@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3D453C43-EF03-34F2-988A-5CA7406C5B2E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/user/Desktop/Avoid/Avoid/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/user/Desktop/Avoid/Avoid -BC:/Users/user/Desktop/Avoid/Avoid/proj.win32 --check-stamp-file C:/Users/user/Desktop/Avoid/Avoid/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\base\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\math\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\network\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/user/Desktop/Avoid/Avoid/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/user/Desktop/Avoid/Avoid -BC:/Users/user/Desktop/Avoid/Avoid/proj.win32 --check-stamp-file C:/Users/user/Desktop/Avoid/Avoid/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\base\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\math\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\network\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/user/Desktop/Avoid/Avoid/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/user/Desktop/Avoid/Avoid -BC:/Users/user/Desktop/Avoid/Avoid/proj.win32 --check-stamp-file C:/Users/user/Desktop/Avoid/Avoid/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\base\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\math\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\network\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/user/Desktop/Avoid/Avoid/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/user/Desktop/Avoid/Avoid -BC:/Users/user/Desktop/Avoid/Avoid/proj.win32 --check-stamp-file C:/Users/user/Desktop/Avoid/Avoid/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\base\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\math\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\network\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\user\Desktop\Avoid\Avoid\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{F9E62390-59BD-323B-BB66-EF7E43806A5E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{E91EAB75-309E-390B-B3B8-10D5090F8576}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{42D80F57-42E2-387E-8162-1D5AE13D8A76}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{BA9AD5B0-2F40-35B9-BEEF-E9393A4B5B93}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{F36CBA78-97C4-3F39-B121-38E7073085AD}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{2808B6E2-58F1-3004-A887-F2CE94A7D903}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{0E8306E1-301E-30F9-A7DB-09DF4CEC3B3E}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{D2D478F7-8C2E-3ADF-99C8-02A68F028327}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{A541EAC7-E221-30CD-825E-5A97CFA198B6}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{726FBC53-501C-3518-B90C-BEBCB9CF151A}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{01539931-6BB6-3FDB-914A-492B1FFA5D64}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{65B9F9E6-37E6-3766-B15C-97617DF0276B}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\engine\external\external.vcxproj">
+      <Project>{7DA03CE8-D47F-3E0F-87AA-CF3A8FAEBAC2}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
