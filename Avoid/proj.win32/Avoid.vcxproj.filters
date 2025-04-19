@@ -13,6 +13,9 @@
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Player.cpp">
+      <Filter>Source Files\Classes\Player</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.h">
@@ -45,6 +48,9 @@
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Player.h">
+      <Filter>Source Files\Classes\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\user\Desktop\Avoid\Avoid\CMakeLists.txt" />
@@ -73,5 +79,16 @@
     <Filter Include="Source Files\proj.win32">
       <UniqueIdentifier>{07602429-9720-38A7-896A-51EE58777FB5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Classes\Player">
+      <UniqueIdentifier>{f78910ee-ea99-4421-aa69-dbf41e0a0422}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\character.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\boundingBox.png">
+      <Filter>Resources</Filter>
+    </Image>
   </ItemGroup>
 </Project>
