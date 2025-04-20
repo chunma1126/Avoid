@@ -42,7 +42,30 @@ bool Player::init()
 
 void Player::update(float dt)
 {
-    cocos2d::Vec2 velocity = Vec2::ZERO;
+    move(dt);
+    clampPosition();
+}
+
+void Player::clampPosition()
+{
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    auto originSize = Director::getInstance()->getVisibleOrigin();
+    auto pos = getPosition();
+    Size spriteSize = _sprite->getContentSize() * _sprite->getScale();
+
+    float halfWidth = spriteSize.width / 2.0f;
+    float halfHeight = spriteSize.height / 2.0f;
+
+
+    float clampedX = clampf(pos.x, halfWidth + originSize.x, visibleSize.width - halfWidth + originSize.x);
+    float clampedY = clampf(pos.y, halfHeight + originSize.y, visibleSize.height - halfHeight + originSize.y);
+
+    setPosition(Vec2(clampedX, clampedY));
+}
+
+void Player::move(float dt)
+{
+    Vec2 velocity;
 
     if (_keyState[EventKeyboard::KeyCode::KEY_A]) {
         velocity.x -= _speed;
@@ -57,7 +80,6 @@ void Player::update(float dt)
         velocity.y -= _speed;
     }
 
-    // 대각선 속도 보정
     if (velocity.length() > _speed) {
         velocity.normalize();
         velocity *= _speed;

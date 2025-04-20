@@ -7,6 +7,10 @@ public:
     virtual bool init() override;
     virtual void update(float dt) override;
 
+
+    void clampPosition();
+    void move(float dt);
+
     CREATE_FUNC(Player);
 private:
     std::map<cocos2d::EventKeyboard::KeyCode, bool> _keyState;
