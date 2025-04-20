@@ -22,18 +22,18 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-#include "HelloWorldScene.h"
+#include "GameScene.h"
 #include "Player.h"
-
+#include "ArrowPool.h"
 
 USING_NS_CC;
 
-Scene* HelloWorld::createScene()
+Scene* GameScene::createScene()
 {
     auto scene = Scene::createWithPhysics();
     scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
 
-    auto layer = HelloWorld::create();
+    auto layer = GameScene::create();
     layer->setPhysicsWorld(scene->getPhysicsWorld());
 
 
@@ -50,7 +50,7 @@ static void problemLoading(const char* filename)
 }
 
 // on "init" you need to initialize your instance
-bool HelloWorld::init()
+bool GameScene::init()
 {
     //////////////////////////////
     // 1. super init first
@@ -69,16 +69,17 @@ bool HelloWorld::init()
     player->setPosition(screenCenter);
     addChild(player);
 
-
-
-    
+    ArrowPool arrowPool(10);
+    Arrow* arrow = arrowPool.Pop();
+    arrow->setPosition(screenCenter);
+    addChild(arrow);
 
 
     return true;
 }
 
 
-void HelloWorld::menuCloseCallback(Ref* pSender)
+void GameScene::menuCloseCallback(Ref* pSender)
 {
     //Close the cocos2d-x game scene and quit the application
     Director::getInstance()->end();

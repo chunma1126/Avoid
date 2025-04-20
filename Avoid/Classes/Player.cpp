@@ -4,14 +4,14 @@ USING_NS_CC;
 
 bool Player::init()
 {
-    if (!cocos2d::Node::init()) {
+    if (!Node::init()) {
         return false;
     }
 
     //sprite init
     {
         _sprite = Sprite::create("character.png");
-        _sprite->setScale(0.3f);
+        _sprite->setScale(0.2f);
         addChild(_sprite);
     }
 
@@ -24,17 +24,21 @@ bool Player::init()
         setPhysicsBody(_rigidBody);
     }
 
-    auto keyboardEvent = EventListenerKeyboard::create();
+    //input init
+    {
+        auto keyboardEvent = EventListenerKeyboard::create();
 
-    keyboardEvent->onKeyPressed = [=](EventKeyboard::KeyCode key, Event*) {
-        _keyState[key] = true;
-        };
+        keyboardEvent->onKeyPressed = [=](EventKeyboard::KeyCode key, Event*) {
+            _keyState[key] = true;
+            };
 
-    keyboardEvent->onKeyReleased = [=](EventKeyboard::KeyCode key, Event*) {
-        _keyState[key] = false;
-        };
+        keyboardEvent->onKeyReleased = [=](EventKeyboard::KeyCode key, Event*) {
+            _keyState[key] = false;
+            };
 
-    _eventDispatcher->addEventListenerWithFixedPriority(keyboardEvent, 1);
+        _eventDispatcher->addEventListenerWithFixedPriority(keyboardEvent, 1);
+    }
+    
 
     scheduleUpdate();
     return true;
@@ -43,7 +47,7 @@ bool Player::init()
 void Player::update(float dt)
 {
     move(dt);
-    clampPosition();
+
 }
 
 void Player::clampPosition()
@@ -55,7 +59,6 @@ void Player::clampPosition()
 
     float halfWidth = spriteSize.width / 2.0f;
     float halfHeight = spriteSize.height / 2.0f;
-
 
     float clampedX = clampf(pos.x, halfWidth + originSize.x, visibleSize.width - halfWidth + originSize.x);
     float clampedY = clampf(pos.y, halfHeight + originSize.y, visibleSize.height - halfHeight + originSize.y);
@@ -80,12 +83,22 @@ void Player::move(float dt)
         velocity.y -= _speed;
     }
 
-    if (velocity.length() > _speed) {
+    if (velocity.length() > _speed)
+    {
         velocity.normalize();
         velocity *= _speed;
     }
+	
+    if (velocity.length() > 0)
+        _isMoving = true;
+    else {
+        _isMoving = false;
+    }
+    
 
     _rigidBody->setVelocity(velocity * dt);
+
+    clampPosition();
 }
 
 

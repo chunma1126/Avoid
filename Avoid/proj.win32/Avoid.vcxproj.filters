@@ -4,9 +4,6 @@
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\HelloWorldScene.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
@@ -14,14 +11,20 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Player.cpp">
-      <Filter>Source Files\Classes\Player</Filter>
+      <Filter>Source Files\Classes\01.Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Arrow.cpp">
+      <Filter>Source Files\Classes\01.Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ArrowPool.cpp">
+      <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\HelloWorldScene.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.h">
@@ -49,7 +52,16 @@
       <Filter>Resources\res</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Player.h">
-      <Filter>Source Files\Classes\Player</Filter>
+      <Filter>Source Files\Classes\01.Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Arrow.h">
+      <Filter>Source Files\Classes\01.Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ArrowPool.h">
+      <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -79,7 +91,7 @@
     <Filter Include="Source Files\proj.win32">
       <UniqueIdentifier>{07602429-9720-38A7-896A-51EE58777FB5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Classes\Player">
+    <Filter Include="Source Files\Classes\01.Object">
       <UniqueIdentifier>{f78910ee-ea99-4421-aa69-dbf41e0a0422}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -88,6 +100,9 @@
       <Filter>Resources</Filter>
     </Image>
     <Image Include="..\Resources\boundingBox.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\Arrow.png">
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>
