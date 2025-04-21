@@ -836,6 +836,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\ArrowPool.h" />
     <ClInclude Include="..\Classes\GameScene.h" />
     <ClInclude Include="..\Classes\Player.h" />
+    <ClInclude Include="..\Classes\TimeCount.h" />
+    <ClInclude Include="..\Classes\TimeView.h" />
+    <ClInclude Include="..\Classes\UIController.h" />
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.h" />
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.h" />
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\resource.h" />
@@ -843,6 +846,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\ArrowPool.cpp" />
     <ClCompile Include="..\Classes\GameScene.cpp" />
     <ClCompile Include="..\Classes\Player.cpp" />
+    <ClCompile Include="..\Classes\TimeCount.cpp" />
+    <ClCompile Include="..\Classes\TimeView.cpp" />
+    <ClCompile Include="..\Classes\UIController.cpp" />
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.cpp" />
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.cpp" />
     <ResourceCompile Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\game.rc" />

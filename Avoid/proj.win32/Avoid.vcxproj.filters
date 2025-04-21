@@ -22,6 +22,15 @@
     <ClCompile Include="..\Classes\ArrowPool.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\TimeCount.cpp">
+      <Filter>Source Files\Classes\02.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIController.cpp">
+      <Filter>Source Files\Classes\02.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TimeView.cpp">
+      <Filter>Source Files\Classes\02.UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.h">
@@ -63,6 +72,15 @@
     <ClInclude Include="..\Classes\ArrowPool.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\TimeCount.h">
+      <Filter>Source Files\Classes\02.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIController.h">
+      <Filter>Source Files\Classes\02.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TimeView.h">
+      <Filter>Source Files\Classes\02.UI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\user\Desktop\Avoid\Avoid\CMakeLists.txt" />
@@ -93,6 +111,9 @@
     </Filter>
     <Filter Include="Source Files\Classes\01.Object">
       <UniqueIdentifier>{f78910ee-ea99-4421-aa69-dbf41e0a0422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\02.UI">
+      <UniqueIdentifier>{5ddfc6cc-822b-4867-956d-29aad7f8bb73}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

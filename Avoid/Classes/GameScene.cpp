@@ -1,6 +1,7 @@
 #include "GameScene.h"
 #include "Player.h"
 #include "ArrowPool.h"
+#include "UIController.h"
 
 USING_NS_CC;
 
@@ -39,8 +40,12 @@ bool GameScene::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
 
+
     ArrowPool::getInstance().initialize(50,this);
 
+    UIController* uiController = UIController::create();
+    uiController->setScene(this);
+    addChild(uiController);
     //Player init
     {
         auto  player = Player::create();
@@ -48,8 +53,28 @@ bool GameScene::init()
         addChild(player);
     }
     
-
+    scheduleUpdate();
 
     return true;
+}
+
+void GameScene::update(float dt)
+{
+    static float timer = 0;
+    timer += dt;
+
+    //CCLOG("%d" , timer);
+
+    if (timer > 5)
+    {
+        timer = 0;
+
+        auto visibleSize = Director::getInstance()->getVisibleSize();
+        Vec2 origin = Director::getInstance()->getVisibleOrigin();
+        Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
+
+        ArrowPool::getInstance().Pop(screenCenter,Vec2::UNIT_X * - 1 , 400);
+    }
+
 }
 
