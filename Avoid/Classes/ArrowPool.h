@@ -2,19 +2,37 @@
 #include <stack>
 #include "Arrow.h"
 
-class ArrowPool
-{
+class ArrowPool {
 public:
-	ArrowPool(int _count);
-	~ArrowPool();
+	static ArrowPool& getInstance() {
+		static ArrowPool instance;
+		return instance;
+	}
 
-	static Arrow* Pop();
-	static void Push(Arrow* _arrow);
+	void initialize(int _count, cocos2d::Scene* _scene) {
+		scene = _scene;
+		createPool(_count);
+	}
+
+	Arrow* Pop(Vec2 _pos);
+	Arrow* Pop(Vec2 _pos,Vec2 _direction,float speed);
+	void Push(Arrow* arrow);
 
 private:
-	static void createPool(int _count);
-	static void releasePool();
+	ArrowPool() = default;
+	~ArrowPool() 
+	{
+		releasePool();
+	}
 
-	static std::stack<Arrow*> pool;
+	ArrowPool(const ArrowPool&) = delete;
+	ArrowPool& operator=(const ArrowPool&) = delete;
+
+	void createPool(int count);
+	void releasePool();
+
+	std::stack<Arrow*> pool;
+	cocos2d::Scene* scene = nullptr;
 };
+
 

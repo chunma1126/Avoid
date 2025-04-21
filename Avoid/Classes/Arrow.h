@@ -12,6 +12,8 @@ public:
     void setDirectionAndSpeed(Vec2 direction, float speed) { _direction = direction, _speed = speed; }
 
     CREATE_FUNC(Arrow);
+private:
+    void rotate();
 
 private:
     PhysicsBody* _rigidBody;

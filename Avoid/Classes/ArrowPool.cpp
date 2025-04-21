@@ -1,19 +1,10 @@
 #include "ArrowPool.h"
 #include "Arrow.h"
 
-std::stack<Arrow*> ArrowPool::pool;
+USING_NS_CC;
 
-ArrowPool::ArrowPool(int _count)
-{
-    createPool(_count);
-}
 
-ArrowPool::~ArrowPool()
-{
-	releasePool();
-}
-
-Arrow* ArrowPool::Pop()
+Arrow* ArrowPool::Pop(Vec2 _pos)
 {
 	if (pool.empty())
 	{
@@ -22,36 +13,43 @@ Arrow* ArrowPool::Pop()
 
 	Arrow* newArrow = pool.top();
 	pool.pop();
-	newArrow->setVisible(true);
 
-	CCLOG("%d", pool.size());
+	newArrow->setVisible(true);
+	newArrow->setPosition(_pos);
+
+	scene->addChild(newArrow);
 
 	return newArrow;
 }
 
-void ArrowPool::Push(Arrow* _arrow)
+Arrow* ArrowPool::Pop(Vec2 _pos, Vec2 _direction, float speed)
 {
-	_arrow->setVisible(false);
-	_arrow->removeFromParentAndCleanup(false);
-	_arrow->setDirectionAndSpeed(Vec2::ZERO , 0);
-	
-
-	pool.push(_arrow);
+	Arrow* arrow = Pop(_pos);
+	arrow->setDirectionAndSpeed(_direction, speed);
+	return arrow;
 }
 
-void ArrowPool::createPool(int _count)
+void ArrowPool::Push(Arrow* arrow)
 {
-    pool = std::stack<Arrow*>();
+	arrow->setVisible(false);
+	arrow->removeFromParentAndCleanup(false);
+	arrow->setDirectionAndSpeed(Vec2::ZERO, 0);
 
-    for (int i = 0; i < _count; i++)
+	pool.push(arrow);
+}
+
+void ArrowPool::createPool(int count)
+{
+	while (!pool.empty()) pool.pop();
+
+	for (int i = 0; i < count; ++i)
 	{
 		Arrow* arrow = Arrow::create();
-		//arrow->retain();
+		arrow->retain();
 		arrow->setVisible(false);
-		arrow->setDirectionAndSpeed(Vec2::ZERO , 0);
+		arrow->setDirectionAndSpeed(Vec2::ZERO, 0);
 		pool.push(arrow);
 	}
-	
 }
 
 void ArrowPool::releasePool()
@@ -61,6 +59,6 @@ void ArrowPool::releasePool()
 		Arrow* arrow = pool.top();
 		pool.pop();
 		arrow->removeFromParentAndCleanup(true);
+		arrow->release();
 	}
-
 }

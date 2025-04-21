@@ -44,13 +44,24 @@ void Arrow::update(float dt)
 	if (pos.x < originSize.x || pos.x > screenSize.width + originSize.x ||
 		pos.y < originSize.y || pos.y > screenSize.height + originSize.y)
 	{
-        ArrowPool::Push(this);
+        ArrowPool::getInstance().Push(this);
         return;
 	}
 
     _rigidBody->setVelocity(_direction * _speed * dt);
+    rotate();
 
+}
 
+void Arrow::rotate()
+{
+    Vec2 velocity = _rigidBody->getVelocity();
+    if (velocity.length() > 0)
+    {
+        velocity.normalize(); // 벡터의 길이를 1로 정규화하여 방향만 고려
+        float angle = CC_RADIANS_TO_DEGREES(velocity.getAngle()); // 벡터의 각도 계산
+        setRotation(angle); // 화살 회전
+    }
 }
 
 
