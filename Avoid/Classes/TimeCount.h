@@ -2,9 +2,14 @@
 class TimeCount
 {
 public:
-	void increaseTime(float _dt) { time += _dt; }
 	void init() { time = 0; }
-	float getTime() const { return time; }
+
+	void addTime(float _dt)
+	{ time += _dt; }
+
+	float getTime() const 
+	{ return time; }
+
 private:
 	float time = 0;
 };

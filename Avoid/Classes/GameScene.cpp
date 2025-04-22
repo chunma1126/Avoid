@@ -13,7 +13,6 @@ Scene* GameScene::createScene()
     auto layer = GameScene::create();
     layer->setPhysicsWorld(scene->getPhysicsWorld());
 
-
     scene->addChild(layer);
 
     return scene;
@@ -41,11 +40,10 @@ bool GameScene::init()
     Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
 
 
-    ArrowPool::getInstance().initialize(50,this);
-
     UIController* uiController = UIController::create();
     uiController->setScene(this);
     addChild(uiController);
+
     //Player init
     {
         auto  player = Player::create();
@@ -62,8 +60,6 @@ void GameScene::update(float dt)
 {
     static float timer = 0;
     timer += dt;
-
-    //CCLOG("%d" , timer);
 
     if (timer > 5)
     {

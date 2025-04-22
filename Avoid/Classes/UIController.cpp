@@ -15,7 +15,7 @@ bool UIController::init()
 
 void UIController::update(float dt)
 {
-	_timeCount.increaseTime(dt);
+	_timeCount.addTime(dt);
 	_timeView.setLabel(_timeCount.getTime());
 	CCLOG("%d" , _timeCount.getTime());
 }
