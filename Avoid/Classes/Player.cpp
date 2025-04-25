@@ -1,6 +1,5 @@
 #include "Player.h"
 #include "Enum.h"
-#include "HealthComponent.h"
 USING_NS_CC;
 
 bool Player::init()
@@ -54,10 +53,13 @@ bool Player::init()
         _eventDispatcher->addEventListenerWithFixedPriority(contactListener,1);
     }
 
-    health = new HealthComponent();
-    
-    health->onDamageEvents.add([this](int dmg) {
-        FlashFeedback(dmg);
+    //action init
+    {
+        
+    }
+
+    health.onDamageEvents.add([this](int dmg) {
+        FlashFeedback();
         });
 
 
@@ -67,10 +69,7 @@ bool Player::init()
 
 Player::~Player()
 {
-    if (health != nullptr) {
-        delete health;
-        health = nullptr;
-    }
+    
 
 }
 
@@ -79,8 +78,6 @@ void Player::update(float dt)
     move(dt);
 
 }
-
-
 
 void Player::clampPosition()
 {
@@ -143,19 +140,24 @@ bool Player::onCollisionBegin(cocos2d::PhysicsContact& contact)
 
     //check physicsbody
     if (canCollision) {
-        health->takeDamage(1);
+        health.takeDamage(1);
     }
     else {
-        return true;
+        return false;
     }
 
 
-    return true;
+    return false;
 }
 
-void Player::FlashFeedback(int _damage)
+void Player::FlashFeedback()
 {
-    CCLOG("WTF");
+    int a = 0;
+    TintTo* defaultToRed  = TintTo::create(0.15f, 255.f, 0.f, 0.f);
+    TintTo* redToDefault  = TintTo::create(0.15f, 255, 255.f, 255.f);
+
+    auto flashFeedback = Sequence::create(defaultToRed , redToDefault,nullptr);
+    _sprite->runAction(flashFeedback);
 }
 
 

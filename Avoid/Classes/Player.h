@@ -1,8 +1,8 @@
 #pragma once
 #include "cocos2d.h"
+#include "HealthComponent.h"
 #include <unordered_map>
 
-class HealthComponent;
 class Player : public cocos2d::Node 
 {
 public:
@@ -16,15 +16,18 @@ private:
     void clampPosition();
     void move(float dt);
     bool onCollisionBegin(cocos2d::PhysicsContact& contact);
-    void FlashFeedback(int _damage);
+    void FlashFeedback();
 private:
     std::unordered_map<cocos2d::EventKeyboard::KeyCode, bool> _keyState;
 
     cocos2d::Sprite* _sprite;
     cocos2d::PhysicsBody* _rigidBody;
 
-    HealthComponent* health;
+    HealthComponent health;
+   
 
+
+private:
     const float _collisionScale = 10;
 	float _speed = 8000;
 
