@@ -1,6 +1,10 @@
 #include "Player.h"
 #include "Enum.h"
+#include "CameraShakeAction.h"
 USING_NS_CC;
+
+#define FLASH_COLOR 255,0,0
+#define DEFAULT_COLOR 255,255,255
 
 bool Player::init()
 {
@@ -52,16 +56,18 @@ bool Player::init()
 
         _eventDispatcher->addEventListenerWithFixedPriority(contactListener,1);
     }
+    
 
-    //action init
+    health.onDamageEvents.add([=](int dmg)
     {
-        
-    }
-
-    health.onDamageEvents.add([this](int dmg) {
         FlashFeedback();
-        });
-
+    });
+    //cameraShake
+    health.onDamageEvents.add([=](int dmg)
+    {
+        auto shake = CameraShakeAction::create(0.15f, 20,20);
+        Director::getInstance()->getRunningScene()->getDefaultCamera()->runAction(shake);
+    });
 
     scheduleUpdate();
     return true;
@@ -134,9 +140,9 @@ bool Player::onCollisionBegin(cocos2d::PhysicsContact& contact)
     auto bodyA = contact.getShapeA()->getBody();
     auto bodyB = contact.getShapeB()->getBody();
 
-    bool canCollision 
-        =  (bodyA->getTag() == LayerMask::PLAYER && bodyB->getTag() == LayerMask::ARROW)
-        || (bodyA->getTag() == LayerMask::ARROW  && bodyB->getTag() == LayerMask::PLAYER);
+    bool canCollision =
+        (bodyA->getTag() == LayerMask::PLAYER && bodyB->getTag() == LayerMask::ARROW)
+      ||(bodyA->getTag() == LayerMask::ARROW  && bodyB->getTag() == LayerMask::PLAYER);
 
     //check physicsbody
     if (canCollision) {
@@ -146,15 +152,14 @@ bool Player::onCollisionBegin(cocos2d::PhysicsContact& contact)
         return false;
     }
 
-
     return false;
 }
 
 void Player::FlashFeedback()
 {
     int a = 0;
-    TintTo* defaultToRed  = TintTo::create(0.15f, 255.f, 0.f, 0.f);
-    TintTo* redToDefault  = TintTo::create(0.15f, 255, 255.f, 255.f);
+    TintTo* defaultToRed  = TintTo::create(_flashTime, FLASH_COLOR);
+    TintTo* redToDefault  = TintTo::create(_flashTime, DEFAULT_COLOR);
 
     auto flashFeedback = Sequence::create(defaultToRed , redToDefault,nullptr);
     _sprite->runAction(flashFeedback);

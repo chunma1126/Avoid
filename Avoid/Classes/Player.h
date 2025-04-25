@@ -24,11 +24,11 @@ private:
     cocos2d::PhysicsBody* _rigidBody;
 
     HealthComponent health;
-   
-
-
+    
 private:
     const float _collisionScale = 10;
+    const float _flashTime = 0.12f;
+
 	float _speed = 8000;
 
 	bool _isMoving;
