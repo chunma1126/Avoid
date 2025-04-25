@@ -61,7 +61,7 @@ void GameScene::update(float dt)
     static float timer = 0;
     timer += dt;
 
-    if (timer > 5)
+    if (timer > 2)
     {
         timer = 0;
 
@@ -69,7 +69,7 @@ void GameScene::update(float dt)
         Vec2 origin = Director::getInstance()->getVisibleOrigin();
         Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
 
-        ArrowPool::getInstance().Pop(screenCenter,Vec2::UNIT_X * - 1 , 400);
+        ArrowPool::getInstance().Pop(screenCenter,Vec2::UNIT_X * - 1 , 20000);
     }
 
 }

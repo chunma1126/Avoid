@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
@@ -13,17 +10,8 @@
     <ClCompile Include="..\Classes\Player.cpp">
       <Filter>Source Files\Classes\01.Object</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\GameScene.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Arrow.cpp">
       <Filter>Source Files\Classes\01.Object</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\ArrowPool.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\TimeCount.cpp">
-      <Filter>Source Files\Classes\02.UI</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\UIController.cpp">
       <Filter>Source Files\Classes\02.UI</Filter>
@@ -31,11 +19,20 @@
     <ClCompile Include="..\Classes\TimeView.cpp">
       <Filter>Source Files\Classes\02.UI</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>Source Files\Classes\06.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ArrowPool.cpp">
+      <Filter>Source Files\Classes\04.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes\04.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HealthComponent.cpp">
+      <Filter>Source Files\Classes\05.Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
@@ -63,14 +60,8 @@
     <ClInclude Include="..\Classes\Player.h">
       <Filter>Source Files\Classes\01.Object</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\GameScene.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Arrow.h">
       <Filter>Source Files\Classes\01.Object</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\ArrowPool.h">
-      <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\TimeCount.h">
       <Filter>Source Files\Classes\02.UI</Filter>
@@ -80,6 +71,24 @@
     </ClInclude>
     <ClInclude Include="..\Classes\TimeView.h">
       <Filter>Source Files\Classes\02.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Action.h">
+      <Filter>Source Files\Classes\04.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HealthComponent.h">
+      <Filter>Source Files\Classes\05.Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Enum.h">
+      <Filter>Source Files\Classes\04.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>Source Files\Classes\06.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ArrowPool.h">
+      <Filter>Source Files\Classes\04.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes\04.Utility</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +123,18 @@
     </Filter>
     <Filter Include="Source Files\Classes\02.UI">
       <UniqueIdentifier>{5ddfc6cc-822b-4867-956d-29aad7f8bb73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\03.ArrowPattern">
+      <UniqueIdentifier>{664db84a-bf82-44c2-b938-630be18f53ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\04.Utility">
+      <UniqueIdentifier>{c2e354b8-4dd5-436d-b501-c6359b250afc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\05.Component">
+      <UniqueIdentifier>{6872dcb2-897f-4653-ae3d-16d55c86db1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\06.Scene">
+      <UniqueIdentifier>{29cd9f44-08d9-49c4-b653-1c3238906224}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

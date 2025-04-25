@@ -17,7 +17,7 @@ void UIController::update(float dt)
 {
 	_timeCount.addTime(dt);
 	_timeView.setLabel(_timeCount.getTime());
-	CCLOG("%d" , _timeCount.getTime());
+	//CCLOG("%d" , _timeCount.getTime());
 }
 
 void UIController::setScene(cocos2d::Scene* scene)

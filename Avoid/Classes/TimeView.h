@@ -11,7 +11,7 @@ public:
 	void setLabel(float _time) 
 	{
 		std::ostringstream stream;
-		stream << std::fixed << std::setprecision(2) << _time;
+		stream << std::fixed << std::setprecision(1) << _time;
 		timeLabel->setString(stream.str());
 	}
 	void addLabel(cocos2d::Scene& scene);

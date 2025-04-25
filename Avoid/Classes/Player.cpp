@@ -1,5 +1,6 @@
 #include "Player.h"
-
+#include "Enum.h"
+#include "HealthComponent.h"
 USING_NS_CC;
 
 bool Player::init()
@@ -7,7 +8,7 @@ bool Player::init()
     if (!Node::init()) {
         return false;
     }
-
+    
     //sprite init
     {
         _sprite = Sprite::create("character.png");
@@ -20,7 +21,13 @@ bool Player::init()
         _rigidBody = PhysicsBody::createCircle(_collisionScale, PHYSICSBODY_MATERIAL_DEFAULT);
         _rigidBody->setGravityEnable(false);
         _rigidBody->setDynamic(true);
-        _rigidBody->setContactTestBitmask(0xFFFFFFFF);
+
+        _rigidBody->setCategoryBitmask(LayerMask::PLAYER);      
+        //_rigidBody->setCollisionBitmask(LayerMask::ARROW);      
+        _rigidBody->setContactTestBitmask(LayerMask::ARROW);
+
+        _rigidBody->setTag(LayerMask::PLAYER);
+
         setPhysicsBody(_rigidBody);
     }
 
@@ -39,9 +46,32 @@ bool Player::init()
         _eventDispatcher->addEventListenerWithFixedPriority(keyboardEvent, 1);
     }
     
+    //rigidbodyEvent init
+    {
+        auto contactListener = EventListenerPhysicsContact::create();
+        contactListener->onContactBegin = std::bind(&Player::onCollisionBegin, this, std::placeholders::_1);
+
+        _eventDispatcher->addEventListenerWithFixedPriority(contactListener,1);
+    }
+
+    health = new HealthComponent();
+    
+    health->onDamageEvents.add([this](int dmg) {
+        FlashFeedback(dmg);
+        });
+
 
     scheduleUpdate();
     return true;
+}
+
+Player::~Player()
+{
+    if (health != nullptr) {
+        delete health;
+        health = nullptr;
+    }
+
 }
 
 void Player::update(float dt)
@@ -49,6 +79,8 @@ void Player::update(float dt)
     move(dt);
 
 }
+
+
 
 void Player::clampPosition()
 {
@@ -95,10 +127,35 @@ void Player::move(float dt)
         _isMoving = false;
     }
     
-
     _rigidBody->setVelocity(velocity * dt);
 
     clampPosition();
+}
+
+bool Player::onCollisionBegin(cocos2d::PhysicsContact& contact)
+{
+    auto bodyA = contact.getShapeA()->getBody();
+    auto bodyB = contact.getShapeB()->getBody();
+
+    bool canCollision 
+        =  (bodyA->getTag() == LayerMask::PLAYER && bodyB->getTag() == LayerMask::ARROW)
+        || (bodyA->getTag() == LayerMask::ARROW  && bodyB->getTag() == LayerMask::PLAYER);
+
+    //check physicsbody
+    if (canCollision) {
+        health->takeDamage(1);
+    }
+    else {
+        return true;
+    }
+
+
+    return true;
+}
+
+void Player::FlashFeedback(int _damage)
+{
+    CCLOG("WTF");
 }
 
 

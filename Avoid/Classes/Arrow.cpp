@@ -1,6 +1,7 @@
 #include "Arrow.h"
 #include "cocos2d.h"
 #include "ArrowPool.h"
+#include "Enum.h"
 
 USING_NS_CC;
 
@@ -26,7 +27,12 @@ bool Arrow::init()
 
         _rigidBody->setGravityEnable(false);
         _rigidBody->setDynamic(true);
-        _rigidBody->setContactTestBitmask(0xFFFFFFFF);
+
+        _rigidBody->setCategoryBitmask(LayerMask::ARROW);        
+        //_rigidBody->setCollisionBitmask(LayerMask::PLAYER);    
+        _rigidBody->setContactTestBitmask(LayerMask::PLAYER);    
+
+        _rigidBody->setTag(LayerMask::ARROW);
 
         setPhysicsBody(_rigidBody);
     }
@@ -58,9 +64,9 @@ void Arrow::rotate()
     Vec2 velocity = _rigidBody->getVelocity();
     if (velocity.length() > 0)
     {
-        velocity.normalize(); // 벡터의 길이를 1로 정규화하여 방향만 고려
-        float angle = CC_RADIANS_TO_DEGREES(velocity.getAngle()); // 벡터의 각도 계산
-        setRotation(angle); // 화살 회전
+        velocity.normalize(); 
+        float angle = CC_RADIANS_TO_DEGREES(velocity.getAngle()); 
+        setRotation(angle);
     }
 }
 
