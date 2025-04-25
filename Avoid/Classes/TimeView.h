@@ -14,7 +14,7 @@ public:
 		stream << std::fixed << std::setprecision(1) << _time;
 		timeLabel->setString(stream.str());
 	}
-	void addLabel(cocos2d::Scene& scene);
+	cocos2d::Label* getLabel() { return timeLabel; }
 private:
 	cocos2d::Label* timeLabel;
 };

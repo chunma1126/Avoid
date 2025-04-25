@@ -1,10 +1,11 @@
 #include "Player.h"
 #include "Enum.h"
 #include "CameraShakeAction.h"
-USING_NS_CC;
 
 #define FLASH_COLOR 255,0,0
 #define DEFAULT_COLOR 255,255,255
+
+USING_NS_CC;
 
 bool Player::init()
 {
@@ -65,7 +66,7 @@ bool Player::init()
     //cameraShake
     health.onDamageEvents.add([=](int dmg)
     {
-        auto shake = CameraShakeAction::create(0.15f, 20,20);
+        auto shake = CameraShakeAction::create(0.15f, 13,13);
         Director::getInstance()->getRunningScene()->getDefaultCamera()->runAction(shake);
     });
 

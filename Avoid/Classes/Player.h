@@ -10,8 +10,10 @@ public:
     virtual void update(float dt) override;
 
     ~Player();
-
     CREATE_FUNC(Player);
+
+public:
+    HealthComponent& getHealthComponent() { return health; }
 private:
     void clampPosition();
     void move(float dt);
@@ -32,6 +34,5 @@ private:
 	float _speed = 8000;
 
 	bool _isMoving;
-
 };
 

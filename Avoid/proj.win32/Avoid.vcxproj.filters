@@ -32,7 +32,7 @@
       <Filter>Source Files\Classes\05.Component</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\CameraShakeAction.cpp">
-      <Filter>Source Files\Classes</Filter>
+      <Filter>Source Files\Classes\05.Component</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -94,7 +94,7 @@
       <Filter>Source Files\Classes\04.Utility</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\CameraShakeAction.h">
-      <Filter>Source Files\Classes</Filter>
+      <Filter>Source Files\Classes\05.Component</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -147,10 +147,10 @@
     <Image Include="..\Resources\character.png">
       <Filter>Resources</Filter>
     </Image>
-    <Image Include="..\Resources\boundingBox.png">
+    <Image Include="..\Resources\Arrow.png">
       <Filter>Resources</Filter>
     </Image>
-    <Image Include="..\Resources\Arrow.png">
+    <Image Include="..\Resources\bloodScreen.png">
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>

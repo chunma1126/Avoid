@@ -28,9 +28,7 @@ static void problemLoading(const char* filename)
 // on "init" you need to initialize your instance
 bool GameScene::init()
 {
-    //////////////////////////////
-    // 1. super init first
-    if ( !Scene::init() )
+    if (!Scene::init())
     {
         return false;
     }
@@ -39,15 +37,19 @@ bool GameScene::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
 
-
     UIController* uiController = UIController::create();
     uiController->setScene(this);
     addChild(uiController);
 
     //Player init
     {
-        auto  player = Player::create();
+        auto player = Player::create();
         player->setPosition(screenCenter);
+        player->getHealthComponent().onDamageEvents.add([=](int dmg)
+        {
+            uiController->playBloodScreen();
+        });
+
         addChild(player);
     }
     

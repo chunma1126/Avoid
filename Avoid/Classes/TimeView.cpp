@@ -13,8 +13,3 @@ void TimeView::init()
 	timeLabel->setPosition(screenCenter);
 
 }
-
-void TimeView::addLabel(Scene& scene)
-{
-	scene.addChild(timeLabel, 1);
-}
