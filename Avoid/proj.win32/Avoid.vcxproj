@@ -940,6 +940,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <Image Include="..\Resources\character.png" />
     <Image Include="..\Resources\HealthBar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\fonts\CookieRun Regular.ttf" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

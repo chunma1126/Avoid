@@ -4,7 +4,7 @@ USING_NS_CC;
 
 void TimeView::init()
 {
-	timeLabel = Label::createWithSystemFont("time", "fonts/Arial",25);
+	timeLabel = Label::createWithSystemFont("time", "fonts/CookieRun Regular.ttf",25);
 
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();

@@ -7,7 +7,7 @@ SectorPattern::~SectorPattern()
 
 void SectorPattern::start()
 {
-	_completeTime = 5;
+	_completeTime = 2.5f;
 
     float centerAngleDeg = 90.0f;
     float sectorAngleDeg = 60.0f;

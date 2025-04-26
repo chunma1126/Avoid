@@ -8,7 +8,5 @@ public:
 	void update(float dt) override;
 	void reset() override;
 	bool isCompleted() override;
-private:
-
 };
 

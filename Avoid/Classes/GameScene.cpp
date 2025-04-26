@@ -39,9 +39,12 @@ bool GameScene::init()
         auto r = new RightAndLeftPattern;
         auto r1 = new SectorPattern;
         auto r2 = new SectorPattern;
+        auto r3 = new RightAndLeftPattern;
+
         _patternQueue.push(r);
         _patternQueue.push(r1);
         _patternQueue.push(r2);
+        _patternQueue.push(r3);
     }
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -59,8 +62,6 @@ bool GameScene::init()
         auto player = Player::create();
         player->setPosition(screenCenter);
         
-       
-
         player->getHealthComponent().onDamageEvents.add([=](int dmg)
         {
             uiController->playBloodScreen();

@@ -178,4 +178,9 @@
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\fonts\CookieRun Regular.ttf">
+      <Filter>Resources\fonts</Filter>
+    </Font>
+  </ItemGroup>
 </Project>
