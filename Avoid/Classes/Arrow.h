@@ -9,7 +9,13 @@ public:
     virtual bool init() override;
     virtual void update(float dt) override;
 
-    void setDirectionAndSpeed(Vec2 direction, float speed) { _direction = direction, _speed = speed; }
+    void move(float dt);
+
+    void setDirectionAndSpeed(Vec2 direction, float speed)
+    {
+        _direction = direction;
+        _speed = speed;
+    }
 
     CREATE_FUNC(Arrow);
 private:
@@ -19,8 +25,10 @@ private:
     PhysicsBody* _rigidBody;
     Sprite* _sprite;
 
+    Size screenSize;
+    Vec2 originSize;
+
     Vec2 _direction;
     float _speed;
-
 };
 

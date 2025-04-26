@@ -37,37 +37,41 @@ bool Arrow::init()
         setPhysicsBody(_rigidBody);
     }
 
+    {
+         screenSize = Director::getInstance()->getVisibleSize() + Size(250, 250);
+         originSize = Director::getInstance()->getVisibleOrigin() - Vec2(250, 250);
+    }
+
     scheduleUpdate();
     return true;
 }
 
 void Arrow::update(float dt)
 {
-    auto pos = getPosition();
-	auto screenSize = Director::getInstance()->getVisibleSize();
-	auto originSize = Director::getInstance()->getVisibleOrigin();
+    rotate();
+    move(dt);
+}
 
-	if (pos.x < originSize.x || pos.x > screenSize.width + originSize.x ||
-		pos.y < originSize.y || pos.y > screenSize.height + originSize.y)
-	{
+void Arrow::move(float dt)
+{
+    auto pos = getPosition();
+
+    if (pos.x < originSize.x || pos.x > screenSize.width + originSize.x ||
+        pos.y < originSize.y || pos.y > screenSize.height + originSize.y)
+    {
         ArrowPool::getInstance().Push(this);
         return;
-	}
+    }
 
     _rigidBody->setVelocity(_direction * _speed * dt);
-    rotate();
-
 }
 
 void Arrow::rotate()
 {
     Vec2 velocity = _rigidBody->getVelocity();
-    if (velocity.length() > 0)
-    {
-        velocity.normalize(); 
-        float angle = CC_RADIANS_TO_DEGREES(velocity.getAngle()); 
-        setRotation(angle);
-    }
+    velocity.normalize();
+    float angle = CC_RADIANS_TO_DEGREES(velocity.getAngle());
+    setRotation(-angle);
 }
 
 

@@ -1,4 +1,6 @@
 #pragma once
+#include "ArrowPool.h"
+
 class ArrowPattern
 {
 public:
@@ -8,5 +10,11 @@ public:
 	virtual	void update(float dt) = 0;
 	virtual void reset() = 0;
 	virtual bool isCompleted() = 0;
+protected:
+	int _arrowCount = 0;
+	float _completeTime = 0;
+	float _timer = 0;
+	float _arrowSpeed = 20000.f;
+
 };
 

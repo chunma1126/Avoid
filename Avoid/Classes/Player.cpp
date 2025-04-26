@@ -176,5 +176,3 @@ void Player::FlashFeedback()
 
     _sprite->runAction(flash);
 }
-
-

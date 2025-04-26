@@ -842,6 +842,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\HealthBar.h" />
     <ClInclude Include="..\Classes\HealthComponent.h" />
     <ClInclude Include="..\Classes\Player.h" />
+    <ClInclude Include="..\Classes\RightAndLeftPattern.h" />
+    <ClInclude Include="..\Classes\SectorPattern.h" />
     <ClInclude Include="..\Classes\TimeCount.h" />
     <ClInclude Include="..\Classes\TimeView.h" />
     <ClInclude Include="..\Classes\UIController.h" />
@@ -849,13 +851,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.h" />
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\resource.h" />
     <ClCompile Include="..\Classes\Arrow.cpp" />
-    <ClCompile Include="..\Classes\ArrowPattern.cpp" />
     <ClCompile Include="..\Classes\ArrowPool.cpp" />
     <ClCompile Include="..\Classes\CameraShakeAction.cpp" />
     <ClCompile Include="..\Classes\GameScene.cpp" />
     <ClCompile Include="..\Classes\HealthBar.cpp" />
     <ClCompile Include="..\Classes\HealthComponent.cpp" />
     <ClCompile Include="..\Classes\Player.cpp" />
+    <ClCompile Include="..\Classes\RightAndLeftPattern.cpp" />
+    <ClCompile Include="..\Classes\SectorPattern.cpp" />
     <ClCompile Include="..\Classes\TimeView.cpp" />
     <ClCompile Include="..\Classes\UIController.cpp" />
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.cpp" />

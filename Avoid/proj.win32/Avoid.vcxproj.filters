@@ -37,8 +37,11 @@
     <ClCompile Include="..\Classes\HealthBar.cpp">
       <Filter>Source Files\Classes\02.UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\ArrowPattern.cpp">
-      <Filter>Source Files\Classes</Filter>
+    <ClCompile Include="..\Classes\RightAndLeftPattern.cpp">
+      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SectorPattern.cpp">
+      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -106,7 +109,13 @@
       <Filter>Source Files\Classes\02.UI</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\ArrowPattern.h">
-      <Filter>Source Files\Classes</Filter>
+      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RightAndLeftPattern.h">
+      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SectorPattern.h">
+      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

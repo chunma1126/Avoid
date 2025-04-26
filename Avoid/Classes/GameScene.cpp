@@ -2,13 +2,15 @@
 #include "Player.h"
 #include "UIController.h"
 #include "ArrowPattern.h"
+#include "RightAndLeftPattern.h"
+#include "SectorPattern.h"
 
 USING_NS_CC;
 
 Scene* GameScene::createScene()
 {
     auto scene = Scene::createWithPhysics();
-    scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+    //scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
 
     auto layer = GameScene::create();
     layer->setPhysicsWorld(scene->getPhysicsWorld());
@@ -31,6 +33,15 @@ bool GameScene::init()
     if (!Scene::init())
     {
         return false;
+    }
+
+    {
+        auto r = new RightAndLeftPattern;
+        auto r1 = new SectorPattern;
+        auto r2 = new SectorPattern;
+        _patternQueue.push(r);
+        _patternQueue.push(r1);
+        _patternQueue.push(r2);
     }
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -90,6 +101,7 @@ void GameScene::update(float dt)
         {
             currentPattern->reset();
 
+            delete currentPattern;
             currentPattern = nullptr;
         }
         else {
