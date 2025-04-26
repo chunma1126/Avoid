@@ -1,9 +1,7 @@
 #pragma once
-
 #include "cocos2d.h"
-
-
-
+#include <queue>
+class ArrowPattern;
 class GameScene : public cocos2d::Scene
 {
 public:
@@ -13,9 +11,10 @@ public:
     virtual void update(float dt);
     CREATE_FUNC(GameScene);
 
-    void setPhysicsWorld(cocos2d::PhysicsWorld* world) { physicsWorld = world; }
+    void setPhysicsWorld(cocos2d::PhysicsWorld* world) { _physicsWorld = world; }
 private:
-    cocos2d::PhysicsWorld* physicsWorld;
-
+    cocos2d::PhysicsWorld* _physicsWorld;
+    std::queue<ArrowPattern*> _patternQueue;
+    ArrowPattern* currentPattern;
 };
 

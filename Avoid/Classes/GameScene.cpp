@@ -1,7 +1,7 @@
 #include "GameScene.h"
 #include "Player.h"
-#include "ArrowPool.h"
 #include "UIController.h"
+#include "ArrowPattern.h"
 
 USING_NS_CC;
 
@@ -74,19 +74,27 @@ bool GameScene::init()
 
 void GameScene::update(float dt)
 {
-    static float timer = 0;
-    timer += dt;
-
-    if (timer > 0.1f)
+    if (_patternQueue.empty() && currentPattern == nullptr)
     {
-        timer = 0;
-
-        auto visibleSize = Director::getInstance()->getVisibleSize();
-        Vec2 origin = Director::getInstance()->getVisibleOrigin();
-        Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
-
-        ArrowPool::getInstance().Pop(screenCenter,Vec2::UNIT_X * - 1 , 20000);
+        CCLOG("game is over!!!");
     }
+    else if (currentPattern == nullptr)
+    {
+        currentPattern = _patternQueue.front();
+        _patternQueue.pop();
+        currentPattern->start();
+    }
+    else
+    {
+        if (currentPattern->isCompleted())
+        {
+            currentPattern->reset();
 
+            currentPattern = nullptr;
+        }
+        else {
+            currentPattern->update(dt);
+        }
+    }
 }
 

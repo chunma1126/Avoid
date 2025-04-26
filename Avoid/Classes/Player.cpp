@@ -79,6 +79,7 @@ bool Player::init()
     });
 
     scheduleUpdate();
+
     return true;
 }
 

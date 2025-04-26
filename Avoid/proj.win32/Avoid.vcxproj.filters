@@ -37,6 +37,9 @@
     <ClCompile Include="..\Classes\HealthBar.cpp">
       <Filter>Source Files\Classes\02.UI</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\ArrowPattern.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.h">
@@ -101,6 +104,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\HealthBar.h">
       <Filter>Source Files\Classes\02.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ArrowPattern.h">
+      <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
