@@ -35,14 +35,21 @@ bool GameScene::init()
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
     
+    //UI Controller
     UIController* uiController = UIController::create();
     uiController->setScene(this);
     addChild(uiController);
+     
 
     //Player init
     {
         auto player = Player::create();
+        player->setPosition(screenCenter);
+        
+       
+
         player->getHealthComponent().onDamageEvents.add([=](int dmg)
         {
             uiController->playBloodScreen();
@@ -51,6 +58,11 @@ bool GameScene::init()
             {
                 uiController->setHealthBar(player->getHealthComponent().getPercent());
             });
+
+        player->getHealthComponent().onHealEvents.add([=](int dmg)
+        {
+            uiController->setHealthBar(player->getHealthComponent().getPercent());
+        });
 
         addChild(player);
     }

@@ -169,7 +169,7 @@ void Player::FlashFeedback()
     TintTo* redToDefault  = TintTo::create(_flashTime, DEFAULT_COLOR);
 
     auto flashFeedback = Sequence::create(defaultToRed , redToDefault,nullptr);
-    auto repeatFlash = Repeat::create(flashFeedback,6);
+    auto repeatFlash = Repeat::create(flashFeedback,_flashCount);
 
     auto flash = Sequence::create(repeatFlash , disableInvinciblity , nullptr);
 

@@ -13,7 +13,7 @@ public:
     CREATE_FUNC(Player);
 
 public:
-    HealthComponent& getHealthComponent() { return health; }
+     HealthComponent& getHealthComponent() { return health; }
 private:
     bool onCollisionBegin(cocos2d::PhysicsContact& contact);
     void move(float dt);
@@ -34,7 +34,9 @@ private:
     
 private:
     const float _collisionScale = 2.5f;
-    const float _flashTime = 0.12f;
+    const float _invincibilityTime = 1.5f;
+    const int _flashCount = 6;
+    float _flashTime = (_invincibilityTime / _flashCount) * 0.5f;
 
 	float _speed = 8000;
 
