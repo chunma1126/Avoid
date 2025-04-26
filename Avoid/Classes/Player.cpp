@@ -2,7 +2,7 @@
 #include "Enum.h"
 #include "CameraShakeAction.h"
 
-#define FLASH_COLOR 255,0,0
+#define FLASH_COLOR 200,0,0
 #define DEFAULT_COLOR 255,255,255
 
 USING_NS_CC;
@@ -13,6 +13,13 @@ bool Player::init()
         return false;
     }
     
+    visibleSize = Director::getInstance()->getVisibleSize();
+    originSize = Director::getInstance()->getVisibleOrigin();
+    
+    Vec2 screenCenter = Vec2(visibleSize.width / 2 + originSize.x, visibleSize.height / 2 + originSize.y);
+
+    setPosition(screenCenter);
+
     //sprite init
     {
         _sprite = Sprite::create("character.png");
@@ -58,15 +65,16 @@ bool Player::init()
         _eventDispatcher->addEventListenerWithFixedPriority(contactListener,1);
     }
     
-
+    //flash feedbacks
     health.onDamageEvents.add([=](int dmg)
     {
         FlashFeedback();
     });
+
     //cameraShake
     health.onDamageEvents.add([=](int dmg)
     {
-        auto shake = CameraShakeAction::create(0.15f, 13,13);
+        auto shake = CameraShakeAction::create(0.21f, 13,13);
         Director::getInstance()->getRunningScene()->getDefaultCamera()->runAction(shake);
     });
 
@@ -74,22 +82,18 @@ bool Player::init()
     return true;
 }
 
-Player::~Player()
-{
-    
-
-}
-
 void Player::update(float dt)
 {
     move(dt);
+}
+
+Player::~Player()
+{
 
 }
 
 void Player::clampPosition()
 {
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    auto originSize = Director::getInstance()->getVisibleOrigin();
     auto pos = getPosition();
     Size spriteSize = _sprite->getContentSize() * _sprite->getScale();
 
@@ -141,12 +145,12 @@ bool Player::onCollisionBegin(cocos2d::PhysicsContact& contact)
     auto bodyA = contact.getShapeA()->getBody();
     auto bodyB = contact.getShapeB()->getBody();
 
-    bool canCollision =
+    bool isCollision =
         (bodyA->getTag() == LayerMask::PLAYER && bodyB->getTag() == LayerMask::ARROW)
       ||(bodyA->getTag() == LayerMask::ARROW  && bodyB->getTag() == LayerMask::PLAYER);
 
     //check physicsbody
-    if (canCollision) {
+    if (isCollision) {
         health.takeDamage(1);
     }
     else {
@@ -158,12 +162,18 @@ bool Player::onCollisionBegin(cocos2d::PhysicsContact& contact)
 
 void Player::FlashFeedback()
 {
-    int a = 0;
+    health.setInvincibility(true);
+    auto disableInvinciblity = CallFunc::create([&](){ health.setInvincibility(false); });
+
     TintTo* defaultToRed  = TintTo::create(_flashTime, FLASH_COLOR);
     TintTo* redToDefault  = TintTo::create(_flashTime, DEFAULT_COLOR);
 
     auto flashFeedback = Sequence::create(defaultToRed , redToDefault,nullptr);
-    _sprite->runAction(flashFeedback);
+    auto repeatFlash = Repeat::create(flashFeedback,6);
+
+    auto flash = Sequence::create(repeatFlash , disableInvinciblity , nullptr);
+
+    _sprite->runAction(flash);
 }
 
 

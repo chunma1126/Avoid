@@ -13,20 +13,24 @@ public:
 	}
 public:
 	using Callback = std::function<void(Args...)>;
-
-	void add(Callback _callback) {
+	
+	void add(Callback _callback) 
+	{
 		callbacks.push_back(_callback);
 	}
 
-	void remove(Callback _callback) {
+	void remove(Callback _callback) 
+	{
 		auto it = std::find(callbacks.begin(), callbacks.end(), _callback);
 		if (it != callbacks.end()) {
 			callbacks.erase(it);
 		}
 	}
 
-	void invoke(Args... args) {
-		for (auto& cb : callbacks) {
+	void invoke(Args... args) 
+	{
+		for (const auto& cb : callbacks) 
+		{
 			cb(args...);
 		}
 	}

@@ -15,9 +15,10 @@ public:
 public:
     HealthComponent& getHealthComponent() { return health; }
 private:
-    void clampPosition();
-    void move(float dt);
     bool onCollisionBegin(cocos2d::PhysicsContact& contact);
+    void move(float dt);
+    void clampPosition();
+
     void FlashFeedback();
 private:
     std::unordered_map<cocos2d::EventKeyboard::KeyCode, bool> _keyState;
@@ -25,10 +26,14 @@ private:
     cocos2d::Sprite* _sprite;
     cocos2d::PhysicsBody* _rigidBody;
 
+    cocos2d::Size visibleSize;
+    cocos2d::Vec2 originSize;
+    cocos2d::Vec2 screenCenter;
+
     HealthComponent health;
     
 private:
-    const float _collisionScale = 10;
+    const float _collisionScale = 2.5f;
     const float _flashTime = 0.12f;
 
 	float _speed = 8000;

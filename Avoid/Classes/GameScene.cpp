@@ -8,7 +8,7 @@ USING_NS_CC;
 Scene* GameScene::createScene()
 {
     auto scene = Scene::createWithPhysics();
-    //scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+    scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
 
     auto layer = GameScene::create();
     layer->setPhysicsWorld(scene->getPhysicsWorld());
@@ -35,8 +35,7 @@ bool GameScene::init()
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
-
+    
     UIController* uiController = UIController::create();
     uiController->setScene(this);
     addChild(uiController);
@@ -44,11 +43,14 @@ bool GameScene::init()
     //Player init
     {
         auto player = Player::create();
-        player->setPosition(screenCenter);
         player->getHealthComponent().onDamageEvents.add([=](int dmg)
         {
             uiController->playBloodScreen();
         });
+        player->getHealthComponent().onDamageEvents.add([=](int dmg)
+            {
+                uiController->setHealthBar(player->getHealthComponent().getPercent());
+            });
 
         addChild(player);
     }
@@ -63,7 +65,7 @@ void GameScene::update(float dt)
     static float timer = 0;
     timer += dt;
 
-    if (timer > 2)
+    if (timer > 0.1f)
     {
         timer = 0;
 

@@ -23,16 +23,23 @@ bool UIController::init()
 
 	//bloodScreen init
 	{
-		bloodScreen = cocos2d::Sprite::create("bloodScreen.png");
-		bloodScreen->setPosition(screenCenter);
+		_bloodScreen = cocos2d::Sprite::create("bloodScreen.png");
+		_bloodScreen->setPosition(screenCenter);
 
-		float scaleX = visibleSize.width / bloodScreen->getContentSize().width;
-		float scaleY = visibleSize.height / bloodScreen->getContentSize().height;
+		float scaleX = visibleSize.width / _bloodScreen->getContentSize().width;
+		float scaleY = visibleSize.height / _bloodScreen->getContentSize().height;
 
-		bloodScreen->setScale(scaleX, scaleY);
-		bloodScreen->setVisible(false);
-		bloodScreen->setOpacity(0);
+		_bloodScreen->setScale(scaleX, scaleY);
+		_bloodScreen->setVisible(false);
+		_bloodScreen->setOpacity(0);
 	}
+
+	// HealthBar init
+	{
+		_healthBar = HealthBar::create();
+		_healthBar->setPosition({ screenCenter.x, visibleSize.height - 11 });
+	}
+
 
 	scheduleUpdate();
 
@@ -43,29 +50,35 @@ void UIController::update(float dt)
 {
 	_timeCount.addTime(dt);
 	_timeView.setLabel(_timeCount.getTime());
-	//CCLOG("%d" , _timeCount.getTime());
 }
 
 void UIController::setScene(cocos2d::Scene* scene)
 {
 	_scene = scene;
 
-	scene->addChild(_timeView.getLabel());
-	scene->addChild(bloodScreen);
+	_scene->addChild(_timeView.getLabel());
+	_scene->addChild(_bloodScreen);
+	_scene->addChild(_healthBar);
+
 }
 
 void UIController::playBloodScreen()
 {
-	bloodScreen->setVisible(true);
+	_bloodScreen->setVisible(true);
 
 	auto increaseAction = FadeTo::create(BLOOD_SCREEN_INCREASE);
 	auto decreaseAction = FadeTo::create(BLODD_SCREEN_DECREASE);
 
 	auto hideAction = CallFunc::create([this]() {
-		bloodScreen->setVisible(false);
+		_bloodScreen->setVisible(false);
 		});
 
-	bloodScreen->runAction(Sequence::create(increaseAction, decreaseAction, hideAction, nullptr));
+	_bloodScreen->runAction(Sequence::create(increaseAction, decreaseAction, hideAction, nullptr));
+}
+
+void UIController::setHealthBar(float _value)
+{
+	_healthBar->setHealthBar(_value);
 }
 
 

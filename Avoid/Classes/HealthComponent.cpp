@@ -19,26 +19,26 @@ void HealthComponent::init()
 
 void HealthComponent::takeDamage(int _damage)
 {
-	onDamageEvents.invoke(_damage);
+	if (isInvincibility)return;
 
 	currentHp -= _damage;
 
-	CCLOG("%d" , currentHp);
+	onDamageEvents.invoke(_damage);
 
-	if (currentHp <= 0) {
+
+	if (currentHp <= 0) 
+	{
 		dead();
 	}
-
 }
 
 void HealthComponent::takeHeal(int _heal)
 {
+	currentHp += _heal;
 	onHealEvents.invoke(_heal);
 
-	currentHp += _heal;
 	if (currentHp >= maxHp)
 		currentHp = maxHp;
-
 }
 
 void HealthComponent::dead()

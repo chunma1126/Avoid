@@ -9,6 +9,9 @@ public:
 
 	void takeDamage(int _damage);
 	void takeHeal(int _heal);
+	void setInvincibility(bool _isInvincibility) { isInvincibility = _isInvincibility; }
+
+	float getPercent() { return float(currentHp) / float(maxHp); };
 
 	Action<int> onDamageEvents;
 	Action<int> onHealEvents;
@@ -19,8 +22,7 @@ private:
 
 private:
 	int maxHp = 10;
-	int currentHp;
+	int currentHp = 1;
 
-	
-
+	bool isInvincibility;
 };
