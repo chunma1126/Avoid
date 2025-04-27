@@ -10,7 +10,7 @@ void SectorPattern::start()
 	_completeTime = 2.5f;
     _arrowCount = 6;
 
-    float centerAngleDeg = 90.0f;
+    float centerAngleDeg = 90.0f + (90 * _direction);
     float sectorAngleDeg = 60.0f;
 
     float startAngleDeg = centerAngleDeg - sectorAngleDeg / 2.0f;
@@ -26,7 +26,20 @@ void SectorPattern::start()
 
         auto visibleSize = Director::getInstance()->getVisibleSize();
         Vec2 origin = Director::getInstance()->getVisibleOrigin();
-        Vec2 pos = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y - 250);
+        Vec2 screenCenter = { visibleSize.width / 2 + origin.x  ,visibleSize.height / 2 + origin.y };
+
+        Vec2 pos;
+        switch (_direction)
+        {
+        case 0: pos = Vec2(screenCenter.x, origin.x);
+            break;
+        case 1: pos = Vec2(visibleSize.width,screenCenter.y);
+            break;
+        case 2:  pos = Vec2(screenCenter.x, visibleSize.height);
+            break;
+        case 3:  pos = Vec2(origin.x , screenCenter.y);
+            break;
+        }
 
         ArrowPool::getInstance().Pop(pos, dir, _arrowSpeed);
     }

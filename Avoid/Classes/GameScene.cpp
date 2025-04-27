@@ -41,14 +41,19 @@ bool GameScene::init()
     //pattern init
     {
         auto r = new RightAndLeftPattern;
-        auto r1 = new SectorPattern;
-        auto r2 = new SquarePattern;
-        auto r3 = new ForkPattern;
+        auto r1 = new SectorPattern(0);
+        auto r2 = new SectorPattern(1);
+        auto r3 = new SectorPattern(2);
+        auto r4 = new SectorPattern(3);
+
+       /* auto r2 = new SquarePattern;
+        auto r3 = new ForkPattern;*/
 
         _patternQueue.push(r);
         _patternQueue.push(r1);
         _patternQueue.push(r2);
         _patternQueue.push(r3);
+        _patternQueue.push(r4);
 
     }
 

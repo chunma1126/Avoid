@@ -57,7 +57,7 @@ void SquarePattern::update(float dt)
 
 void SquarePattern::reset()
 {
-	SectorPattern sector;
+	SectorPattern sector(1);
 	sector.start();
 
 	for (auto& spawner : _spawnInfo) 
