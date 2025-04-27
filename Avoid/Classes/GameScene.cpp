@@ -2,9 +2,11 @@
 #include "Player.h"
 #include "UIController.h"
 #include "ArrowPattern.h"
+
 #include "RightAndLeftPattern.h"
 #include "SectorPattern.h"
 #include "SquarePattern.h"
+#include "ForkPattern.h"
 
 USING_NS_CC;
 
@@ -36,18 +38,17 @@ bool GameScene::init()
         return false;
     }
 
+    //pattern init
     {
         auto r = new RightAndLeftPattern;
         auto r1 = new SectorPattern;
-        auto r2 = new SectorPattern;
-        auto r3 = new RightAndLeftPattern;
-        auto r4 = new SquarePattern;
+        auto r2 = new SquarePattern;
+        auto r3 = new ForkPattern;
 
         _patternQueue.push(r);
         _patternQueue.push(r1);
         _patternQueue.push(r2);
         _patternQueue.push(r3);
-        _patternQueue.push(r4);
 
     }
 
@@ -87,17 +88,18 @@ bool GameScene::init()
 
 void GameScene::update(float dt)
 {
-    if (_patternQueue.empty() && currentPattern == nullptr)
+
+    if (_patternQueue.empty() && currentPattern == nullptr)//game clear!
     {
         CCLOG("game is over!!!");
     }
-    else if (currentPattern == nullptr)
+    else if (currentPattern == nullptr)//next patterb
     {
         currentPattern = _patternQueue.front();
         _patternQueue.pop();
         currentPattern->start();
     }
-    else
+    else//check complete and pattern update
     {
         if (currentPattern->isCompleted())
         {
@@ -110,5 +112,6 @@ void GameScene::update(float dt)
             currentPattern->update(dt);
         }
     }
+
 }
 

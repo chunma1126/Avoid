@@ -838,6 +838,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\ArrowPool.h" />
     <ClInclude Include="..\Classes\CameraShakeAction.h" />
     <ClInclude Include="..\Classes\Enum.h" />
+    <ClInclude Include="..\Classes\ForkPattern.h" />
     <ClInclude Include="..\Classes\GameScene.h" />
     <ClInclude Include="..\Classes\HealthBar.h" />
     <ClInclude Include="..\Classes\HealthComponent.h" />
@@ -854,6 +855,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\Arrow.cpp" />
     <ClCompile Include="..\Classes\ArrowPool.cpp" />
     <ClCompile Include="..\Classes\CameraShakeAction.cpp" />
+    <ClCompile Include="..\Classes\ForkPattern.cpp" />
     <ClCompile Include="..\Classes\GameScene.cpp" />
     <ClCompile Include="..\Classes\HealthBar.cpp" />
     <ClCompile Include="..\Classes\HealthComponent.cpp" />

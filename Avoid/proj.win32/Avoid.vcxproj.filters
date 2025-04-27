@@ -46,6 +46,9 @@
     <ClCompile Include="..\Classes\SquarePattern.cpp">
       <Filter>Source Files\Classes\03.ArrowPattern</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\ForkPattern.cpp">
+      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.h">
@@ -121,6 +124,9 @@
       <Filter>Source Files\Classes\03.ArrowPattern</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\SquarePattern.h">
+      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ForkPattern.h">
       <Filter>Source Files\Classes\03.ArrowPattern</Filter>
     </ClInclude>
   </ItemGroup>

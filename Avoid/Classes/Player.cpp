@@ -152,7 +152,7 @@ bool Player::onCollisionBegin(cocos2d::PhysicsContact& contact)
 
     //check physicsbody
     if (isCollision) {
-        health.takeDamage(1);
+        health.takeDamage(2);
     }
     else {
         return false;

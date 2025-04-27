@@ -8,6 +8,7 @@ SectorPattern::~SectorPattern()
 void SectorPattern::start()
 {
 	_completeTime = 2.5f;
+    _arrowCount = 6;
 
     float centerAngleDeg = 90.0f;
     float sectorAngleDeg = 60.0f;
@@ -15,10 +16,9 @@ void SectorPattern::start()
     float startAngleDeg = centerAngleDeg - sectorAngleDeg / 2.0f;
     float endAngleDeg = centerAngleDeg + sectorAngleDeg / 2.0f;
 
-    int count = 5;
-    for (int i = 0; i < count; ++i)
+    for (int i = 0; i < _arrowCount; ++i)
     {
-        float t = (float)i / (count - 1);
+        float t = (float)i / (_arrowCount - 1);
         float angleDeg = startAngleDeg + (endAngleDeg - startAngleDeg) * t;
         float angleRad = CC_DEGREES_TO_RADIANS(angleDeg);
 
@@ -36,9 +36,6 @@ void SectorPattern::start()
 void SectorPattern::update(float dt)
 {
 	_timer += dt;
-
-    
-
 }
 
 void SectorPattern::reset()
