@@ -16,6 +16,7 @@ bool Arrow::init()
     {
         _sprite = Sprite::create("Arrow.png");
         _sprite->setScale(0.2f);
+        _sprite->setOpacity(0);
         addChild(_sprite);
     }
 
@@ -29,7 +30,7 @@ bool Arrow::init()
         _rigidBody->setDynamic(true);
 
         _rigidBody->setCategoryBitmask(LayerMask::ARROW);        
-        //_rigidBody->setCollisionBitmask(LayerMask::PLAYER);    
+        _rigidBody->setCollisionBitmask(LayerMask::PLAYER);    
         _rigidBody->setContactTestBitmask(LayerMask::PLAYER);    
 
         _rigidBody->setTag(LayerMask::ARROW);
@@ -50,6 +51,17 @@ void Arrow::update(float dt)
 {
     rotate();
     move(dt);
+}
+
+void Arrow::fadeIn()
+{
+    auto fadeInAction = FadeIn::create(0.2f);
+    _sprite->runAction(fadeInAction);
+}
+
+void Arrow::fadeOut()
+{
+    _sprite->setOpacity(0);
 }
 
 void Arrow::move(float dt)

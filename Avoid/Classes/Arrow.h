@@ -9,6 +9,9 @@ public:
     virtual bool init() override;
     virtual void update(float dt) override;
 
+    void fadeIn();
+    void fadeOut();
+
     void move(float dt);
 
     void setDirectionAndSpeed(Vec2 direction, float speed)

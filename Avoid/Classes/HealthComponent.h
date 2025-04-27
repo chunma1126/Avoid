@@ -11,10 +11,13 @@ public:
 	void takeHeal(int _heal);
 	void setInvincibility(bool _isInvincibility) { isInvincibility = _isInvincibility; }
 
-	float getPercent() { return float(currentHp) / float(maxHp); };
+	float getPercent() 
+	{
+		return float(currentHp) / float(maxHp);
+	};
 
-	Action<int> onDamageEvents;
-	Action<int> onHealEvents;
+	Action<> onDamageEvents;
+	Action<> onHealEvents;
 	Action<> onDeadEvents;
 private:
 	void init();

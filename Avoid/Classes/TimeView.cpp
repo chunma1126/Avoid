@@ -11,5 +11,4 @@ void TimeView::init()
 	Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y + 120);
 
 	timeLabel->setPosition(screenCenter);
-
 }

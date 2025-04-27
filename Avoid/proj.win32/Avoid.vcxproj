@@ -844,6 +844,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\Player.h" />
     <ClInclude Include="..\Classes\RightAndLeftPattern.h" />
     <ClInclude Include="..\Classes\SectorPattern.h" />
+    <ClInclude Include="..\Classes\SquarePattern.h" />
     <ClInclude Include="..\Classes\TimeCount.h" />
     <ClInclude Include="..\Classes\TimeView.h" />
     <ClInclude Include="..\Classes\UIController.h" />
@@ -859,6 +860,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\Player.cpp" />
     <ClCompile Include="..\Classes\RightAndLeftPattern.cpp" />
     <ClCompile Include="..\Classes\SectorPattern.cpp" />
+    <ClCompile Include="..\Classes\SquarePattern.cpp" />
     <ClCompile Include="..\Classes\TimeView.cpp" />
     <ClCompile Include="..\Classes\UIController.cpp" />
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.cpp" />

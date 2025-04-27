@@ -66,13 +66,13 @@ bool Player::init()
     }
     
     //flash feedbacks
-    health.onDamageEvents.add([=](int dmg)
+    health.onDamageEvents.add([=]()
     {
         FlashFeedback();
     });
 
     //cameraShake
-    health.onDamageEvents.add([=](int dmg)
+    health.onDamageEvents.add([=]()
     {
         auto shake = CameraShakeAction::create(0.21f, 13,13);
         Director::getInstance()->getRunningScene()->getDefaultCamera()->runAction(shake);
@@ -157,6 +157,7 @@ bool Player::onCollisionBegin(cocos2d::PhysicsContact& contact)
     else {
         return false;
     }
+
 
     return false;
 }

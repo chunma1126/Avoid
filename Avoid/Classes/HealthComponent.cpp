@@ -23,7 +23,7 @@ void HealthComponent::takeDamage(int _damage)
 
 	currentHp -= _damage;
 
-	onDamageEvents.invoke(_damage);
+	onDamageEvents.invoke();
 
 
 	if (currentHp <= 0) 
@@ -35,7 +35,7 @@ void HealthComponent::takeDamage(int _damage)
 void HealthComponent::takeHeal(int _heal)
 {
 	currentHp += _heal;
-	onHealEvents.invoke(_heal);
+	onHealEvents.invoke();
 
 	if (currentHp >= maxHp)
 		currentHp = maxHp;

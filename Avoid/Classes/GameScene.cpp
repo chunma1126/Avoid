@@ -4,6 +4,7 @@
 #include "ArrowPattern.h"
 #include "RightAndLeftPattern.h"
 #include "SectorPattern.h"
+#include "SquarePattern.h"
 
 USING_NS_CC;
 
@@ -40,11 +41,14 @@ bool GameScene::init()
         auto r1 = new SectorPattern;
         auto r2 = new SectorPattern;
         auto r3 = new RightAndLeftPattern;
+        auto r4 = new SquarePattern;
 
         _patternQueue.push(r);
         _patternQueue.push(r1);
         _patternQueue.push(r2);
         _patternQueue.push(r3);
+        _patternQueue.push(r4);
+
     }
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -62,19 +66,16 @@ bool GameScene::init()
         auto player = Player::create();
         player->setPosition(screenCenter);
         
-        player->getHealthComponent().onDamageEvents.add([=](int dmg)
-        {
-            uiController->playBloodScreen();
-        });
-        player->getHealthComponent().onDamageEvents.add([=](int dmg)
-            {
-                uiController->setHealthBar(player->getHealthComponent().getPercent());
+        player->getHealthComponent().onDamageEvents.add([uiController]() { uiController->playBloodScreen(); });
+        player->getHealthComponent().onDamageEvents.add([uiController, player]() {
+            uiController->setHealthBar(player->getHealthComponent().getPercent());
             });
 
-        player->getHealthComponent().onHealEvents.add([=](int dmg)
-        {
+        player->getHealthComponent().onHealEvents.add([uiController, player]() {
             uiController->setHealthBar(player->getHealthComponent().getPercent());
-        });
+            });
+
+
 
         addChild(player);
     }
