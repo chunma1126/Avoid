@@ -4,6 +4,8 @@
 #include <random>
 #include <ctime>
 
+
+
 SquarePattern::~SquarePattern()
 {
 	
@@ -43,7 +45,7 @@ void SquarePattern::update(float dt)
 		int randomIndex = _randomIndex[_spawnIndex++];
 		Vec2 pos = _spawnInfo[randomIndex].pos;
 		Vec2 dir = _spawnInfo[randomIndex].direction;
-		_spawnInfo[randomIndex].arrow = ArrowPool::getInstance().Pop(pos, dir, 0.001f);
+		_spawnInfo[randomIndex].arrow = ArrowPool::getInstance().pop(pos, dir, 0.001f);
 	}
 	else if (_spawnIndex >= 4 && _timer >= _arrowInterval) 
 	{
@@ -52,7 +54,7 @@ void SquarePattern::update(float dt)
 		{
 			Vec2 pos = _spawnInfo[i].pos;
 			Vec2 dir = _spawnInfo[i].direction;
-			ArrowPool::getInstance().Pop(pos, dir, _arrowSpeed);
+			ArrowPool::getInstance().pop(pos, dir, _arrowSpeed);
 		}
 	}
 

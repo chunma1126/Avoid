@@ -4,7 +4,7 @@
 USING_NS_CC;
 
 
-Arrow* ArrowPool::Pop(Vec2 _pos)
+Arrow* ArrowPool::pop(Vec2 _pos)
 {
 	if (pool.empty())
 	{
@@ -24,14 +24,14 @@ Arrow* ArrowPool::Pop(Vec2 _pos)
 	return newArrow;
 }
 
-Arrow* ArrowPool::Pop(Vec2 _pos, Vec2 _direction, float speed)
+Arrow* ArrowPool::pop(Vec2 _pos, Vec2 _direction, float speed)
 {
-	Arrow* arrow = Pop(_pos);
+	Arrow* arrow = pop(_pos);
 	arrow->setDirectionAndSpeed(_direction, speed);
 	return arrow;
 }
 
-void ArrowPool::Push(Arrow* arrow)
+void ArrowPool::push(Arrow* arrow)
 {
 	arrow->setVisible(false);
 	arrow->removeFromParentAndCleanup(false);

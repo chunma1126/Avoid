@@ -8,7 +8,7 @@
 #include "SquarePattern.h"
 #include "ForkPattern.h"
 #include "StayPattern.h"
-
+#include "CirclePattern.h"
 USING_NS_CC;
 
 Scene* GameScene::createScene()
@@ -31,7 +31,6 @@ static void problemLoading(const char* filename)
     printf("Depending on how you compiled you might have to add 'Resources/' in front of filenames in HelloWorldScene.cpp\n");
 }
 
-// on "init" you need to initialize your instance
 bool GameScene::init()
 {
     if (!Scene::init())
@@ -41,24 +40,17 @@ bool GameScene::init()
 
     //pattern init
     {
-        auto r = new StayPattern;
-        /*auto r1 = new SectorPattern(SECTOR_DIRECTION::DOWN);
-        auto r2 = new SectorPattern(SECTOR_DIRECTION::LEFT);
-        auto r3 = new SectorPattern(SECTOR_DIRECTION::UP);
-        auto r4 = new SectorPattern(SECTOR_DIRECTION::RIGHT);
-
+        
+        auto r = new CirclePattern;
         auto r5 = new SquarePattern;
-        auto r6 = new ForkPattern;*/
-
-        /*_patternQueue.push(r);
-        _patternQueue.push(r1);
-        _patternQueue.push(r2);
-        _patternQueue.push(r3);
-        _patternQueue.push(r4);*/
+        auto r6 = new ForkPattern;
+        
         _patternQueue.push(r);
-
+        _patternQueue.push(r5);
+        _patternQueue.push(r6);
     }
 
+    //position init
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
@@ -67,7 +59,6 @@ bool GameScene::init()
     UIController* uiController = UIController::create();
     uiController->setScene(this);
     addChild(uiController);
-     
 
     //Player init
     {
@@ -85,7 +76,7 @@ bool GameScene::init()
 
         addChild(player);
     }
-    
+
     scheduleUpdate();
 
     return true;

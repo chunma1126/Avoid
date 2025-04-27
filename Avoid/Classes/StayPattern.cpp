@@ -11,8 +11,9 @@ void StayPattern::start()
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
 	_arrowSpeed = 1000.f;
-	_completeTime = 12;
+	_completeTime = 1.9f;
 	_arrowCount = 10;
+
 	_arrowList.reserve(_arrowCount);
 
 	int _halfCount = _arrowCount * 0.5f;
@@ -21,7 +22,7 @@ void StayPattern::start()
 	{
 		Vec2 pos = Vec2(origin.x, (visibleSize.height - _arrowInterval * i) - _margin);
 		Vec2 direction = Vec2::UNIT_X;
-		Arrow* arrow = (ArrowPool::getInstance().Pop(pos, direction, _arrowSpeed));
+		Arrow* arrow = (ArrowPool::getInstance().pop(pos, direction, _arrowSpeed));
 
 		_arrowList.emplace_back(pos , direction , arrow);
 	}
@@ -30,7 +31,7 @@ void StayPattern::start()
 	{
 		Vec2 pos = Vec2(visibleSize.width + origin.x, (visibleSize.height - _arrowInterval * i) - _margin);
 		Vec2 direction = -Vec2::UNIT_X;
-		Arrow* arrow = ArrowPool::getInstance().Pop(pos, direction, _arrowSpeed);
+		Arrow* arrow = ArrowPool::getInstance().pop(pos, direction, _arrowSpeed);
 
 		_arrowList.emplace_back(pos, direction, arrow);
 	}

@@ -74,7 +74,7 @@ void Arrow::move(float dt)
     if (pos.x < _minBoundingSize.x || pos.x > _maxBoundingSize.x ||
         pos.y < _minBoundingSize.y || pos.y > _maxBoundingSize.y)
     {
-        ArrowPool::getInstance().Push(this);
+        ArrowPool::getInstance().push(this);
         return;
     }
 
@@ -83,6 +83,8 @@ void Arrow::move(float dt)
 
 void Arrow::rotate()
 {
+    if (_ignoreRotate)return;
+
     Vec2 velocity = _rigidBody->getVelocity();
     velocity.normalize();
     float angle = CC_RADIANS_TO_DEGREES(velocity.getAngle());

@@ -7,3 +7,4 @@ ArrowInfo::ArrowInfo(Vec2 _pos, Vec2 _direction, Arrow* _arrow)
 	direction = _direction;
 	arrow = _arrow;
 }
+

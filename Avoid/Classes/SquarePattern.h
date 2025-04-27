@@ -2,8 +2,6 @@
 #include "ArrowPattern.h"
 
 class Arrow;
-
-
 class SquarePattern : public  ArrowPattern
 {
 public:

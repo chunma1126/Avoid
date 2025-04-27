@@ -9,7 +9,6 @@ public:
 	void reset() override;
 	bool isCompleted() override;
 private:
-	float _timer = 0;
 	float _completeTimer = 0;
 
 	float _startPosX;

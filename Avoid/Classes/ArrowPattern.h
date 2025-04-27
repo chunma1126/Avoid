@@ -3,7 +3,8 @@
 
 struct ArrowInfo
 {
-	ArrowInfo(Vec2 _pos, Vec2 _direction , Arrow* _arrow);
+	ArrowInfo() {}
+	ArrowInfo(Vec2 _pos, Vec2 _direction, Arrow* _arrow);
 
 	Vec2 pos;
 	Vec2 direction;
@@ -26,4 +27,6 @@ protected:
 	float _arrowSpeed = 20000.f;
 
 };
+
+
 

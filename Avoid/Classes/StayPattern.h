@@ -9,7 +9,7 @@ public:
 	void update(float dt) override;
 	void reset() override;
 	bool isCompleted() override;
-
+	
 private:
 	float _completeTimer = 0;
 	float _stopTime = 0.8f;
@@ -21,4 +21,3 @@ private:
 	std::vector<ArrowInfo> _arrowList;
 
 };
-

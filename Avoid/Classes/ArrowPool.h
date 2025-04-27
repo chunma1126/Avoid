@@ -14,9 +14,9 @@ public:
 		createPool(_count);
 	}
 
-	Arrow* Pop(Vec2 _pos);
-	Arrow* Pop(Vec2 _pos,Vec2 _direction,float speed);
-	void Push(Arrow* arrow);
+	Arrow* pop(Vec2 _pos);
+	Arrow* pop(Vec2 _pos,Vec2 _direction,float speed);
+	void push(Arrow* arrow);
 
 private:
 	ArrowPool() = default;

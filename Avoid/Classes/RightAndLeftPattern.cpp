@@ -18,7 +18,7 @@ void RightAndLeftPattern::start()
 	for (int i = 0; i < _arrowCount; i++)
 	{
 		Vec2 pos = Vec2(_rightStartPos.x, _rightStartPos.y - _arrowInterval * i);
-		ArrowPool::getInstance().Pop(pos, -Vec2::UNIT_X, _arrowSpeed);
+		ArrowPool::getInstance().pop(pos, -Vec2::UNIT_X, _arrowSpeed);
 	}
 }
 
@@ -33,7 +33,7 @@ void RightAndLeftPattern::update(float dt)
 		for (int i = 0; i < _arrowCount; i++)
 		{
 			Vec2 pos = Vec2(_leftStartPos.x, _leftStartPos.y - _arrowInterval * i);
-			ArrowPool::getInstance().Pop(pos, Vec2::UNIT_X, _arrowSpeed);
+			ArrowPool::getInstance().pop(pos, Vec2::UNIT_X, _arrowSpeed);
 		}
 	}
 	

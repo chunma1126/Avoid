@@ -13,7 +13,7 @@ public:
     void fadeOut();
 
     void move(float dt);
-
+    void setIngnoreRotate(bool ignore) { _ignoreRotate = ignore; };
     void setDirectionAndSpeed(Vec2 direction, float speed)
     {
         _direction = direction;
@@ -23,6 +23,7 @@ public:
     CREATE_FUNC(Arrow);
 private:
     void rotate();
+
 
 private:
     PhysicsBody* _rigidBody;
@@ -35,5 +36,7 @@ private:
     float _speed;
 
     float _margin = 150;
+
+    bool _ignoreRotate = false;
 };
 

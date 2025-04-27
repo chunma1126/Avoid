@@ -46,7 +46,7 @@ void SectorPattern::start()
             break;
         }
 
-        ArrowPool::getInstance().Pop(pos, dir, _arrowSpeed);
+        ArrowPool::getInstance().pop(pos, dir, _arrowSpeed);
     }
 
 }

@@ -36,7 +36,7 @@ void ForkPattern::update(float dt)
 	if (_timer >= _arrowInterval && _spawnIndex < _arrowCount)
 	{
 		_timer = 0;
-		ArrowPool::getInstance().Pop(_arrowPositions[_spawnIndex++] , -Vec2::UNIT_Y ,_arrowSpeed);
+		ArrowPool::getInstance().pop(_arrowPositions[_spawnIndex++] , -Vec2::UNIT_Y ,_arrowSpeed);
 	}
 
 }
