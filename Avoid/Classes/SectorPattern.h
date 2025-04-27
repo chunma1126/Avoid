@@ -1,5 +1,12 @@
 #pragma once
 #include "ArrowPattern.h"
+enum SECTOR_DIRECTION 
+{
+	DOWN = 0,
+	RIGHT = 1,
+	UP = 2,
+	LEFT = 3,
+};
 class SectorPattern : public ArrowPattern
 {
 public:
@@ -11,5 +18,6 @@ public:
 	bool isCompleted() override;
 private:
 	int _direction = 0;
+	float _margin = 100;
 };
 

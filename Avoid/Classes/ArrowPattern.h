@@ -1,6 +1,15 @@
 #pragma once
 #include "ArrowPool.h"
 
+struct ArrowInfo
+{
+	ArrowInfo(Vec2 _pos, Vec2 _direction , Arrow* _arrow);
+
+	Vec2 pos;
+	Vec2 direction;
+	Arrow* arrow;
+};
+
 class ArrowPattern
 {
 public:

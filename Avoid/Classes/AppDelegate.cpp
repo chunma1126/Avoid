@@ -25,6 +25,7 @@
 #include "AppDelegate.h"
 #include "GameScene.h"
 #include "ArrowPool.h"
+#include "random"
 // #define USE_AUDIO_ENGINE 1
 
 #if USE_AUDIO_ENGINE
@@ -109,7 +110,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // create a scene. it's an autorelease object
     auto scene = GameScene::createScene();
-    ArrowPool::getInstance().initialize(50, scene);
+    ArrowPool::getInstance().initialize(100, scene);
+
+    srand((unsigned int)time(NULL));
 
     // run
     director->runWithScene(scene);

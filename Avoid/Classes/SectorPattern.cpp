@@ -9,9 +9,10 @@ void SectorPattern::start()
 {
 	_completeTime = 2.5f;
     _arrowCount = 6;
+    _arrowSpeed = 15000;
 
     float centerAngleDeg = 90.0f + (90 * _direction);
-    float sectorAngleDeg = 60.0f;
+    float sectorAngleDeg = 40.f;
 
     float startAngleDeg = centerAngleDeg - sectorAngleDeg / 2.0f;
     float endAngleDeg = centerAngleDeg + sectorAngleDeg / 2.0f;
@@ -31,13 +32,17 @@ void SectorPattern::start()
         Vec2 pos;
         switch (_direction)
         {
-        case 0: pos = Vec2(screenCenter.x, origin.x);
+        case 0:
+            pos = Vec2(screenCenter.x, origin.y - _margin);
             break;
-        case 1: pos = Vec2(visibleSize.width,screenCenter.y);
+        case 1:
+            pos = Vec2(visibleSize.width + _margin, screenCenter.y);
             break;
-        case 2:  pos = Vec2(screenCenter.x, visibleSize.height);
+        case 2:
+            pos = Vec2(screenCenter.x, visibleSize.height + _margin);
             break;
-        case 3:  pos = Vec2(origin.x , screenCenter.y);
+        case 3:
+            pos = Vec2(origin.x - _margin, screenCenter.y);
             break;
         }
 

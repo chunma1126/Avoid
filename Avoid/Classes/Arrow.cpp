@@ -39,8 +39,11 @@ bool Arrow::init()
     }
 
     {
-         screenSize = Director::getInstance()->getVisibleSize() + Size(250, 250);
-         originSize = Director::getInstance()->getVisibleOrigin() - Vec2(250, 250);
+        Size screenSize = Director::getInstance()->getVisibleSize();
+        Vec2 originSize = Director::getInstance()->getVisibleOrigin();
+
+        _maxBoundingSize = { screenSize.width + originSize.x + _margin  , screenSize.height + originSize.y + _margin };
+        _minBoundingSize = { originSize.x - _margin ,originSize.y - _margin };
     }
 
     scheduleUpdate();
@@ -68,8 +71,8 @@ void Arrow::move(float dt)
 {
     auto pos = getPosition();
 
-    if (pos.x < originSize.x || pos.x > screenSize.width + originSize.x ||
-        pos.y < originSize.y || pos.y > screenSize.height + originSize.y)
+    if (pos.x < _minBoundingSize.x || pos.x > _maxBoundingSize.x ||
+        pos.y < _minBoundingSize.y || pos.y > _maxBoundingSize.y)
     {
         ArrowPool::getInstance().Push(this);
         return;

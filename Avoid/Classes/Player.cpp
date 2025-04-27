@@ -74,7 +74,7 @@ bool Player::init()
     //cameraShake
     health.onDamageEvents.add([=]()
     {
-        auto shake = CameraShakeAction::create(0.21f, 13,13);
+        auto shake = CameraShakeAction::create(0.21f, 9,9);
         Director::getInstance()->getRunningScene()->getDefaultCamera()->runAction(shake);
     });
 

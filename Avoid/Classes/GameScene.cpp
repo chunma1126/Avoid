@@ -7,6 +7,7 @@
 #include "SectorPattern.h"
 #include "SquarePattern.h"
 #include "ForkPattern.h"
+#include "StayPattern.h"
 
 USING_NS_CC;
 
@@ -40,20 +41,21 @@ bool GameScene::init()
 
     //pattern init
     {
-        auto r = new RightAndLeftPattern;
-        auto r1 = new SectorPattern(0);
-        auto r2 = new SectorPattern(1);
-        auto r3 = new SectorPattern(2);
-        auto r4 = new SectorPattern(3);
+        auto r = new StayPattern;
+        /*auto r1 = new SectorPattern(SECTOR_DIRECTION::DOWN);
+        auto r2 = new SectorPattern(SECTOR_DIRECTION::LEFT);
+        auto r3 = new SectorPattern(SECTOR_DIRECTION::UP);
+        auto r4 = new SectorPattern(SECTOR_DIRECTION::RIGHT);
 
-       /* auto r2 = new SquarePattern;
-        auto r3 = new ForkPattern;*/
+        auto r5 = new SquarePattern;
+        auto r6 = new ForkPattern;*/
 
-        _patternQueue.push(r);
+        /*_patternQueue.push(r);
         _patternQueue.push(r1);
         _patternQueue.push(r2);
         _patternQueue.push(r3);
-        _patternQueue.push(r4);
+        _patternQueue.push(r4);*/
+        _patternQueue.push(r);
 
     }
 
@@ -80,8 +82,6 @@ bool GameScene::init()
         player->getHealthComponent().onHealEvents.add([uiController, player]() {
             uiController->setHealthBar(player->getHealthComponent().getPercent());
             });
-
-
 
         addChild(player);
     }

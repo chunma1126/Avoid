@@ -38,7 +38,7 @@ private:
     const int _flashCount = 6;
     float _flashTime = (_invincibilityTime / _flashCount) * 0.5f;
 
-	float _speed = 8000;
+	float _speed = 10000;
 
 	bool _isMoving;
 };

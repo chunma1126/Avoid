@@ -2,12 +2,7 @@
 #include "ArrowPattern.h"
 
 class Arrow;
-struct SquarePatternInfo
-{
-	Vec2 pos;
-	Vec2 direction;
-	Arrow* arrow;
-};
+
 
 class SquarePattern : public  ArrowPattern
 {
@@ -21,7 +16,7 @@ private:
 	float suqareWidth = 100;
 	float suqareHeight = 100;
 
-	SquarePatternInfo _spawnInfo[4];
+	ArrowInfo _spawnInfo[4];
 	float _spawnInterval = 0.7f;
 	int _spawnIndex = 0;
 
@@ -29,5 +24,7 @@ private:
 	float _arrowInterval = 0.14f;
 
 	float _completeTimer = 0;
+	float _sectorPatternTimer = 0;
+	const int _sectorPatternCount = 5;
 };
 

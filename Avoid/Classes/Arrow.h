@@ -27,11 +27,13 @@ private:
 private:
     PhysicsBody* _rigidBody;
     Sprite* _sprite;
-
-    Size screenSize;
-    Vec2 originSize;
+    
+    Vec2 _maxBoundingSize;
+    Vec2 _minBoundingSize;
 
     Vec2 _direction;
     float _speed;
+
+    float _margin = 150;
 };
 

@@ -6,12 +6,12 @@
 
 SquarePattern::~SquarePattern()
 {
-
+	
 }
 
 void SquarePattern::start()
 {
-	_completeTime = 5.5f;
+	_completeTime = 7.5f;
 	
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
@@ -27,7 +27,7 @@ void SquarePattern::start()
 	_spawnInfo[2].direction = -Vec2::UNIT_X;
 	_spawnInfo[3].direction = Vec2::UNIT_Y;
 
-	std::mt19937 rng(static_cast<unsigned int>(time(nullptr)));
+	std::mt19937 rng((unsigned int)(time(NULL)));
 	std::shuffle(_randomIndex, _randomIndex + 4, rng);
 }
 
@@ -35,6 +35,8 @@ void SquarePattern::update(float dt)
 {
 	_timer += dt;
 	_completeTimer += dt;
+	_sectorPatternTimer += dt;
+
 	if (_spawnIndex < 4 && _timer >= _spawnInterval)
 	{
 		_timer = 0;
@@ -53,16 +55,23 @@ void SquarePattern::update(float dt)
 			ArrowPool::getInstance().Pop(pos, dir, _arrowSpeed);
 		}
 	}
+
+	if (_sectorPatternTimer >= _completeTime / _sectorPatternCount) 
+	{
+		_sectorPatternTimer = 0;
+		int direction = rand() % 4;
+		SectorPattern sector((SECTOR_DIRECTION)direction);
+		sector.start();
+
+	}
+
 }
 
 void SquarePattern::reset()
 {
-	SectorPattern sector(1);
-	sector.start();
-
 	for (auto& spawner : _spawnInfo) 
 	{
-		ArrowPool::getInstance().Push(spawner.arrow);
+		spawner.arrow->setDirectionAndSpeed(spawner.direction , _arrowSpeed);
 	}
 }
 
