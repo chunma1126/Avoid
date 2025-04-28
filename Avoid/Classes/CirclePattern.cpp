@@ -1,13 +1,13 @@
 #include "CirclePattern.h"
-#include "SquarePattern.h"
 
 CirclePattern::~CirclePattern()
 {
-
+  
 }
 
 void CirclePattern::start()
 {
+
     _completeTime = 6.5;
     _arrowCount = 24;
     _arrowSpeed = 7000;
@@ -27,6 +27,7 @@ void CirclePattern::start()
 
 void CirclePattern::update(float dt)
 {
+
     _timer += dt;
     _completeTimer += dt;
 

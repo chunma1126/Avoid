@@ -9,6 +9,7 @@
 #include "ForkPattern.h"
 #include "StayPattern.h"
 #include "CirclePattern.h"
+#include "OneToOnePattern.h"
 USING_NS_CC;
 
 Scene* GameScene::createScene()
@@ -40,14 +41,22 @@ bool GameScene::init()
 
     //pattern init
     {
+        /*auto r = new RightAndLeftPattern;
+        auto r1 = new SectorPattern(SECTOR_DIRECTION::DOWN);
+        auto r2 = new SquarePattern;
+        auto r3 = new ForkPattern;
+        auto r4 = new StayPattern;
+        auto r5 = new CirclePattern;*/
+        auto r6 = new OneToOnePattern;
         
-        auto r = new CirclePattern;
-        auto r5 = new SquarePattern;
-        auto r6 = new ForkPattern;
-        
-        _patternQueue.push(r);
-        _patternQueue.push(r5);
+        /*_patternQueue.push(r);
+        _patternQueue.push(r1);
+        _patternQueue.push(r2);
+        _patternQueue.push(r3);
+        _patternQueue.push(r4);
+        _patternQueue.push(r5);*/
         _patternQueue.push(r6);
+        
     }
 
     //position init

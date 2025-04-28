@@ -843,6 +843,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\GameScene.h" />
     <ClInclude Include="..\Classes\HealthBar.h" />
     <ClInclude Include="..\Classes\HealthComponent.h" />
+    <ClInclude Include="..\Classes\OneToOnePattern.h" />
     <ClInclude Include="..\Classes\Player.h" />
     <ClInclude Include="..\Classes\RightAndLeftPattern.h" />
     <ClInclude Include="..\Classes\SectorPattern.h" />
@@ -863,6 +864,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\GameScene.cpp" />
     <ClCompile Include="..\Classes\HealthBar.cpp" />
     <ClCompile Include="..\Classes\HealthComponent.cpp" />
+    <ClCompile Include="..\Classes\OneToOnePattern.cpp" />
     <ClCompile Include="..\Classes\Player.cpp" />
     <ClCompile Include="..\Classes\RightAndLeftPattern.cpp" />
     <ClCompile Include="..\Classes\SectorPattern.cpp" />

@@ -13,7 +13,7 @@ void RightAndLeftPattern::start()
 	_leftStartPos = {origin.x , visibleSize.y + origin.x};
 
 	_arrowCount = 7;
-	_completeTime = 5;
+	_completeTime = 4.1f;
 
 	for (int i = 0; i < _arrowCount; i++)
 	{

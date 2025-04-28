@@ -4,8 +4,6 @@
 #include <random>
 #include <ctime>
 
-
-
 SquarePattern::~SquarePattern()
 {
 	
