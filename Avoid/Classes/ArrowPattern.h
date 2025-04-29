@@ -22,8 +22,8 @@ public:
 	virtual bool isCompleted() = 0;
 protected:
 	int _arrowCount = 0;
-	float _completeTime = 0;
 	float _timer = 0;
+	float _completeTime = 0;
 	float _arrowSpeed = 20000.f;
 
 };

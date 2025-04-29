@@ -61,6 +61,12 @@
     <ClCompile Include="..\Classes\OneToOnePattern.cpp">
       <Filter>Source Files\Classes\03.ArrowPattern</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\DragonPattern.cpp">
+      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TitleScene.cpp">
+      <Filter>Source Files\Classes\06.Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.h">
@@ -149,6 +155,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\OneToOnePattern.h">
       <Filter>Source Files\Classes\03.ArrowPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DragonPattern.h">
+      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TitleScene.h">
+      <Filter>Source Files\Classes\06.Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

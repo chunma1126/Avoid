@@ -1,0 +1,15 @@
+-- using toolchain file:C:\Users\user\AppData\Local\Android\Sdk\ndk\22.0.7026061\build\cmake\android.toolchain.cmake
+-- PROJECT_NAME:Avoid
+-- PROJECT_SOURCE_DIR:C:/Users/user/Desktop/Avoid/Avoid
+-- COCOS2DX_ROOT_PATH:C:/Users/user/Desktop/Avoid/Avoid/cocos2d
+-- CMAKE_MODULE_PATH:C:/Users/user/Desktop/Avoid/Avoid/cocos2d/cmake/Modules/
+-- PROJECT_BINARY_DIR:C:/Users/user/Desktop/Avoid/Avoid/proj.android/app/.cxx/cmake/debug/arm64-v8a
+-- ENGINE_BINARY_PATH:C:/Users/user/Desktop/Avoid/Avoid/proj.android/app/.cxx/cmake/debug/arm64-v8a/engine
+-- PYTHON_PATH:C:/Python27/python.exe
+-- COCOS_COMMAND_PATH:C:/Cocos/cocos2d-x-4.0/tools/cocos2d-console/bin/cocos
+-- HOST_SYSTEM:Windows
+-- CMAKE_GENERATOR: Ninja
+-- COCOS2DX_LUAJIT_ROOT:C:/Cocos/cocos2d-x-4.0/tools/cocos2d-console/bin/../plugins/plugin_luacompile/bin
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/user/Desktop/Avoid/Avoid/proj.android/app/.cxx/cmake/debug/arm64-v8a

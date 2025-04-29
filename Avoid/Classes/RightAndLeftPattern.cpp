@@ -7,13 +7,13 @@ RightAndLeftPattern::~RightAndLeftPattern()
 
 void RightAndLeftPattern::start()
 {
+	_arrowCount = 7;
+	_completeTime = 4.1f;
+
 	Vec2 visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	_rightStartPos = visibleSize + origin;
 	_leftStartPos = {origin.x , visibleSize.y + origin.x};
-
-	_arrowCount = 7;
-	_completeTime = 4.1f;
 
 	for (int i = 0; i < _arrowCount; i++)
 	{

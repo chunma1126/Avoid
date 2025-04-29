@@ -43,5 +43,8 @@ void HealthComponent::takeHeal(int _heal)
 
 void HealthComponent::dead()
 {
+	if (isDead)return;
+
+	isDead = true;
 	onDeadEvents.invoke();
 }

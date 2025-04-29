@@ -23,8 +23,7 @@
  ****************************************************************************/
 
 #include "AppDelegate.h"
-#include "GameScene.h"
-#include "ArrowPool.h"
+#include "TitleScene.h"
 #include "random"
 // #define USE_AUDIO_ENGINE 1
 
@@ -109,8 +108,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = GameScene::createScene();
-    ArrowPool::getInstance().initialize(100, scene);
+    auto scene = TitleScene::createScene();
+   
 
     srand((unsigned int)time(NULL));
 
@@ -118,7 +117,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->runWithScene(scene);
 
 
-    //moveToCenter
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
+    {
     HWND hwnd = glview->getWin32Window();
     RECT rect;
     GetWindowRect(hwnd, &rect);
@@ -132,6 +132,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
     int posY = (screenHeight - windowHeight) / 2;
 
     MoveWindow(hwnd, posX, posY, windowWidth, windowHeight, TRUE);
+}
+#endif
+
+
 
 
 

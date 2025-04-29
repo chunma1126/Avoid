@@ -46,12 +46,16 @@ bool Player::init()
     {
         auto keyboardEvent = EventListenerKeyboard::create();
 
-        keyboardEvent->onKeyPressed = [=](EventKeyboard::KeyCode key, Event*) {
-            _keyState[key] = true;
+        keyboardEvent->onKeyPressed = [=](EventKeyboard::KeyCode key, Event*) 
+            {
+                if(_canInput)
+                    _keyState[static_cast<int>(key)] = true;
             };
 
-        keyboardEvent->onKeyReleased = [=](EventKeyboard::KeyCode key, Event*) {
-            _keyState[key] = false;
+        keyboardEvent->onKeyReleased = [=](EventKeyboard::KeyCode key, Event*)
+            {
+                if (_canInput)
+                    _keyState[static_cast<int>(key)] = false;
             };
 
         _eventDispatcher->addEventListenerWithFixedPriority(keyboardEvent, 1);
@@ -77,6 +81,19 @@ bool Player::init()
         auto shake = CameraShakeAction::create(0.21f, 9,9);
         Director::getInstance()->getRunningScene()->getDefaultCamera()->runAction(shake);
     });
+
+    health.onDeadEvents.add([this]()
+        {
+            _canInput = false;
+            
+            for (auto& keyEvent : _keyState)
+            {
+                keyEvent.second = false;
+            }
+
+            _rigidBody->setVelocity(Vec2::ZERO);
+
+        });
 
     scheduleUpdate();
 
@@ -111,16 +128,17 @@ void Player::move(float dt)
 {
     Vec2 velocity;
 
-    if (_keyState[EventKeyboard::KeyCode::KEY_A]) {
+    if (_keyState[static_cast<int>(EventKeyboard::KeyCode::KEY_A)]) {
         velocity.x -= _speed;
     }
-    if (_keyState[EventKeyboard::KeyCode::KEY_D]) {
+
+    if (_keyState[static_cast<int>(EventKeyboard::KeyCode::KEY_D)]) {
         velocity.x += _speed;
     }
-    if (_keyState[EventKeyboard::KeyCode::KEY_W]) {
+    if (_keyState[static_cast<int>(EventKeyboard::KeyCode::KEY_W)]) {
         velocity.y += _speed;
     }
-    if (_keyState[EventKeyboard::KeyCode::KEY_S]) {
+    if (_keyState[static_cast<int>(EventKeyboard::KeyCode::KEY_S)]) {
         velocity.y -= _speed;
     }
 

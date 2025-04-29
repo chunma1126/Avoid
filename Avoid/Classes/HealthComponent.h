@@ -28,4 +28,5 @@ private:
 	int currentHp = 1;
 
 	bool isInvincibility;
+	bool isDead = false;
 };

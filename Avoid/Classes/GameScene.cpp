@@ -10,6 +10,7 @@
 #include "StayPattern.h"
 #include "CirclePattern.h"
 #include "OneToOnePattern.h"
+#include "DragonPattern.h"
 USING_NS_CC;
 
 Scene* GameScene::createScene()
@@ -41,22 +42,38 @@ bool GameScene::init()
 
     //pattern init
     {
-        /*auto r = new RightAndLeftPattern;
-        auto r1 = new SectorPattern(SECTOR_DIRECTION::DOWN);
-        auto r2 = new SquarePattern;
-        auto r3 = new ForkPattern;
-        auto r4 = new StayPattern;
-        auto r5 = new CirclePattern;*/
-        auto r6 = new OneToOnePattern;
-        
-        /*_patternQueue.push(r);
-        _patternQueue.push(r1);
-        _patternQueue.push(r2);
-        _patternQueue.push(r3);
-        _patternQueue.push(r4);
-        _patternQueue.push(r5);*/
-        _patternQueue.push(r6);
-        
+        _patternQueue.push(new RightAndLeftPattern);
+        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::DOWN));
+        _patternQueue.push(new ForkPattern);
+        _patternQueue.push(new StayPattern);
+        _patternQueue.push(new CirclePattern);
+        _patternQueue.push(new OneToOnePattern);
+
+        _patternQueue.push(new RightAndLeftPattern);
+        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::UP));
+        _patternQueue.push(new SquarePattern);
+        _patternQueue.push(new StayPattern);
+        _patternQueue.push(new CirclePattern);
+        _patternQueue.push(new OneToOnePattern);
+        _patternQueue.push(new DragonPattern);
+
+        _patternQueue.push(new RightAndLeftPattern);
+        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::DOWN));
+        _patternQueue.push(new SquarePattern);
+        _patternQueue.push(new ForkPattern);
+        _patternQueue.push(new StayPattern);
+        _patternQueue.push(new CirclePattern);
+        _patternQueue.push(new OneToOnePattern);
+        _patternQueue.push(new DragonPattern);
+
+        _patternQueue.push(new RightAndLeftPattern);
+        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::UP));
+        _patternQueue.push(new SquarePattern);
+        _patternQueue.push(new ForkPattern);
+        _patternQueue.push(new StayPattern);
+        _patternQueue.push(new CirclePattern);
+        _patternQueue.push(new OneToOnePattern);
+        _patternQueue.push(new DragonPattern);
     }
 
     //position init
@@ -72,8 +89,10 @@ bool GameScene::init()
     //Player init
     {
         auto player = Player::create();
-        player->setPosition(screenCenter);
         
+        static_cast<Node*>(player)->setPosition(screenCenter);
+        //player->setPosition(screenCenter);
+
         player->getHealthComponent().onDamageEvents.add([uiController]() { uiController->playBloodScreen(); });
         player->getHealthComponent().onDamageEvents.add([uiController, player]() {
             uiController->setHealthBar(player->getHealthComponent().getPercent());
@@ -83,7 +102,11 @@ bool GameScene::init()
             uiController->setHealthBar(player->getHealthComponent().getPercent());
             });
 
-        addChild(player);
+        player->getHealthComponent().onDeadEvents.add([uiController]() {
+                uiController->playerGameOverScreen(uiController->getTimeCount().getTime());
+            });
+
+        addChild(player,0);
     }
 
     scheduleUpdate();

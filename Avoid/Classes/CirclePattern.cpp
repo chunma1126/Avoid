@@ -7,9 +7,8 @@ CirclePattern::~CirclePattern()
 
 void CirclePattern::start()
 {
-
-    _completeTime = 6.5;
-    _arrowCount = 24;
+    _completeTime = 4.5;
+    _arrowCount = 18;
     _arrowSpeed = 7000;
 
     _arrowInteval = _angle / _arrowCount;

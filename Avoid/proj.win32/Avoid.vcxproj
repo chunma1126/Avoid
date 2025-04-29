@@ -838,6 +838,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\ArrowPool.h" />
     <ClInclude Include="..\Classes\CameraShakeAction.h" />
     <ClInclude Include="..\Classes\CirclePattern.h" />
+    <ClInclude Include="..\Classes\DragonPattern.h" />
     <ClInclude Include="..\Classes\Enum.h" />
     <ClInclude Include="..\Classes\ForkPattern.h" />
     <ClInclude Include="..\Classes\GameScene.h" />
@@ -851,6 +852,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\StayPattern.h" />
     <ClInclude Include="..\Classes\TimeCount.h" />
     <ClInclude Include="..\Classes\TimeView.h" />
+    <ClInclude Include="..\Classes\TitleScene.h" />
     <ClInclude Include="..\Classes\UIController.h" />
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.h" />
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.h" />
@@ -860,6 +862,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\ArrowPool.cpp" />
     <ClCompile Include="..\Classes\CameraShakeAction.cpp" />
     <ClCompile Include="..\Classes\CirclePattern.cpp" />
+    <ClCompile Include="..\Classes\DragonPattern.cpp" />
     <ClCompile Include="..\Classes\ForkPattern.cpp" />
     <ClCompile Include="..\Classes\GameScene.cpp" />
     <ClCompile Include="..\Classes\HealthBar.cpp" />
@@ -871,6 +874,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\SquarePattern.cpp" />
     <ClCompile Include="..\Classes\StayPattern.cpp" />
     <ClCompile Include="..\Classes\TimeView.cpp" />
+    <ClCompile Include="..\Classes\TitleScene.cpp" />
     <ClCompile Include="..\Classes\UIController.cpp" />
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.cpp" />
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.cpp" />

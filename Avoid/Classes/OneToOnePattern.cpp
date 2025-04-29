@@ -53,19 +53,15 @@ void OneToOnePattern::update(float dt)
                 continue;  
             }
 
-            Vec2 pos = Vec2(posX, _origin.y);
-            Vec2 dir = Vec2::UNIT_Y; 
-            ArrowPool::getInstance().pop(pos, dir, _arrowSpeed);
+            ArrowPool::getInstance().pop({ posX, _origin.y }, Vec2::UNIT_Y, _arrowSpeed);
         }
     }
-
 
     if (_oneShotTimer >= _oneShotTime)
     {
         _oneShotTimer = 0;
         Vec2 pos = _oneShoePos[rand() % _oneShotCount];
-        Vec2 dir = Vec2::UNIT_Y;
-        ArrowPool::getInstance().pop(pos, dir, _oneShotSpeed);
+        ArrowPool::getInstance().pop(pos, Vec2::UNIT_Y, _oneShotSpeed);
     }
 
 }

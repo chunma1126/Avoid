@@ -21,7 +21,7 @@ private:
 
     void FlashFeedback();
 private:
-    std::unordered_map<cocos2d::EventKeyboard::KeyCode, bool> _keyState;
+        std::unordered_map<int, bool> _keyState;
 
     cocos2d::Sprite* _sprite;
     cocos2d::PhysicsBody* _rigidBody;
@@ -40,6 +40,7 @@ private:
 
 	float _speed = 10000;
 
+    bool _canInput = true;
 	bool _isMoving;
 };
 

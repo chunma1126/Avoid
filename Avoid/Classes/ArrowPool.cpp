@@ -16,10 +16,11 @@ Arrow* ArrowPool::pop(Vec2 _pos)
 	newArrow->fadeIn();
 	pool.pop();
 
+	
 	newArrow->setVisible(true);
 	newArrow->setPosition(_pos);
 
-	scene->addChild(newArrow);
+	scene->addChild(newArrow,0);
 
 	return newArrow;
 }
@@ -34,9 +35,11 @@ Arrow* ArrowPool::pop(Vec2 _pos, Vec2 _direction, float speed)
 void ArrowPool::push(Arrow* arrow)
 {
 	arrow->setVisible(false);
+	arrow->setIngnoreRotate(false);
 	arrow->removeFromParentAndCleanup(false);
 	arrow->setDirectionAndSpeed(Vec2::ZERO, 0);
 	arrow->fadeOut();
+	arrow->stopAllActions();
 
 	pool.push(arrow);
 }

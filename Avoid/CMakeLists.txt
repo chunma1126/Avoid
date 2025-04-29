@@ -57,16 +57,57 @@ endif()
 # add cross-platforms source files and header files 
 list(APPEND GAME_SOURCE
      Classes/AppDelegate.cpp
-     Classes/HelloWorldScene.cpp
+     Classes/Arrow.cpp
+     Classes/ArrowPattern.cpp
+     Classes/ArrowPool.cpp
+     Classes/CameraShakeAction.cpp
+     Classes/CirclePattern.cpp
+     Classes/DragonPattern.cpp
+     Classes/ForkPattern.cpp
+     Classes/GameScene.cpp
+     Classes/HealthBar.cpp
+     Classes/HealthComponent.cpp
+     Classes/OneToOnePattern.cpp
+     Classes/Player.cpp
+     Classes/RightAndLeftPattern.cpp
+     Classes/SectorPattern.cpp
+     Classes/SquarePattern.cpp
+     Classes/StayPattern.cpp
+     Classes/TimeView.cpp
+     Classes/TitleScene.cpp
+     Classes/UIController.cpp
+
+
      )
 list(APPEND GAME_HEADER
-     Classes/AppDelegate.h
-     Classes/HelloWorldScene.h
-     )
+        Classes/Action.h
+        Classes/AppDelegate.h
+        Classes/Arrow.h
+        Classes/ArrowPattern.h
+        Classes/ArrowPool.h
+        Classes/CameraShakeAction.h
+        Classes/CirclePattern.h
+        Classes/DragonPattern.h
+        Classes/Enum.h
+        Classes/ForkPattern.h
+        Classes/GameScene.h
+        Classes/HealthBar.h
+        Classes/HealthComponent.h
+        Classes/OneToOnePattern.h
+        Classes/Player.h
+        Classes/RightAndLeftPattern.h
+        Classes/SectorPattern.h
+        Classes/SquarePattern.h
+        Classes/StayPattern.h
+        Classes/TimeView.h
+        Classes/TitleScene.h
+        Classes/UIController.h
+        )
+
 
 if(ANDROID)
     # change APP_NAME to the share library name for Android, it's value depend on AndroidManifest.xml
-    set(APP_NAME MyGame)
+    set(APP_NAME Avoid)
     list(APPEND GAME_SOURCE
          proj.android/app/jni/hellocpp/main.cpp
          )
