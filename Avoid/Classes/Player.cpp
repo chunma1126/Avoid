@@ -44,29 +44,26 @@ bool Player::init()
 
     //input init
     {
-        auto keyboardEvent = EventListenerKeyboard::create();
+        _keyboardListener = EventListenerKeyboard::create();
 
-        keyboardEvent->onKeyPressed = [=](EventKeyboard::KeyCode key, Event*) 
+        _keyboardListener->onKeyPressed = [=](EventKeyboard::KeyCode key, Event*)
             {
-                if(_canInput)
+                if (_canInput)
                     _keyState[static_cast<int>(key)] = true;
             };
 
-        keyboardEvent->onKeyReleased = [=](EventKeyboard::KeyCode key, Event*)
+        _keyboardListener->onKeyReleased = [=](EventKeyboard::KeyCode key, Event*)
             {
                 if (_canInput)
                     _keyState[static_cast<int>(key)] = false;
             };
 
-        _eventDispatcher->addEventListenerWithFixedPriority(keyboardEvent, 1);
     }
     
     //rigidbodyEvent init
     {
-        auto contactListener = EventListenerPhysicsContact::create();
-        contactListener->onContactBegin = std::bind(&Player::onCollisionBegin, this, std::placeholders::_1);
-
-        _eventDispatcher->addEventListenerWithFixedPriority(contactListener,1);
+        _contactListener = EventListenerPhysicsContact::create();
+        _contactListener->onContactBegin = std::bind(&Player::onCollisionBegin, this, std::placeholders::_1);
     }
     
     //flash feedbacks
@@ -103,6 +100,22 @@ bool Player::init()
 void Player::update(float dt)
 {
     move(dt);
+}
+
+void Player::onEnter()
+{
+    Node::onEnter();
+
+    _eventDispatcher->addEventListenerWithFixedPriority(_keyboardListener, 1);
+    _eventDispatcher->addEventListenerWithFixedPriority(_contactListener, 1);
+}
+
+void Player::onExit()
+{
+    Node::onExit();
+
+    _eventDispatcher->removeEventListener(_keyboardListener);
+    _eventDispatcher->removeEventListener(_contactListener);
 }
 
 Player::~Player()

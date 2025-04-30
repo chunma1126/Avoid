@@ -17,8 +17,8 @@ bool TitleScene::init()
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
 
+    
     //title Label
     {
         Vec2 pos = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y - 75);
@@ -44,26 +44,25 @@ bool TitleScene::init()
         addChild(title);
     }
 
-    auto keyboardEvent = EventListenerKeyboard::create();
-
-    keyboardEvent->onKeyPressed = [=](EventKeyboard::KeyCode key, Event*)
-        {
-            
-        };
-
-    keyboardEvent->onKeyReleased = [=](EventKeyboard::KeyCode key, Event*)
-        {
-            _eventDispatcher->removeAllEventListeners();
-
-            auto scene = GameScene::createScene();
-            auto transition = cocos2d::TransitionFade::create(_transitionTime, scene);
-            Director::getInstance()->replaceScene(transition);
-
-            ArrowPool::getInstance().initialize(100, scene);
-        };
-
-    _eventDispatcher->addEventListenerWithFixedPriority(keyboardEvent, 1);
-
-
     return true;
 }
+
+void TitleScene::onEnter()
+{
+    Scene::onEnter();
+
+    CCLOG("Enter!!!!!!!!!!!!!!");
+
+    auto keyboardEvent = EventListenerKeyboard::create();
+
+    keyboardEvent->onKeyPressed = [&](EventKeyboard::KeyCode key, Event*)
+        {
+            auto gameScene = GameScene::createScene();
+            ArrowPool::getInstance().initialize(100, gameScene);
+            auto transition = TransitionFade::create(_transitionTime, gameScene);
+            Director::getInstance()->replaceScene(transition);
+        };
+
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(keyboardEvent, this);
+}
+

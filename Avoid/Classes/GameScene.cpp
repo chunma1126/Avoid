@@ -40,6 +40,7 @@ bool GameScene::init()
         return false;
     }
 
+
     //pattern init
     {
         _patternQueue.push(new RightAndLeftPattern);
@@ -66,14 +67,14 @@ bool GameScene::init()
         _patternQueue.push(new OneToOnePattern);
         _patternQueue.push(new DragonPattern);
 
-        _patternQueue.push(new RightAndLeftPattern);
-        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::UP));
-        _patternQueue.push(new SquarePattern);
-        _patternQueue.push(new ForkPattern);
-        _patternQueue.push(new StayPattern);
         _patternQueue.push(new CirclePattern);
+        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::UP));
         _patternQueue.push(new OneToOnePattern);
+        _patternQueue.push(new RightAndLeftPattern);
+        _patternQueue.push(new SquarePattern);
+        _patternQueue.push(new StayPattern);
         _patternQueue.push(new DragonPattern);
+        _patternQueue.push(new ForkPattern);
     }
 
     //position init

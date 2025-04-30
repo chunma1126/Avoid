@@ -1,79 +1,148 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\Arrow.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\ArrowPattern.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\ArrowPool.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\CameraShakeAction.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\CirclePattern.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\DragonPattern.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\ForkPattern.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\GameScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\HealthBar.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\HealthComponent.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\OneToOnePattern.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\Player.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\RightAndLeftPattern.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\SectorPattern.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\SquarePattern.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\StayPattern.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\TimeView.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\TitleScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\UIController.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Player.cpp">
-      <Filter>Source Files\Classes\01.Object</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Arrow.cpp">
-      <Filter>Source Files\Classes\01.Object</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\UIController.cpp">
-      <Filter>Source Files\Classes\02.UI</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\TimeView.cpp">
-      <Filter>Source Files\Classes\02.UI</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\GameScene.cpp">
-      <Filter>Source Files\Classes\06.Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\ArrowPool.cpp">
-      <Filter>Source Files\Classes\04.Utility</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.cpp">
-      <Filter>Source Files\Classes\04.Utility</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\HealthComponent.cpp">
-      <Filter>Source Files\Classes\05.Component</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\CameraShakeAction.cpp">
-      <Filter>Source Files\Classes\05.Component</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\HealthBar.cpp">
-      <Filter>Source Files\Classes\02.UI</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\RightAndLeftPattern.cpp">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\SectorPattern.cpp">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\SquarePattern.cpp">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\ForkPattern.cpp">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\StayPattern.cpp">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\CirclePattern.cpp">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\ArrowPattern.cpp">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\OneToOnePattern.cpp">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\DragonPattern.cpp">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\TitleScene.cpp">
-      <Filter>Source Files\Classes\06.Scene</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\Action.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\Arrow.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\ArrowPattern.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\ArrowPool.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\CameraShakeAction.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\CirclePattern.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\DragonPattern.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\Enum.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\ForkPattern.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\GameScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\HealthBar.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\HealthComponent.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\OneToOnePattern.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\Player.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\RightAndLeftPattern.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\SectorPattern.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\SquarePattern.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\StayPattern.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\TimeView.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\TitleScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\UIController.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\main.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\proj.win32\resource.h">
       <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\Arrow.png">
+      <Filter>Resources</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\CloseNormal.png">
       <Filter>Resources</Filter>
@@ -81,8 +150,23 @@
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\CloseSelected.png">
       <Filter>Resources</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\HealthBar.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\HelloWorld.png">
       <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\bloodScreen.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\boundingBox.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\character.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\fonts\CookieRun Regular.ttf">
+      <Filter>Resources\fonts</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\fonts\Marker Felt.ttf">
       <Filter>Resources\fonts</Filter>
@@ -92,75 +176,6 @@
     </ClInclude>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Player.h">
-      <Filter>Source Files\Classes\01.Object</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Arrow.h">
-      <Filter>Source Files\Classes\01.Object</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\TimeCount.h">
-      <Filter>Source Files\Classes\02.UI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\UIController.h">
-      <Filter>Source Files\Classes\02.UI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\TimeView.h">
-      <Filter>Source Files\Classes\02.UI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Action.h">
-      <Filter>Source Files\Classes\04.Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HealthComponent.h">
-      <Filter>Source Files\Classes\05.Component</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Enum.h">
-      <Filter>Source Files\Classes\04.Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\GameScene.h">
-      <Filter>Source Files\Classes\06.Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\ArrowPool.h">
-      <Filter>Source Files\Classes\04.Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.h">
-      <Filter>Source Files\Classes\04.Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\CameraShakeAction.h">
-      <Filter>Source Files\Classes\05.Component</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HealthBar.h">
-      <Filter>Source Files\Classes\02.UI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\ArrowPattern.h">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\RightAndLeftPattern.h">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\SectorPattern.h">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\SquarePattern.h">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\ForkPattern.h">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\StayPattern.h">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\CirclePattern.h">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\OneToOnePattern.h">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\DragonPattern.h">
-      <Filter>Source Files\Classes\03.ArrowPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\TitleScene.h">
-      <Filter>Source Files\Classes\06.Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -190,42 +205,5 @@
     <Filter Include="Source Files\proj.win32">
       <UniqueIdentifier>{07602429-9720-38A7-896A-51EE58777FB5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Classes\01.Object">
-      <UniqueIdentifier>{f78910ee-ea99-4421-aa69-dbf41e0a0422}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Classes\02.UI">
-      <UniqueIdentifier>{5ddfc6cc-822b-4867-956d-29aad7f8bb73}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Classes\03.ArrowPattern">
-      <UniqueIdentifier>{664db84a-bf82-44c2-b938-630be18f53ae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Classes\04.Utility">
-      <UniqueIdentifier>{c2e354b8-4dd5-436d-b501-c6359b250afc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Classes\05.Component">
-      <UniqueIdentifier>{6872dcb2-897f-4653-ae3d-16d55c86db1b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Classes\06.Scene">
-      <UniqueIdentifier>{29cd9f44-08d9-49c4-b653-1c3238906224}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\Resources\character.png">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="..\Resources\Arrow.png">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="..\Resources\bloodScreen.png">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="..\Resources\HealthBar.png">
-      <Filter>Resources</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="..\Resources\fonts\CookieRun Regular.ttf">
-      <Filter>Resources\fonts</Filter>
-    </Font>
   </ItemGroup>
 </Project>

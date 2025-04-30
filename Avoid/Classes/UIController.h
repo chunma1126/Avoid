@@ -29,7 +29,8 @@ private:
 	float increaseTime = 0.13f;
 	float decreaseTime = 1.02f;
 
-	const float _gameOverFadeTime = 1.2f;
+	float _transitionTime = 1.2f;
+	float _appearanceTime = 1.4f;
 
 };
 

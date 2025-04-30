@@ -8,6 +8,8 @@ class Player : public cocos2d::Node
 public:
     virtual bool init() override;
     virtual void update(float dt) override;
+    virtual void onEnter() override;
+    virtual void onExit() override;
 
     ~Player();
     CREATE_FUNC(Player);
@@ -21,7 +23,7 @@ private:
 
     void FlashFeedback();
 private:
-        std::unordered_map<int, bool> _keyState;
+    std::unordered_map<int, bool> _keyState;
 
     cocos2d::Sprite* _sprite;
     cocos2d::PhysicsBody* _rigidBody;
@@ -32,6 +34,9 @@ private:
 
     HealthComponent health;
     
+    cocos2d::EventListenerKeyboard* _keyboardListener = nullptr;
+    cocos2d::EventListenerPhysicsContact* _contactListener = nullptr;
+
 private:
     const float _collisionScale = 2.5f;
     const float _invincibilityTime = 1.5f;
