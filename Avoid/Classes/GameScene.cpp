@@ -11,6 +11,10 @@
 #include "CirclePattern.h"
 #include "OneToOnePattern.h"
 #include "DragonPattern.h"
+
+#include "Joystick.h"
+
+
 USING_NS_CC;
 
 Scene* GameScene::createScene()
@@ -41,6 +45,11 @@ bool GameScene::init()
     }
 
 
+
+   
+
+
+
     //pattern init
     {
         _patternQueue.push(new RightAndLeftPattern);
@@ -49,21 +58,24 @@ bool GameScene::init()
         _patternQueue.push(new StayPattern);
         _patternQueue.push(new CirclePattern);
         _patternQueue.push(new OneToOnePattern);
-
-        _patternQueue.push(new RightAndLeftPattern);
-        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::UP));
-        _patternQueue.push(new SquarePattern);
-        _patternQueue.push(new StayPattern);
-        _patternQueue.push(new CirclePattern);
-        _patternQueue.push(new OneToOnePattern);
         _patternQueue.push(new DragonPattern);
 
+        _patternQueue.push(new SquarePattern);
+        _patternQueue.push(new StayPattern);
+        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::UP));
+        _patternQueue.push(new CirclePattern);
         _patternQueue.push(new RightAndLeftPattern);
-        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::DOWN));
+        _patternQueue.push(new DragonPattern);
+        _patternQueue.push(new OneToOnePattern);
+
+        _patternQueue.push(new RightAndLeftPattern);
+        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::RIGHT));
+        _patternQueue.push(new SectorPattern(SECTOR_DIRECTION::LEFT));
+        _patternQueue.push(new RightAndLeftPattern);
+
+        _patternQueue.push(new DragonPattern);
         _patternQueue.push(new SquarePattern);
         _patternQueue.push(new ForkPattern);
-        _patternQueue.push(new StayPattern);
-        _patternQueue.push(new CirclePattern);
         _patternQueue.push(new OneToOnePattern);
         _patternQueue.push(new DragonPattern);
 
@@ -81,7 +93,7 @@ bool GameScene::init()
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     Vec2 screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
-    
+
     //UI Controller
     UIController* uiController = UIController::create();
     uiController->setScene(this);
@@ -90,7 +102,8 @@ bool GameScene::init()
     //Player init
     {
         auto player = Player::create();
-        
+        player->setJoystick(uiController->getJoystick());
+
         static_cast<Node*>(player)->setPosition(screenCenter);
         //player->setPosition(screenCenter);
 
@@ -109,6 +122,8 @@ bool GameScene::init()
 
         addChild(player,0);
     }
+
+
 
     scheduleUpdate();
 

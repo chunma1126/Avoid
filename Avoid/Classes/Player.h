@@ -3,6 +3,7 @@
 #include "HealthComponent.h"
 #include <unordered_map>
 
+class Joystick;
 class Player : public cocos2d::Node 
 {
 public:
@@ -16,9 +17,11 @@ public:
 
 public:
      HealthComponent& getHealthComponent() { return health; }
+     void setJoystick(Joystick* joystick);
 private:
     bool onCollisionBegin(cocos2d::PhysicsContact& contact);
     void move(float dt);
+    cocos2d::Vec2 getVelocity();
     void clampPosition();
 
     void FlashFeedback();
@@ -33,7 +36,8 @@ private:
     cocos2d::Vec2 screenCenter;
 
     HealthComponent health;
-    
+    Joystick* joystick;
+
     cocos2d::EventListenerKeyboard* _keyboardListener = nullptr;
     cocos2d::EventListenerPhysicsContact* _contactListener = nullptr;
 

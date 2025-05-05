@@ -1,7 +1,9 @@
 #include "UIController.h"
 #include "GameScene.h"
 #include "TitleScene.h"
+#include "Joystick.h"
 #include <string>
+
 USING_NS_CC;
 
 #define BLOOD_SCREEN_INCREASE increaseTime, 70
@@ -16,6 +18,12 @@ bool UIController::init()
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
+
+	{
+		joystickPos = { screenCenter.x - 140 , screenCenter.y - 75 };
+		joystick = Joystick::create(joystickPos);
+
+	}
 
 	//timeLabel init
 	{
@@ -42,7 +50,6 @@ bool UIController::init()
 		_healthBar->setPosition({ screenCenter.x, visibleSize.height - 11 });
 	}
 
-
 	scheduleUpdate();
 
 	return true;
@@ -61,7 +68,7 @@ void UIController::setScene(cocos2d::Scene* scene)
 	_scene->addChild(_timeView.getLabel());
 	_scene->addChild(_bloodScreen);
 	_scene->addChild(_healthBar);
-
+	_scene->addChild(joystick);
 }
 
 void UIController::playBloodScreen()

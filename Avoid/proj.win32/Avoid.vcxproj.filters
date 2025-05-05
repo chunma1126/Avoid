@@ -67,6 +67,9 @@
     <ClCompile Include="C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Joystick.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Classes\Action.h">
@@ -177,6 +180,9 @@
     <ClInclude Include="C:\Users\user\Desktop\Avoid\Avoid\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Joystick.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\user\Desktop\Avoid\Avoid\CMakeLists.txt" />
@@ -205,5 +211,24 @@
     <Filter Include="Source Files\proj.win32">
       <UniqueIdentifier>{07602429-9720-38A7-896A-51EE58777FB5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\shaders">
+      <UniqueIdentifier>{9f7b340d-1037-49a6-9df3-70549a4cfa6f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\shaders\CRT.frag">
+      <Filter>Resources\shaders</Filter>
+    </None>
+    <None Include="..\Resources\shaders\CRT.vert">
+      <Filter>Resources\shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\dpadbase.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\dpadmid.png">
+      <Filter>Resources</Filter>
+    </Image>
   </ItemGroup>
 </Project>

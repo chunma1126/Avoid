@@ -1,7 +1,7 @@
 #include "Player.h"
 #include "Enum.h"
 #include "CameraShakeAction.h"
-
+#include "Joystick.h"
 #define FLASH_COLOR 200,0,0
 #define DEFAULT_COLOR 255,255,255
 
@@ -17,8 +17,9 @@ bool Player::init()
     originSize = Director::getInstance()->getVisibleOrigin();
     
     Vec2 screenCenter = Vec2(visibleSize.width / 2 + originSize.x, visibleSize.height / 2 + originSize.y);
-
     setPosition(screenCenter);
+
+    
 
     //sprite init
     {
@@ -60,6 +61,8 @@ bool Player::init()
 
     }
     
+
+
     //rigidbodyEvent init
     {
         _contactListener = EventListenerPhysicsContact::create();
@@ -100,6 +103,8 @@ bool Player::init()
 void Player::update(float dt)
 {
     move(dt);
+
+    
 }
 
 void Player::onEnter()
@@ -139,8 +144,32 @@ void Player::clampPosition()
 
 void Player::move(float dt)
 {
-    Vec2 velocity;
+    if (_canInput == false)return;
+    
+    Vec2 velocity = getVelocity();
 
+    if (velocity.length() > _speed)
+    {
+        velocity.normalize();
+        velocity *= _speed;
+    }
+	
+    if (velocity.length() > 0)
+        _isMoving = true;
+    else {
+        _isMoving = false;
+    }
+    
+    CCLOG("x : %f , y : %f", velocity.x, velocity.y);
+
+    _rigidBody->setVelocity(velocity * dt);
+
+    clampPosition();
+}
+
+Vec2 Player::getVelocity()
+{
+    Vec2 velocity = {};
     if (_keyState[static_cast<int>(EventKeyboard::KeyCode::KEY_A)]) {
         velocity.x -= _speed;
     }
@@ -155,21 +184,22 @@ void Player::move(float dt)
         velocity.y -= _speed;
     }
 
-    if (velocity.length() > _speed)
-    {
-        velocity.normalize();
-        velocity *= _speed;
-    }
-	
-    if (velocity.length() > 0)
-        _isMoving = true;
-    else {
-        _isMoving = false;
-    }
-    
-    _rigidBody->setVelocity(velocity * dt);
 
-    clampPosition();
+    float joystickIntensity = joystick->getIntensity();
+    if (joystick->getIsActive() && joystickIntensity != 0)
+    {
+        float angle = CC_DEGREES_TO_RADIANS(joystick->getDirection());
+        Vec2 joystickVec(cosf(angle), -sinf(angle));
+
+        velocity += joystickVec * _speed;
+    }
+
+    return velocity;
+}
+
+void Player::setJoystick(Joystick* _joystick)
+{
+    joystick = _joystick;
 }
 
 bool Player::onCollisionBegin(cocos2d::PhysicsContact& contact)

@@ -4,6 +4,7 @@
 #include "TimeView.h"
 #include "HealthBar.h"
 
+class Joystick;
 class UIController : public cocos2d::Node
 {
 public:
@@ -13,6 +14,7 @@ public:
 	void playBloodScreen();
 	void setHealthBar(float _value);
 	void playerGameOverScreen(float _playTime);
+	Joystick* getJoystick() { return joystick; };
 
 	TimeCount getTimeCount(){ return _timeCount; }
 
@@ -22,9 +24,12 @@ private:
 	TimeView _timeView;
 	HealthBar* _healthBar;
 
+	Joystick* joystick = nullptr;
+
 	cocos2d::Scene* _scene;
 	cocos2d::Sprite* _bloodScreen;
 	cocos2d::Vec2 screenCenter = {};
+	cocos2d::Vec2 joystickPos = {};
 private:
 	float increaseTime = 0.13f;
 	float decreaseTime = 1.02f;

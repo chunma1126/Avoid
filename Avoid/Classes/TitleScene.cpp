@@ -51,8 +51,6 @@ void TitleScene::onEnter()
 {
     Scene::onEnter();
 
-    CCLOG("Enter!!!!!!!!!!!!!!");
-
     auto keyboardEvent = EventListenerKeyboard::create();
 
     keyboardEvent->onKeyPressed = [&](EventKeyboard::KeyCode key, Event*)
@@ -63,6 +61,18 @@ void TitleScene::onEnter()
             Director::getInstance()->replaceScene(transition);
         };
 
+    auto touchEvent = EventListenerTouchOneByOne::create();
+
+    touchEvent->onTouchBegan = [&](Touch* touch, Event*)
+        {
+            auto gameScene = GameScene::createScene();
+            ArrowPool::getInstance().initialize(100, gameScene);
+            auto transition = TransitionFade::create(_transitionTime, gameScene);
+            Director::getInstance()->replaceScene(transition);
+            return true; 
+        };
+
     _eventDispatcher->addEventListenerWithSceneGraphPriority(keyboardEvent, this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchEvent, this);
 }
 

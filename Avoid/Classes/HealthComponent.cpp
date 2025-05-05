@@ -25,11 +25,11 @@ void HealthComponent::takeDamage(int _damage)
 
 	onDamageEvents.invoke();
 
-
-	if (currentHp <= 0) 
+	if (currentHp <= 0)
 	{
 		dead();
 	}
+	
 }
 
 void HealthComponent::takeHeal(int _heal)
