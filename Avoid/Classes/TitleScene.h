@@ -9,6 +9,7 @@ public:
 
     virtual bool init();
     virtual void onEnter() override;
+    void goToGameScene();
     CREATE_FUNC(TitleScene);
 private:
     const float _titleLabelFadeInTime = 0.6f;

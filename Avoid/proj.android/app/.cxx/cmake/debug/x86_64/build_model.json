@@ -5,7 +5,6 @@
       "sdkFolder": "C:\\Users\\user\\AppData\\Local\\Android\\Sdk",
       "isNativeCompilerSettingsCacheEnabled": false,
       "isBuildOnlyTargetAbiEnabled": true,
-      "ideBuildTargetAbi": "x86_64",
       "splitsAbiFilterSet": [],
       "intermediatesFolder": "C:\\Users\\user\\Desktop\\Avoid\\Avoid\\proj.android\\app\\build\\intermediates",
       "gradleModulePathName": ":Avoid",
@@ -47,6 +46,8 @@
     "gradleBuildOutputFolder": "C:\\Users\\user\\Desktop\\Avoid\\Avoid\\proj.android\\app\\.cxx\\cxx\\debug",
     "isDebuggableEnabled": true,
     "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
       "X86_64"
     ],
     "buildTargetSet": [

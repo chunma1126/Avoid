@@ -15,18 +15,20 @@ void CirclePattern::start()
 
     Vec2 visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    screenCenter = Vec2(visibleSize.x / 2 + origin.x, visibleSize.x / 2 + origin.y);
+    _circleCenter = Vec2(
+        visibleSize.x * 0.5f + origin.x,
+        visibleSize.y * 0.3f + origin.y  
+    );
 
     auto rotateAction = RotateBy::create(_fireTime, -_arrowInteval);
     auto repeateRoate = RepeatForever::create(rotateAction);
-    spawnerArrow = ArrowPool::getInstance().pop(screenCenter, screenCenter, 0.1f);
+    spawnerArrow = ArrowPool::getInstance().pop(_circleCenter, _circleCenter, 0.1f);
     spawnerArrow->setIngnoreRotate(true);
     spawnerArrow->runAction(repeateRoate);
 }
 
 void CirclePattern::update(float dt)
 {
-
     _timer += dt;
     _completeTimer += dt;
 
@@ -44,7 +46,7 @@ void CirclePattern::update(float dt)
         float angle = CC_DEGREES_TO_RADIANS(angleDegree);
         Vec2 dir = Vec2(cosf(angle), sinf(angle));
 
-        ArrowPool::getInstance().pop(screenCenter, dir, _arrowSpeed);
+        ArrowPool::getInstance().pop(_circleCenter, dir, _arrowSpeed);
     }
 }
 

@@ -2,6 +2,7 @@
 #include "GameScene.h"
 #include "TitleScene.h"
 #include "Joystick.h"
+#include <format>
 #include <string>
 
 USING_NS_CC;
@@ -13,22 +14,23 @@ bool UIController::init()
 {
 	if (Node::init() == false)
 		return false;
-	
 
-	auto visibleSize = Director::getInstance()->getVisibleSize();
-	Vec2 origin = Director::getInstance()->getVisibleOrigin();
+	visibleSize = Director::getInstance()->getVisibleSize();
+	origin = Director::getInstance()->getVisibleOrigin();
 	screenCenter = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
 
 	{
-		joystickPos = { screenCenter.x - 140 , screenCenter.y - 75 };
-		joystick = Joystick::create(joystickPos);
-
+		joystickPos = { origin.x + visibleSize.width * 0.1f, origin.y + visibleSize.height * 0.2f };
+		_joystick = Joystick::create(joystickPos);
 	}
 
 	//timeLabel init
 	{
 		_timeCount.init();
 		_timeView.init();
+
+		Vec2 pos = Vec2(visibleSize.width * 0.5f + origin.x, origin.y + visibleSize.height * 0.85f);
+		_timeView.getLabel()->setPosition(pos);
 	}
 
 	//bloodScreen init
@@ -47,7 +49,7 @@ bool UIController::init()
 	// HealthBar init
 	{
 		_healthBar = HealthBar::create();
-		_healthBar->setPosition({ screenCenter.x, visibleSize.height - 11 });
+		_healthBar->setPosition({ screenCenter.x, origin.y + visibleSize.height * 0.95f }); 
 	}
 
 	scheduleUpdate();
@@ -68,7 +70,7 @@ void UIController::setScene(cocos2d::Scene* scene)
 	_scene->addChild(_timeView.getLabel());
 	_scene->addChild(_bloodScreen);
 	_scene->addChild(_healthBar);
-	_scene->addChild(joystick);
+	_scene->addChild(_joystick);
 }
 
 void UIController::playBloodScreen()
@@ -92,20 +94,17 @@ void UIController::setHealthBar(float _value)
 
 void UIController::playerGameOverScreen(float _playTime)
 {
-	auto gameOverlabel = cocos2d::Label::createWithSystemFont("Game Over", "fonts/CookieRun Regular.ttf", 45);
+	auto gameOverlabel = cocos2d::Label::createWithSystemFont("Game Over", "fonts/CookieRun Regular.ttf", 39);
 	gameOverlabel->setOpacity(255);
-	gameOverlabel->setPosition({ screenCenter.x , screenCenter.y + 95});
+	gameOverlabel->setPosition({ screenCenter.x , screenCenter.y + visibleSize.height * 0.1f });
 	_scene->addChild(gameOverlabel,1);
 
-	std::string str = "time : " + std::to_string(_playTime);
-
-	auto playTimeLabel = cocos2d::Label::createWithSystemFont(str, "fonts/CookieRun Regular.ttf", 30);
-	playTimeLabel->setPosition({ screenCenter.x , screenCenter.y + 21 });
-
+	std::string str = std::format("time : {:.2f}", _playTime);
+	auto playTimeLabel = cocos2d::Label::createWithSystemFont(str, "fonts/CookieRun Regular.ttf", 28);
+	playTimeLabel->setPosition({ screenCenter.x, screenCenter.y - visibleSize.height * 0.05f });
 	_scene->addChild(playTimeLabel, 1);
 
 	auto delay = cocos2d::DelayTime::create(_appearanceTime);
-
 	auto changeScene = cocos2d::CallFunc::create([&]() 
 	{
 		auto scene = TitleScene::createScene();

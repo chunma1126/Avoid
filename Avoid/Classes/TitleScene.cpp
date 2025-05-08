@@ -1,6 +1,7 @@
 #include "TitleScene.h"
 #include "ArrowPool.h"
 #include "GameScene.h"
+
 USING_NS_CC;
 
 Scene* TitleScene::createScene()
@@ -17,13 +18,22 @@ bool TitleScene::init()
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-
     
-    //title Label
+    //press label
     {
         Vec2 pos = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y - 75);
+        
+        std::string text = "";
 
-        auto titleLabel = Label::createWithSystemFont("press any key", "fonts/CookieRun Regular.ttf", 22);
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+        text = "screen touch";
+#else
+        text = "press any key";
+#endif
+
+        auto titleLabel = Label::createWithSystemFont(text, "fonts/CookieRun Regular.ttf", 15);
+
         titleLabel->setPosition(pos);
 
         auto fadeIn = FadeTo::create(_titleLabelFadeInTime, _fadeInAlpha);
@@ -38,7 +48,7 @@ bool TitleScene::init()
     //title 
     {
         Vec2 pos = Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y + 75);
-        auto title = Label::createWithSystemFont("AVOID", "fonts/CookieRun Regular.ttf", 95);
+        auto title = Label::createWithSystemFont("AVOID", "fonts/CookieRun Regular.ttf", 65);
         title->setPosition(pos);
 
         addChild(title);
@@ -52,27 +62,29 @@ void TitleScene::onEnter()
     Scene::onEnter();
 
     auto keyboardEvent = EventListenerKeyboard::create();
-
     keyboardEvent->onKeyPressed = [&](EventKeyboard::KeyCode key, Event*)
-        {
-            auto gameScene = GameScene::createScene();
-            ArrowPool::getInstance().initialize(100, gameScene);
-            auto transition = TransitionFade::create(_transitionTime, gameScene);
-            Director::getInstance()->replaceScene(transition);
-        };
+    {
+        goToGameScene();
+    };
 
     auto touchEvent = EventListenerTouchOneByOne::create();
-
     touchEvent->onTouchBegan = [&](Touch* touch, Event*)
-        {
-            auto gameScene = GameScene::createScene();
-            ArrowPool::getInstance().initialize(100, gameScene);
-            auto transition = TransitionFade::create(_transitionTime, gameScene);
-            Director::getInstance()->replaceScene(transition);
-            return true; 
-        };
+    {
+        goToGameScene();
 
+        return true; 
+    };
+    
     _eventDispatcher->addEventListenerWithSceneGraphPriority(keyboardEvent, this);
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchEvent, this);
+
 }
 
+void TitleScene::goToGameScene()
+{
+    auto gameScene = GameScene::createScene();
+    ArrowPool::getInstance().initialize(100, gameScene);
+
+    auto transition = TransitionFade::create(_transitionTime, gameScene);
+    Director::getInstance()->replaceScene(transition);
+}

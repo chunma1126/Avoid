@@ -17,7 +17,7 @@ private:
 	float _arrowInteval;
 	float _fadeOutTime = 0.45f;
 
-	Vec2 screenCenter;
+	Vec2 _circleCenter;
 private:
 	Arrow* spawnerArrow;
 };

@@ -45,11 +45,6 @@ bool GameScene::init()
     }
 
 
-
-   
-
-
-
     //pattern init
     {
         _patternQueue.push(new RightAndLeftPattern);
@@ -107,11 +102,14 @@ bool GameScene::init()
         static_cast<Node*>(player)->setPosition(screenCenter);
         //player->setPosition(screenCenter);
 
-        player->getHealthComponent().onDamageEvents.add([uiController]() { uiController->playBloodScreen(); });
+        player->getHealthComponent().onDamageEvents.add([uiController]() 
+            {
+                uiController->playBloodScreen(); 
+            });
         player->getHealthComponent().onDamageEvents.add([uiController, player]() {
             uiController->setHealthBar(player->getHealthComponent().getPercent());
             });
-
+        
         player->getHealthComponent().onHealEvents.add([uiController, player]() {
             uiController->setHealthBar(player->getHealthComponent().getPercent());
             });

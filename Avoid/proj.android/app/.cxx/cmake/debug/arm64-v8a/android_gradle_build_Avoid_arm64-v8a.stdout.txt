@@ -1,1 +1,1141 @@
-ninja: no work to do.
+[1/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_mpeg2_get_scale_factors.cpp.o
+[2/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_stereo_proc.cpp.o
+[3/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_huffman_parsing.cpp.o
+[4/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_imdct_synth.cpp.o
+[5/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_dct_6.cpp.o
+[6/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_poly_phase_synthesis.cpp.o
+[7/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_reorder.cpp.o
+[8/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_huffman_decoding.cpp.o
+[9/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_mpeg2_stereo_proc.cpp.o
+[10/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_tables.cpp.o
+[11/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_equalizer.cpp.o
+[12/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_seek_synch.cpp.o
+[13/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_mdct_6.cpp.o
+[14/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/floor1.c.o
+[15/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/framing.c.o
+[16/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/mapping0.c.o
+[17/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/floor0.c.o
+[18/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_polyphase_filter_window.cpp.o
+[19/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_mdct_18.cpp.o
+[20/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_dct_16.cpp.o
+[21/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_dct_9.cpp.o
+[22/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/bitwise.c.o
+[23/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/floor_lookup.c.o
+[24/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/dsp.c.o
+[25/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/codebook.c.o
+[26/666] Building CXX object engine/external/unzip/CMakeFiles/ext_unzip.dir/ioapi_mem.cpp.o
+[27/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/mdct.c.o
+[28/666] Building CXX object engine/cocos/platform/CMakeFiles/cpp_android_spec.dir/jni/JniHelper.cpp.o
+[29/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/misc.c.o
+[30/666] Building CXX object engine/external/unzip/CMakeFiles/ext_unzip.dir/unzip.cpp.o
+[31/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/res012.c.o
+[32/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/treminfo.c.o
+[33/666] Building C object engine/external/android-specific/tremolo/CMakeFiles/ext_tremolo.dir/Tremolo/vorbisfile.c.o
+[34/666] Building CXX object engine/external/unzip/CMakeFiles/ext_unzip.dir/ioapi.cpp.o
+[35/666] Building CXX object engine/cocos/platform/CMakeFiles/cpp_android_spec.dir/CCDevice-android.cpp.o
+[36/666] Building CXX object engine/cocos/platform/CMakeFiles/cpp_android_spec.dir/jni/TouchesJni.cpp.o
+[37/666] Building CXX object engine/cocos/platform/CMakeFiles/cpp_android_spec.dir/javaactivity-android.cpp.o
+[38/666] Building CXX object engine/cocos/platform/CMakeFiles/cpp_android_spec.dir/jni/Java_org_cocos2dx_lib_Cocos2dxHelper.cpp.o
+[39/666] Building CXX object engine/cocos/platform/CMakeFiles/cpp_android_spec.dir/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp.o
+[40/666] Building CXX object engine/cocos/platform/CMakeFiles/cpp_android_spec.dir/jni/Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp.o
+[41/666] Building CXX object engine/cocos/platform/CMakeFiles/cpp_android_spec.dir/jni/Java_org_cocos2dx_lib_Cocos2dxAccelerometer.cpp.o
+[42/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/DetourCrowd/DetourLocalBoundary.cpp.o
+[43/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/DetourCrowd/DetourObstacleAvoidance.cpp.o
+[44/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/Detour/DetourNavMeshQuery.cpp.o
+[45/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/Detour/DetourCommon.cpp.o
+[46/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/DetourCrowd/DetourPathCorridor.cpp.o
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:176:49: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp_o0 = fxp_mul32_Q32((vec[ 0] - vec[15]), Qfmt_31(0.50241928618816F));
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:179:54: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp_o7 = fxp_mul32_Q32((vec[ 7] - vec[ 8]) << 3, Qfmt_31(0.63764357733614F));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:182:47: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    itmp_e0    = fxp_mul32_Q32((tmp0 - tmp7), Qfmt_31(0.50979557910416F));
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:185:49: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp_o1 = fxp_mul32_Q32((vec[ 1] - vec[14]), Qfmt_31(0.52249861493969F));
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:188:54: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp_o6 = fxp_mul32_Q32((vec[ 6] - vec[ 9]) << 1, Qfmt_31(0.86122354911916F));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:194:44: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp6    = fxp_mul32_Q32((tmp1 - tmp6), Qfmt_31(0.60134488693505F));
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:198:49: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp_o2 = fxp_mul32_Q32((vec[ 2] - vec[13]), Qfmt_31(0.56694403481636F));
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:200:54: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp_o5 = fxp_mul32_Q32((vec[ 5] - vec[10]) << 1, Qfmt_31(0.53033884299517F));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:204:44: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp5    = fxp_mul32_Q32((tmp2 - tmp5), Qfmt_31(0.89997622313642F));
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:206:49: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp_o3 = fxp_mul32_Q32((vec[ 3] - vec[12]), Qfmt_31(0.64682178335999F));
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:208:49: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp_o4 = fxp_mul32_Q32((vec[ 4] - vec[11]), Qfmt_31(0.78815462345125F));
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:212:49: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp4   =  fxp_mul32_Q32((tmp3 - tmp4) << 2, Qfmt_31(0.64072886193538F));
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:217:41: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp1 = fxp_mul32_Q32((tmp7 - tmp1), Qfmt_31(0.54119610014620F));
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:219:52: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp3 = fxp_mul32_Q32((itmp_e1 - itmp_e2) << 1, Qfmt_31(0.65328148243819F));
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:223:45: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[ 8]  = fxp_mul32_Q32((tmp0 - tmp7), Qfmt_31(0.70710678118655F));
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:224:50: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp0     = fxp_mul32_Q32((tmp1 - tmp3) << 1, Qfmt_31(0.70710678118655F));
+                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:230:49: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp1 = fxp_mul32_Q32((itmp_e0 - tmp4) << 1, Qfmt_31(0.54119610014620F));
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:233:47: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp3  = fxp_mul32_Q32((tmp6 - tmp5) << 2, Qfmt_31(0.65328148243819F));
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:236:47: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp4  = fxp_mul32_Q32((tmp7 - tmp6) << 1, Qfmt_31(0.70710678118655F));
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:238:47: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp7  = fxp_mul32_Q32((tmp1 - tmp3) << 1, Qfmt_31(0.70710678118655F));
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:249:50: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp1 = fxp_mul32_Q32((tmp_o0 - tmp_o7) << 1, Qfmt_31(0.50979557910416F));
+                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:253:52: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp_o1 = fxp_mul32_Q32((tmp_o1 - tmp_o6) << 1, Qfmt_31(0.60134488693505F));
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:256:52: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp_o5 = fxp_mul32_Q32((tmp_o2 - tmp_o5) << 1, Qfmt_31(0.89997622313642F));
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:258:50: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp0 = fxp_mul32_Q32((tmp_o3 - tmp_o4) << 3, Qfmt_31(0.6407288619354F));
+                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:274:53: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp2     =  fxp_mul32_Q32((tmp1 -   tmp0) << 1, Qfmt_31(0.54119610014620F));
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:276:53: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp1     =  fxp_mul32_Q32((tmp7 -   tmp4) << 1, Qfmt_31(0.54119610014620F));
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:278:53: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp4     =  fxp_mul32_Q32((tmp6 -   tmp5) << 2, Qfmt_31(0.65328148243819F));
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:280:55: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp5     =  fxp_mul32_Q32((tmp_o1 - tmp_o5) << 2, Qfmt_31(0.65328148243819F));
+                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:284:53: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[13]  =  fxp_mul32_Q32((tmp1 -   tmp4) << 1, Qfmt_31(0.70710678118655F));
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:287:53: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[ 9]  =  fxp_mul32_Q32((tmp7 -   tmp6) << 1, Qfmt_31(0.70710678118655F));
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:290:53: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp4     =  fxp_mul32_Q32((tmp0 - tmp_o1) << 1, Qfmt_31(0.70710678118655F));
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_16.cpp:292:53: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    tmp6     =  fxp_mul32_Q32((tmp2 -   tmp5) << 1, Qfmt_31(0.70710678118655F));
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../cocos2d/external/android-specific/pvmp3dec/src/pv_mp3dec_fxd_op_c_equivalent.h:47:39: note: expanded from macro 'Qfmt_31'
+#define Qfmt_31(a)   (Int32)((float)a*0x7FFFFFFF)
+                                     ~^~~~~~~~~~
+32 warnings generated.
+[47/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/DetourCrowd/DetourPathQueue.cpp.o
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:139:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[4]  = fxp_mac32_Q32(vec[4], tmp0 << 1, cos_2pi_9);
+                                               ^~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:83:21: note: expanded from macro 'cos_2pi_9'
+#define cos_2pi_9   Qfmt31( 0.76604444311898f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:140:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[8]  = fxp_mac32_Q32(vec[8], tmp0 << 1, cos_4pi_9);
+                                               ^~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:84:21: note: expanded from macro 'cos_4pi_9'
+#define cos_4pi_9   Qfmt31( 0.17364817766693f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:141:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[2]  = fxp_mac32_Q32(vec[2], tmp0 << 1, cos_pi_9);
+                                               ^~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:82:21: note: expanded from macro 'cos_pi_9'
+#define cos_pi_9    Qfmt31( 0.93969262078591f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:142:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[2]  = fxp_mac32_Q32(vec[2], tmp2 << 1, cos_5pi_9);
+                                               ^~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:85:21: note: expanded from macro 'cos_5pi_9'
+#define cos_5pi_9   Qfmt31(-0.17364817766693f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:143:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[4]  = fxp_mac32_Q32(vec[4], tmp2 << 1, cos_8pi_9);
+                                               ^~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:87:21: note: expanded from macro 'cos_8pi_9'
+#define cos_8pi_9   Qfmt31(-0.93969262078591f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:144:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[8]  = fxp_mac32_Q32(vec[8], tmp2 << 1, cos_2pi_9);
+                                               ^~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:83:21: note: expanded from macro 'cos_2pi_9'
+#define cos_2pi_9   Qfmt31( 0.76604444311898f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:145:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[8]  = fxp_mac32_Q32(vec[8], tmp3 << 1, cos_8pi_9);
+                                               ^~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:87:21: note: expanded from macro 'cos_8pi_9'
+#define cos_8pi_9   Qfmt31(-0.93969262078591f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:146:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[4]  = fxp_mac32_Q32(vec[4], tmp3 << 1, cos_4pi_9);
+                                               ^~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:84:21: note: expanded from macro 'cos_4pi_9'
+#define cos_4pi_9   Qfmt31( 0.17364817766693f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:147:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[2]  = fxp_mac32_Q32(vec[2], tmp3 << 1, cos_7pi_9);
+                                               ^~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:86:21: note: expanded from macro 'cos_7pi_9'
+#define cos_7pi_9   Qfmt31(-0.76604444311898f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:149:40: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[1]  = fxp_mul32_Q32(tmp5 << 1, cos_11pi_18);
+                                       ^~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:92:21: note: expanded from macro 'cos_11pi_18'
+#define cos_11pi_18 Qfmt31(-0.34202014332567f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:150:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[1]  = fxp_mac32_Q32(vec[1], tmp6 << 1, cos_13pi_18);
+                                               ^~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:93:21: note: expanded from macro 'cos_13pi_18'
+#define cos_13pi_18 Qfmt31(-0.64278760968654f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:151:50: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[1]  = fxp_mac32_Q32(vec[1], tmp7 << 1,   cos_5pi_6);
+                                                 ^~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:89:21: note: expanded from macro 'cos_5pi_6'
+#define cos_5pi_6   Qfmt31(-0.86602540378444f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:152:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[1]  = fxp_mac32_Q32(vec[1], tmp8 << 1, cos_17pi_18);
+                                               ^~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:94:21: note: expanded from macro 'cos_17pi_18'
+#define cos_17pi_18 Qfmt31(-0.98480775301221f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:153:57: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[3]  = fxp_mul32_Q32((tmp5 + tmp6  - tmp8) << 1, cos_pi_6);
+                                                        ^~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:88:21: note: expanded from macro 'cos_pi_6'
+#define cos_pi_6    Qfmt31( 0.86602540378444f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:154:40: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[5]  = fxp_mul32_Q32(tmp5 << 1, cos_17pi_18);
+                                       ^~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:94:21: note: expanded from macro 'cos_17pi_18'
+#define cos_17pi_18 Qfmt31(-0.98480775301221f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:155:49: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[5]  = fxp_mac32_Q32(vec[5], tmp6 << 1,  cos_7pi_18);
+                                                ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:91:21: note: expanded from macro 'cos_7pi_18'
+#define cos_7pi_18  Qfmt31( 0.34202014332567f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:156:51: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[5]  = fxp_mac32_Q32(vec[5], tmp7 << 1,    cos_pi_6);
+                                                  ^~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:88:21: note: expanded from macro 'cos_pi_6'
+#define cos_pi_6    Qfmt31( 0.86602540378444f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:157:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[5]  = fxp_mac32_Q32(vec[5], tmp8 << 1, cos_13pi_18);
+                                               ^~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:93:21: note: expanded from macro 'cos_13pi_18'
+#define cos_13pi_18 Qfmt31(-0.64278760968654f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:158:40: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[7]  = fxp_mul32_Q32(tmp5 << 1, cos_5pi_18);
+                                       ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:90:21: note: expanded from macro 'cos_5pi_18'
+#define cos_5pi_18  Qfmt31( 0.64278760968654f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:159:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[7]  = fxp_mac32_Q32(vec[7], tmp6 << 1, cos_17pi_18);
+                                               ^~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:94:21: note: expanded from macro 'cos_17pi_18'
+#define cos_17pi_18 Qfmt31(-0.98480775301221f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:160:51: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[7]  = fxp_mac32_Q32(vec[7], tmp7 << 1,    cos_pi_6);
+                                                  ^~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:88:21: note: expanded from macro 'cos_pi_6'
+#define cos_pi_6    Qfmt31( 0.86602540378444f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:161:48: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    vec[7]  = fxp_mac32_Q32(vec[7], tmp8 << 1, cos_11pi_18);
+                                               ^~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:92:21: note: expanded from macro 'cos_11pi_18'
+#define cos_11pi_18 Qfmt31(-0.34202014332567f)
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_dct_9.cpp:80:32: note: expanded from macro 'Qfmt31'
+#define Qfmt31(a)   (int32)(a*(0x7FFFFFFF))
+                             ~ ^~~~~~~~~~
+22 warnings generated.
+[48/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/DebugUtils/DetourDebugDraw.cpp.o
+[49/666] Linking C static library lib\libext_tremolo.a
+[50/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/Detour/DetourNavMeshBuilder.cpp.o
+[51/666] Linking CXX static library lib\libext_unzip.a
+[52/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/Detour/DetourAlloc.cpp.o
+[53/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/DebugUtils/DebugDraw.cpp.o
+[54/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/Detour/DetourNavMesh.cpp.o
+[55/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/DetourCrowd/DetourCrowd.cpp.o
+[56/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/Detour/DetourNode.cpp.o
+[57/666] Building CXX object engine/external/poly2tri/CMakeFiles/ext_poly2tri.dir/common/shapes.cc.o
+[58/666] Building C object engine/external/ConvertUTF/CMakeFiles/ext_convertUTF.dir/ConvertUTF.c.o
+[59/666] Building C object engine/external/recast/CMakeFiles/ext_recast.dir/fastlz/fastlz.c.o
+[60/666] Building CXX object engine/external/xxtea/CMakeFiles/ext_xxtea.dir/xxtea.cpp.o
+[61/666] Building CXX object engine/external/clipper/CMakeFiles/ext_clipper.dir/clipper.cpp.o
+[62/666] Building CXX object engine/external/edtaa3func/CMakeFiles/ext_edtaa3func.dir/edtaa3func.cpp.o
+[63/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/DetourTileCache/DetourTileCacheBuilder.cpp.o
+[64/666] Building C object engine/external/xxhash/CMakeFiles/ext_xxhash.dir/xxhash.c.o
+[65/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/DetourCrowd/DetourProximityGrid.cpp.o
+[66/666] Building CXX object engine/external/tinyxml2/CMakeFiles/ext_tinyxml2.dir/tinyxml2.cpp.o
+[67/666] Linking CXX static library lib\libext_xxtea.a
+[68/666] Building CXX object engine/external/ConvertUTF/CMakeFiles/ext_convertUTF.dir/ConvertUTFWrapper.cpp.o
+[69/666] Building CXX object engine/external/recast/CMakeFiles/ext_recast.dir/DetourTileCache/DetourTileCache.cpp.o
+[70/666] Linking C static library lib\libext_xxhash.a
+[71/666] Linking CXX static library lib\libext_edtaa3func.a
+[72/666] Building CXX object engine/external/poly2tri/CMakeFiles/ext_poly2tri.dir/sweep/advancing_front.cc.o
+[73/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_alias_reduction.cpp.o
+[74/666] Building CXX object engine/external/poly2tri/CMakeFiles/ext_poly2tri.dir/sweep/sweep.cc.o
+[75/666] Building CXX object engine/external/poly2tri/CMakeFiles/ext_poly2tri.dir/sweep/sweep_context.cc.o
+C:\Users\user\Desktop\Avoid\Avoid\cocos2d\external\android-specific\pvmp3dec\src\pvmp3_alias_reduction.cpp:172:70: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    *used_freq_lines = fxp_mul32_Q32(*used_freq_lines << 16, (int32)(0x7FFFFFFF / (float)18 - 1.0f)) >> 15;
+                                                                     ^~~~~~~~~~ ~
+1 warning generated.
+[76/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_crc.cpp.o
+[77/666] Linking CXX static library lib\libext_recast.a
+[78/666] Linking CXX static library lib\libext_tinyxml2.a
+[79/666] Building CXX object engine/external/poly2tri/CMakeFiles/ext_poly2tri.dir/sweep/cdt.cc.o
+[80/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_normalize.cpp.o
+[81/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_decode_header.cpp.o
+[82/666] Building C object engine/external/android-specific/cpufeatures/CMakeFiles/ext_cpufeatures.dir/a6f37f78f4cb091e72d5aa3b706e946b/ndk/22.0.7026061/sources/android/cpufeatures/cpu-features.c.o
+[83/666] Building C object engine/external/md5/CMakeFiles/ext_md5.dir/md5.c.o
+[84/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_getbits.cpp.o
+[85/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_get_main_data_size.cpp.o
+[86/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_get_side_info.cpp.o
+[87/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_dequantize_sample.cpp.o
+[88/666] Linking CXX static library lib\libext_convertUTF.a
+[89/666] Linking C static library lib\libext_md5.a
+[90/666] Linking C static library engine\external\android-specific\cpufeatures\libext_cpufeatures.a
+[91/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_framedecoder.cpp.o
+[92/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_decode_huff_cw.cpp.o
+[93/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_get_scale_factors.cpp.o
+[94/666] Building CXX object engine/external/android-specific/pvmp3dec/CMakeFiles/ext_pvmp3dec.dir/src/pvmp3_mpeg2_get_scale_data.cpp.o
+[95/666] Linking CXX static library lib\libext_pvmp3dec.a
+[96/666] Linking CXX static library lib\libext_poly2tri.a
+[97/666] Linking CXX static library engine\cocos\platform\libcpp_android_spec.a
+[98/666] Linking CXX static library lib\libext_clipper.a
+[99/666] Building CXX object engine/external/CMakeFiles/external.dir/empty.cpp.o
+[100/666] Linking CXX static library lib\libexternal.a
+[101/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCSpriteBatchNode.cpp.o
+[102/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCRenderTexture.cpp.o
+[103/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCProtectedNode.cpp.o
+[104/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCTileMapAtlas.cpp.o
+[105/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCTMXLayer.cpp.o
+[106/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCSprite.cpp.o
+[107/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCTMXTiledMap.cpp.o
+[108/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCScene.cpp.o
+[109/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCTextFieldTTF.cpp.o
+[110/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCProgressTimer.cpp.o
+[111/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCSpriteFrameCache.cpp.o
+[112/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCSpriteFrame.cpp.o
+[113/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCTMXObjectGroup.cpp.o
+[114/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCAutoPolygon.cpp.o
+[115/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCTransitionProgress.cpp.o
+[116/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCBillBoard.cpp.o
+[117/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCBundle3D.cpp.o
+[118/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCBundle3DData.cpp.o
+[119/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCTMXXMLParser.cpp.o
+[120/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCAnimation3D.cpp.o
+[121/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCAnimate3D.cpp.o
+[122/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCTransition.cpp.o
+[123/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCTweenFunction.cpp.o
+[124/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCAABB.cpp.o
+[125/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCAttachNode.cpp.o
+[126/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCTransitionPageTurn.cpp.o
+[127/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCMotionStreak3D.cpp.o
+[128/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCObjLoader.cpp.o
+[129/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCMesh.cpp.o
+[130/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCMeshSkin.cpp.o
+[131/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCBundleReader.cpp.o
+[132/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCFrustum.cpp.o
+[133/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCOBB.cpp.o
+[134/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCMeshVertexIndexData.cpp.o
+[135/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics3d/CCPhysics3DObject.cpp.o
+[136/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics3d/CCPhysics3DComponent.cpp.o
+[137/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventAcceleration.cpp.o
+[138/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics3d/CCPhysics3DConstraint.cpp.o
+[139/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics3d/CCPhysics3DWorld.cpp.o
+[140/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics3d/CCPhysicsSprite3D.cpp.o
+[141/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/math/CCGeometry.cpp.o
+[142/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics3d/CCPhysics3DDebugDrawer.cpp.o
+[143/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics3d/CCPhysics3DShape.cpp.o
+[144/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/math/CCAffineTransform.cpp.o
+[145/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/platform/android/CCEnhanceAPI-android.cpp.o
+[146/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/platform/CCSAXParser.cpp.o
+[147/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCSkeleton3D.cpp.o
+[148/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCSkybox.cpp.o
+[149/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCRay.cpp.o
+[150/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCVertexAttribBinding.cpp.o
+[151/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/platform/CCGLView.cpp.o
+[152/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCSprite3D.cpp.o
+[153/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCSprite3DMaterial.cpp.o
+[154/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/platform/android/CCGLViewImpl-android.cpp.o
+[155/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCTerrain.cpp.o
+[156/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CC3DProgramInfo.cpp.o
+[157/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/platform/android/CCCommon-android.cpp.o
+[158/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/platform/android/CCFileUtils-android.cpp.o
+[159/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/platform/android/CCApplication-android.cpp.o
+[160/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/platform/CCFileUtils.cpp.o
+[161/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics3d/CCPhysics3D.cpp.o
+[162/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics/CCPhysicsShape.cpp.o
+[163/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics/CCPhysicsWorld.cpp.o
+[164/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics/CCPhysicsBody.cpp.o
+[165/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics/CCPhysicsJoint.cpp.o
+[166/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/physics/CCPhysicsContact.cpp.o
+[167/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/platform/CCImage.cpp.o
+[168/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCTextureCube.cpp.o
+[169/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCTechnique.cpp.o
+[170/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCRenderer.cpp.o
+[171/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCTextureUtils.cpp.o
+[172/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCTextureCache.cpp.o
+[173/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCTextureAtlas.cpp.o
+[174/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCTexture2D.cpp.o
+[175/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/ccShaders.cpp.o
+[176/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCTrianglesCommand.cpp.o
+[177/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCCustomCommand.cpp.o
+[178/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/navmesh/CCNavMeshDebugDraw.cpp.o
+[179/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/math/CCVertex.cpp.o
+[180/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/navmesh/CCNavMeshObstacle.cpp.o
+[181/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/math/Vec2.cpp.o
+[182/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/math/MathUtil.cpp.o
+[183/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/math/Vec4.cpp.o
+[184/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/navmesh/CCNavMesh.cpp.o
+[185/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/math/Quaternion.cpp.o
+[186/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/navmesh/CCNavMeshAgent.cpp.o
+[187/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/math/TransformUtils.cpp.o
+[188/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/math/Mat4.cpp.o
+[189/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/math/Vec3.cpp.o
+[190/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCCallbackCommand.cpp.o
+[191/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/navmesh/CCNavMeshUtils.cpp.o
+[192/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCQuadCommand.cpp.o
+[193/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCGroupCommand.cpp.o
+[194/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCMeshCommand.cpp.o
+[195/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCPass.cpp.o
+[196/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCRenderCommand.cpp.o
+[197/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCRenderState.cpp.o
+[198/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/CCMaterial.cpp.o
+[199/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/CommandBuffer.cpp.o
+[200/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/ShaderModule.cpp.o
+[201/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/ProgramState.cpp.o
+[202/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCAsyncTaskPool.cpp.o
+[203/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/Device.cpp.o
+[204/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/VertexLayout.cpp.o
+[205/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/ShaderCache.cpp.o
+[206/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/Texture.cpp.o
+[207/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/Types.cpp.o
+[208/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/Program.cpp.o
+[209/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/ProgramCache.cpp.o
+[210/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/RenderPassDescriptor.cpp.o
+[211/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/DepthStencilState.cpp.o
+[212/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCAutoreleasePool.cpp.o
+[213/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCConfiguration.cpp.o
+[214/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/opengl/DepthStencilStateGL.cpp.o
+[215/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/opengl/DeviceGL.cpp.o
+[216/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/opengl/TextureGL.cpp.o
+[217/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/opengl/ShaderModuleGL.cpp.o
+[218/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/opengl/BufferGL.cpp.o
+[219/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/opengl/ProgramGL.cpp.o
+[220/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/opengl/RenderPipelineGL.cpp.o
+[221/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/opengl/UtilsGL.cpp.o
+[222/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/opengl/DeviceInfoGL.cpp.o
+[223/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/renderer/backend/opengl/CommandBufferGL.cpp.o
+[224/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCController.cpp.o
+[225/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCDirector.cpp.o
+[226/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCData.cpp.o
+[227/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEvent.cpp.o
+[228/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCConsole.cpp.o
+[229/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCNinePatchImageParser.cpp.o
+[230/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/PcmBufferProvider.cpp.o
+[231/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioMixer.cpp.o
+[232/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioMixerController.cpp.o
+[233/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/PcmAudioPlayer.cpp.o
+[234/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioResampler.cpp.o
+[235/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/UrlAudioPlayer.cpp.o
+[236/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/Track.cpp.o
+[237/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioResamplerCubic.cpp.o
+[238/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCSSceneReader.cpp.o
+[239/666] Building C object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/audio_utils/format.c.o
+[240/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/PcmAudioService.cpp.o
+[241/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventFocus.cpp.o
+In file included from C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\android\AudioResampler.cpp:28:
+../../../../../../cocos2d/cocos\audio/android/audio_utils/include/audio_utils/primitives.h:742:33: warning: implicit conversion from 'unsigned long' to 'float' changes value from 4294967295 to 4294967296 [-Wimplicit-const-int-float-conversion]
+    static const float limpos = 0xffffffffUL / (float)(1 << 28);
+                                ^~~~~~~~~~~~ ~
+1 warning generated.
+[242/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventListenerTouch.cpp.o
+In file included from C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\android\audio_utils\format.c:21:
+../../../../../../cocos2d/cocos\audio/android/audio_utils/include/audio_utils/primitives.h:742:33: warning: implicit conversion from 'unsigned long' to 'float' changes value from 4294967295 to 4294967296 [-Wimplicit-const-int-float-conversion]
+    static const float limpos = 0xffffffffUL / (float)(1 << 28);
+                                ^~~~~~~~~~~~ ~
+1 warning generated.
+[243/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventListenerKeyboard.cpp.o
+In file included from C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\android\AudioMixer.cpp:28:
+../../../../../../cocos2d/cocos\audio/android/audio_utils/include/audio_utils/primitives.h:742:33: warning: implicit conversion from 'unsigned long' to 'float' changes value from 4294967295 to 4294967296 [-Wimplicit-const-int-float-conversion]
+    static const float limpos = 0xffffffffUL / (float)(1 << 28);
+                                ^~~~~~~~~~~~ ~
+In file included from C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\android\AudioMixer.cpp:31:
+In file included from ../../../../../../cocos2d/cocos\audio/android/AudioMixer.h:25:
+../../../../../../cocos2d/cocos\audio/android/AudioResamplerPublic.h:106:29: warning: self-comparison always evaluates to true [-Wtautological-compare]
+           pr2.mStretchMode == pr2.mStretchMode &&
+                            ^
+../../../../../../cocos2d/cocos\audio/android/AudioResamplerPublic.h:107:30: warning: self-comparison always evaluates to true [-Wtautological-compare]
+           pr2.mFallbackMode == pr2.mFallbackMode;
+                             ^
+3 warnings generated.
+[244/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventCustom.cpp.o
+[245/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventDispatcher.cpp.o
+In file included from C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\android\AudioMixerController.cpp:29:
+In file included from ../../../../../../cocos2d/cocos\audio/android/AudioMixer.h:25:
+../../../../../../cocos2d/cocos\audio/android/AudioResamplerPublic.h:106:29: warning: self-comparison always evaluates to true [-Wtautological-compare]
+           pr2.mStretchMode == pr2.mStretchMode &&
+                            ^
+../../../../../../cocos2d/cocos\audio/android/AudioResamplerPublic.h:107:30: warning: self-comparison always evaluates to true [-Wtautological-compare]
+           pr2.mFallbackMode == pr2.mFallbackMode;
+                             ^
+2 warnings generated.
+[246/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventKeyboard.cpp.o
+[247/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventListener.cpp.o
+[248/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventController.cpp.o
+[249/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventListenerController.cpp.o
+[250/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventListenerFocus.cpp.o
+[251/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventListenerCustom.cpp.o
+[252/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventListenerAcceleration.cpp.o
+[253/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventListenerMouse.cpp.o
+[254/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCIMEDispatcher.cpp.o
+[255/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventMouse.cpp.o
+[256/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCNS.cpp.o
+[257/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCProfiling.cpp.o
+[258/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCRef.cpp.o
+[259/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCScheduler.cpp.o
+[260/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCTouch.cpp.o
+[261/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCScriptSupport.cpp.o
+[262/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCEventTouch.cpp.o
+[263/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCProperties.cpp.o
+[264/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCUserDefault.cpp.o
+[265/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/TGAlib.cpp.o
+[266/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/ObjectFactory.cpp.o
+[267/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/etc1.cpp.o
+[268/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/pvr.cpp.o
+[269/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/ZipUtils.cpp.o
+[270/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/atitc.cpp.o
+[271/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/ccTypes.cpp.o
+[272/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCStencilStateManager.cpp.o
+[273/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/ccRandom.cpp.o
+[274/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/base64.cpp.o
+[275/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/ccCArray.cpp.o
+[276/666] Building C object engine/cocos/core/CMakeFiles/cocos2d.dir/base/ccFPSImages.c.o
+[277/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCValue.cpp.o
+[278/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/ccUTF8.cpp.o
+[279/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/ccUtils.cpp.o
+[280/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCController-android.cpp.o
+[281/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioDecoderOgg.cpp.o
+[282/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/CCThreadPool.cpp.o
+[283/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/s3tc.cpp.o
+[284/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/AudioEngine.cpp.o
+[285/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/base/CCUserDefault-android.cpp.o
+[286/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/ccdandroidUtils.cpp.o
+[287/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioEngine-inl.cpp.o
+[288/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AssetFd.cpp.o
+[289/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioDecoder.cpp.o
+[290/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/PcmData.cpp.o
+[291/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioDecoderProvider.cpp.o
+[292/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioDecoderSLES.cpp.o
+[293/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioPlayerProvider.cpp.o
+[294/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioDecoderWav.cpp.o
+[295/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/AudioDecoderMp3.cpp.o
+[296/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionProgressTimer.cpp.o
+[297/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionTiledGrid.cpp.o
+[298/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionGrid.cpp.o
+[299/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionInstant.cpp.o
+[300/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionInterval.cpp.o
+[301/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionCatmullRom.cpp.o
+[302/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionEase.cpp.o
+[303/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/cocos2d.cpp.o
+[304/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCAction.cpp.o
+[305/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionGrid3D.cpp.o
+[306/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionCamera.cpp.o
+[307/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionPageTurn3D.cpp.o
+[308/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionManager.cpp.o
+[309/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCAtlasNode.cpp.o
+[310/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCFastTMXLayer.cpp.o
+[311/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCClippingNode.cpp.o
+[312/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCComponentContainer.cpp.o
+[313/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCAnimationCache.cpp.o
+[314/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCComponent.cpp.o
+[315/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCDrawNode.cpp.o
+[316/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCFontAtlasCache.cpp.o
+[317/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCCamera.cpp.o
+[318/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCAnimation.cpp.o
+[319/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCActionTween.cpp.o
+[320/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCCameraBackgroundBrush.cpp.o
+[321/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCClippingRectangleNode.cpp.o
+[322/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCFastTMXTiledMap.cpp.o
+[323/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCFont.cpp.o
+[324/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCFontCharMap.cpp.o
+[325/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCFontAtlas.cpp.o
+[326/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCFontFNT.cpp.o
+[327/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCParticleBatchNode.cpp.o
+[328/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCLabelTextFormatter.cpp.o
+[329/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCParallaxNode.cpp.o
+[330/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCParticleExamples.cpp.o
+[331/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCLayer.cpp.o
+[332/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCLight.cpp.o
+[333/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCMenuItem.cpp.o
+[334/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCLabel.cpp.o
+[335/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCFontFreeType.cpp.o
+[336/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCLabelAtlas.cpp.o
+[337/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCMenu.cpp.o
+[338/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCNodeGrid.cpp.o
+[339/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCMotionStreak.cpp.o
+[340/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCNode.cpp.o
+[341/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCGrid.cpp.o
+[342/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/3d/CCPlane.cpp.o
+[343/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCParticleSystem.cpp.o
+[344/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/2d/CCParticleSystemQuad.cpp.o
+[345/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEmitterManager.cpp.o
+[346/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPointEmitter.cpp.o
+[347/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSlaveEmitterTranslator.cpp.o
+[348/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPositionEmitter.cpp.o
+[349/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSphereSurfaceEmitterTranslator.cpp.o
+[350/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEmitterTranslator.cpp.o
+[351/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSphereSurfaceEmitter.cpp.o
+[352/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUMeshSurfaceEmitter.cpp.o
+[353/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUMeshSurfaceEmitterTranslator.cpp.o
+[354/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULineEmitter.cpp.o
+[355/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPointEmitterTranslator.cpp.o
+[356/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULineEmitterTranslator.cpp.o
+[357/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPositionEmitterTranslator.cpp.o
+[358/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSlaveEmitter.cpp.o
+[359/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURibbonTrailRender.cpp.o
+[360/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoAffectorEventHandler.cpp.o
+[361/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoAffectorEventHandlerTranslator.cpp.o
+[362/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoEnableComponentEventHandlerTranslator.cpp.o
+[363/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURibbonTrail.cpp.o
+[364/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoExpireEventHandler.cpp.o
+[365/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBillboardChain.cpp.o
+[366/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBeamRender.cpp.o
+[367/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUVertexEmitter.cpp.o
+[368/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoFreezeEventHandlerTranslator.cpp.o
+[369/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoFreezeEventHandler.cpp.o
+[370/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURender.cpp.o
+[371/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoExpireEventHandlerTranslator.cpp.o
+[372/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoEnableComponentEventHandler.cpp.o
+[373/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnCollisionObserverTranslator.cpp.o
+[374/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoStopSystemEventHandler.cpp.o
+[375/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEventHandlerTranslator.cpp.o
+[376/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUObserver.cpp.o
+[377/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEventHandler.cpp.o
+[378/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoPlacementParticleEventHandlerTranslator.cpp.o
+[379/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoScaleEventHandlerTranslator.cpp.o
+[380/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoPlacementParticleEventHandler.cpp.o
+[381/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoScaleEventHandler.cpp.o
+[382/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnClearObserverTranslator.cpp.o
+[383/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUObserverManager.cpp.o
+[384/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEventHandlerManager.cpp.o
+[385/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUObserverTranslator.cpp.o
+[386/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnClearObserver.cpp.o
+[387/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoStopSystemEventHandlerTranslator.cpp.o
+[388/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnRandomObserver.cpp.o
+[389/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnCollisionObserver.cpp.o
+[390/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnQuotaObserver.cpp.o
+[391/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnRandomObserverTranslator.cpp.o
+[392/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.cpp.o
+[393/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnEventFlagObserver.cpp.o
+[394/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnCountObserver.cpp.o
+[395/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnCountObserverTranslator.cpp.o
+[396/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnEventFlagObserverTranslator.cpp.o
+[397/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnQuotaObserverTranslator.cpp.o
+[398/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnExpireObserver.cpp.o
+[399/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnEmissionObserver.cpp.o
+[400/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnPositionObserver.cpp.o
+[401/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnPositionObserverTranslator.cpp.o
+[402/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnEmissionObserverTranslator.cpp.o
+[403/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnVelocityObserverTranslator.cpp.o
+[404/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSlaveBehaviourTranslator.cpp.o
+[405/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBehaviourTranslator.cpp.o
+[406/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBehaviour.cpp.o
+[407/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnTimeObserverTranslator.cpp.o
+[408/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnTimeObserver.cpp.o
+[409/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSlaveBehaviour.cpp.o
+[410/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnVelocityObserver.cpp.o
+[411/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBehaviourManager.cpp.o
+[412/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCBone.cpp.o
+[413/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCArmatureAnimation.cpp.o
+[414/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCActionFrame.cpp.o
+[415/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCActionFrameEasing.cpp.o
+[416/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCActionManagerEx.cpp.o
+[417/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCArmature.cpp.o
+[418/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCColliderDetector.cpp.o
+[419/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCActionNode.cpp.o
+[420/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/SimpleAudioEngine.cpp.o
+[421/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCArmatureDataManager.cpp.o
+[422/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCActionObject.cpp.o
+[423/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCBatchNode.cpp.o
+[424/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCArmatureDefine.cpp.o
+[425/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCDataReaderHelper.cpp.o
+[426/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCComAttribute.cpp.o
+[427/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCDisplayManager.cpp.o
+[428/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCComRender.cpp.o
+[429/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCProcessBase.cpp.o
+[430/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCSGUIReader.cpp.o
+[431/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCDecorativeDisplay.cpp.o
+[432/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUNoise.cpp.o
+[433/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCDatas.cpp.o
+[434/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCComAudio.cpp.o
+[435/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCComController.cpp.o
+[436/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCDisplayFactory.cpp.o
+[437/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCInputDelegate.cpp.o
+[438/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UICheckBox.cpp.o
+[439/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIWebView/UIWebView.cpp.o
+[440/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIVideoPlayer-android.cpp.o
+[441/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIWebView/UIWebViewImpl-android.cpp.o
+[442/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/CocosGUI.cpp.o
+[443/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIEditBox/UIEditBoxImpl-android.cpp.o
+[444/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/utils/Utils.cpp.o
+[445/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/tinysndfile.cpp.o
+[446/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIButton.cpp.o
+[447/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/audio_utils/minifloat.cpp.o
+In file included from C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\android\tinysndfile.cpp:20:
+../../../../../../cocos2d/cocos\audio/android/audio_utils/include/audio_utils/primitives.h:742:33: warning: implicit conversion from 'unsigned long' to 'float' changes value from 4294967295 to 4294967296 [-Wimplicit-const-int-float-conversion]
+    static const float limpos = 0xffffffffUL / (float)(1 << 28);
+                                ^~~~~~~~~~~~ ~
+1 warning generated.
+[448/666] Building C object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/audio_utils/primitives.c.o
+[449/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/audio/android/mp3reader.cpp.o
+In file included from C:\Users\user\Desktop\Avoid\Avoid\cocos2d\cocos\audio\android\audio_utils\primitives.c:18:
+../../../../../../cocos2d/cocos\audio/android/audio_utils/include/audio_utils/primitives.h:742:33: warning: implicit conversion from 'unsigned long' to 'float' changes value from 4294967295 to 4294967296 [-Wimplicit-const-int-float-conversion]
+    static const float limpos = 0xffffffffUL / (float)(1 << 28);
+                                ^~~~~~~~~~~~ ~
+1 warning generated.
+[450/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIAbstractCheckButton.cpp.o
+[451/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIHelper.cpp.o
+[452/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UILoadingBar.cpp.o
+[453/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIScale9Sprite.cpp.o
+[454/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UILayout.cpp.o
+[455/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIRelativeBox.cpp.o
+[456/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIHBox.cpp.o
+[457/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIPageView.cpp.o
+[458/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIScrollView.cpp.o
+[459/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIListView.cpp.o
+[460/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIRichText.cpp.o
+[461/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIImageView.cpp.o
+[462/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UILayoutManager.cpp.o
+[463/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIRadioButton.cpp.o
+[464/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UILayoutParameter.cpp.o
+[465/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIPageViewIndicator.cpp.o
+[466/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIEditBox/UIEditBox.cpp.o
+[467/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/network/SocketIO.cpp.o
+[468/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UITextAtlas.cpp.o
+[469/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/network/HttpClient-android.cpp.o
+[470/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UITextField.cpp.o
+[471/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIWidget.cpp.o
+[472/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UITextBMFont.cpp.o
+[473/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UISlider.cpp.o
+[474/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIEditBox/UIEditBoxImpl-common.cpp.o
+[475/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIText.cpp.o
+[476/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UITabControl.cpp.o
+[477/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UILayoutComponent.cpp.o
+[478/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIScrollViewBar.cpp.o
+[479/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/ui/UIVBox.cpp.o
+[480/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/network/WebSocket.cpp.o
+[481/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/network/Uri.cpp.o
+[482/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/network/CCDownloader-android.cpp.o
+[483/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/network/CCDownloader.cpp.o
+[484/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCSkinNode.cpp.o
+[485/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/AssetsManager.cpp.o
+[486/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCBoneNode.cpp.o
+[487/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp.o
+[488/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/AssetsManagerEx.cpp.o
+[489/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ButtonReader/ButtonReader.cpp.o
+[490/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CSLoader.cpp.o
+[491/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCActionTimelineCache.cpp.o
+[492/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCSkeletonNode.cpp.o
+[493/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCFrame.cpp.o
+[494/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ArmatureNodeReader/ArmatureNodeReader.cpp.o
+[495/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/CCEventListenerAssetsManagerEx.cpp.o
+[496/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ScrollViewReader/ScrollViewReader.cpp.o
+[497/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCActionTimeline.cpp.o
+[498/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/GameNode3DReader/GameNode3DReader.cpp.o
+[499/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCActionTimelineNode.cpp.o
+[500/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/TabControlReader/TabControlReader.cpp.o
+[501/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/CCEventAssetsManagerEx.cpp.o
+[502/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/Light3DReader/Light3DReader.cpp.o
+[503/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp.o
+[504/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp.o
+[505/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/Manifest.cpp.o
+[506/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlButton.cpp.o
+[507/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlPotentiometer.cpp.o
+[508/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlStepper.cpp.o
+[509/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlUtils.cpp.o
+[510/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControl.cpp.o
+[511/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCScrollView/CCTableView.cpp.o
+[512/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlColourPicker.cpp.o
+[513/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlSlider.cpp.o
+[514/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCInvocation.cpp.o
+[515/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlSwitch.cpp.o
+[516/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCScrollView/CCScrollView.cpp.o
+[517/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDynamicAttributeTranslator.cpp.o
+[518/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUMaterialManager.cpp.o
+[519/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/physics-nodes/CCPhysicsDebugNode.cpp.o
+[520/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/CCParticleSystem3D.cpp.o
+[521/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUMaterialTranslator.cpp.o
+[522/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUForceField.cpp.o
+[523/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/physics-nodes/CCPhysicsSprite.cpp.o
+[524/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/CCParticle3DEmitter.cpp.o
+[525/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/CCParticle3DRender.cpp.o
+[526/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp.o
+[527/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/CCParticle3DAffector.cpp.o
+[528/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCScrollView/CCTableViewCell.cpp.o
+[529/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCTransformHelp.cpp.o
+[530/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CocoLoader.cpp.o
+[531/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCTween.cpp.o
+[532/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCUtilMath.cpp.o
+[533/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/FlatBuffersSerialize.cpp.o
+[534/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/LocalizationManager.cpp.o
+[535/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCComExtensionData.cpp.o
+[536/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/TriggerMng.cpp.o
+[537/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/TriggerObj.cpp.o
+[538/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/DictionaryHelper.cpp.o
+[539/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/TriggerBase.cpp.o
+[540/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCSkin.cpp.o
+[541/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCSpriteFrameCacheHelper.cpp.o
+[542/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ComAudioReader/ComAudioReader.cpp.o
+[543/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/WidgetReader.cpp.o
+[544/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/TextReader/TextReader.cpp.o
+[545/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/Node3DReader/Node3DReader.cpp.o
+[546/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/Particle3DReader/Particle3DReader.cpp.o
+[547/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/SingleNodeReader/SingleNodeReader.cpp.o
+[548/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/SpriteReader/SpriteReader.cpp.o
+[549/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CocoStudio.cpp.o
+[550/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/PageViewReader/PageViewReader.cpp.o
+[551/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/NodeReader/NodeReader.cpp.o
+[552/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/UserCameraReader/UserCameraReader.cpp.o
+[553/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/CheckBoxReader/CheckBoxReader.cpp.o
+[554/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.cpp.o
+[555/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/TextFieldReader/TextFieldReader.cpp.o
+[556/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/LoadingBarReader/LoadingBarReader.cpp.o
+[557/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ProjectNodeReader/ProjectNodeReader.cpp.o
+[558/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetCallBackHandlerProtocol.cpp.o
+[559/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/SliderReader/SliderReader.cpp.o
+[560/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ParticleReader/ParticleReader.cpp.o
+[561/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/GameMapReader/GameMapReader.cpp.o
+[562/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.cpp.o
+[563/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ImageViewReader/ImageViewReader.cpp.o
+[564/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/SkeletonReader/SkeletonNodeReader.cpp.o
+[565/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/TextBMFontReader/TextBMFontReader.cpp.o
+[566/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/LayoutReader/LayoutReader.cpp.o
+[567/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/Sprite3DReader/Sprite3DReader.cpp.o
+[568/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/SkeletonReader/BoneNodeReader.cpp.o
+[569/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUUtil.cpp.o
+[570/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUParticleSystem3DTranslator.cpp.o
+[571/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScriptCompiler.cpp.o
+[572/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUParticleSystem3D.cpp.o
+[573/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScriptTranslator.cpp.o
+[574/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSimpleSpline.cpp.o
+[575/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURendererTranslator.cpp.o
+[576/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScriptParser.cpp.o
+[577/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTranslateManager.cpp.o
+[578/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPlane.cpp.o
+[579/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScriptLexer.cpp.o
+[580/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSphere.cpp.o
+[581/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTechniqueTranslator.cpp.o
+[582/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUAffectorTranslator.cpp.o
+[583/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBaseCollider.cpp.o
+[584/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUListener.cpp.o
+[585/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBoxColliderTranslator.cpp.o
+[586/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.cpp.o
+[587/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBaseColliderTranslator.cpp.o
+[588/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.cpp.o
+[589/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.cpp.o
+[590/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUAffectorManager.cpp.o
+[591/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBaseForceAffector.cpp.o
+[592/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBoxCollider.cpp.o
+[593/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUAlignAffector.cpp.o
+[594/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUAffector.cpp.o
+[595/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUAlignAffectorTranslator.cpp.o
+[596/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.cpp.o
+[597/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUColorAffector.cpp.o
+[598/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.cpp.o
+[599/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.cpp.o
+[600/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUJetAffector.cpp.o
+[601/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUGeometryRotator.cpp.o
+[602/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUColorAffectorTranslator.cpp.o
+[603/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUInterParticleCollider.cpp.o
+[604/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUJetAffectorTranslator.cpp.o
+[605/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUGravityAffector.cpp.o
+[606/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUFlockCenteringAffector.cpp.o
+[607/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULineAffectorTranslator.cpp.o
+[608/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.cpp.o
+[609/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUForceFieldAffector.cpp.o
+[610/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUGravityAffectorTranslator.cpp.o
+[611/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScaleAffector.cpp.o
+[612/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPathFollowerTranslator.cpp.o
+[613/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.cpp.o
+[614/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScaleVelocityAffector.cpp.o
+[615/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPlaneCollider.cpp.o
+[616/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPlaneColliderTranslator.cpp.o
+[617/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURandomiser.cpp.o
+[618/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULineAffector.cpp.o
+[619/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUParticleFollowerTranslator.cpp.o
+[620/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUParticleFollower.cpp.o
+[621/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPathFollower.cpp.o
+[622/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULinearForceAffector.cpp.o
+[623/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURandomiserTranslator.cpp.o
+[624/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScaleAffectorTranslator.cpp.o
+[625/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.cpp.o
+[626/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUVortexAffectorTranslator.cpp.o
+[627/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUCircleEmitterTranslator.cpp.o
+[628/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBoxEmitter.cpp.o
+[629/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.cpp.o
+[630/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSphereCollider.cpp.o
+[631/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTextureRotator.cpp.o
+[632/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTextureRotatorTranslator.cpp.o
+[633/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTextureAnimator.cpp.o
+[634/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.cpp.o
+[635/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUVortexAffector.cpp.o
+[636/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSphereColliderTranslator.cpp.o
+[637/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUVelocityMatchingAffector.cpp.o
+[638/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSineForceAffector.cpp.o
+[639/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.cpp.o
+[640/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEmitter.cpp.o
+[641/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBoxEmitterTranslator.cpp.o
+[642/666] Building CXX object engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUCircleEmitter.cpp.o
+[643/666] Linking CXX static library lib\libcocos2d.a
+[644/666] Building CXX object CMakeFiles/Avoid.dir/Classes/ArrowPool.cpp.o
+[645/666] Building CXX object CMakeFiles/Avoid.dir/Classes/CameraShakeAction.cpp.o
+[646/666] Building CXX object CMakeFiles/Avoid.dir/Classes/ForkPattern.cpp.o
+[647/666] Building CXX object CMakeFiles/Avoid.dir/Classes/Arrow.cpp.o
+[648/666] Building CXX object CMakeFiles/Avoid.dir/Classes/CirclePattern.cpp.o
+[649/666] Building CXX object CMakeFiles/Avoid.dir/Classes/DragonPattern.cpp.o
+[650/666] Building CXX object CMakeFiles/Avoid.dir/Classes/ArrowPattern.cpp.o
+[651/666] Building CXX object CMakeFiles/Avoid.dir/Classes/AppDelegate.cpp.o
+[652/666] Building CXX object CMakeFiles/Avoid.dir/Classes/StayPattern.cpp.o
+[653/666] Building CXX object CMakeFiles/Avoid.dir/Classes/Player.cpp.o
+[654/666] Building CXX object CMakeFiles/Avoid.dir/Classes/OneToOnePattern.cpp.o
+[655/666] Building CXX object CMakeFiles/Avoid.dir/Classes/HealthComponent.cpp.o
+[656/666] Building CXX object CMakeFiles/Avoid.dir/Classes/RightAndLeftPattern.cpp.o
+[657/666] Building CXX object CMakeFiles/Avoid.dir/proj.android/app/jni/hellocpp/main.cpp.o
+[658/666] Building CXX object CMakeFiles/Avoid.dir/Classes/TimeView.cpp.o
+[659/666] Building CXX object CMakeFiles/Avoid.dir/Classes/SquarePattern.cpp.o
+[660/666] Building CXX object CMakeFiles/Avoid.dir/Classes/GameScene.cpp.o
+[661/666] Building CXX object CMakeFiles/Avoid.dir/Classes/HealthBar.cpp.o
+[662/666] Building CXX object CMakeFiles/Avoid.dir/Classes/SectorPattern.cpp.o
+[663/666] Building CXX object CMakeFiles/Avoid.dir/Classes/TitleScene.cpp.o
+[664/666] Building CXX object CMakeFiles/Avoid.dir/Classes/UIController.cpp.o
+C:\Users\user\Desktop\Avoid\Avoid\Classes\CameraShakeAction.cpp:34:36: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    float randX = ((float)rand() / RAND_MAX - 0.5f) * 2 * _strengthX;
+                                 ~ ^~~~~~~~
+C:/Users/user/AppData/Local/Android/Sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\stdlib.h:132:18: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX 0x7fffffff
+                 ^~~~~~~~~~
+C:\Users\user\Desktop\Avoid\Avoid\Classes\CameraShakeAction.cpp:35:36: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+    float randY = ((float)rand() / RAND_MAX - 0.5f) * 2 * _strengthY;
+                                 ~ ^~~~~~~~
+C:/Users/user/AppData/Local/Android/Sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\stdlib.h:132:18: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX 0x7fffffff
+                 ^~~~~~~~~~
+2 warnings generated.
+[665/666] Building CXX object CMakeFiles/Avoid.dir/Classes/Joystick.cpp.o
+In file included from C:\Users\user\Desktop\Avoid\Avoid\Classes\AppDelegate.cpp:26:
+../../../../../../Classes/TitleScene.h:10:18: warning: 'init' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+    virtual bool init();
+                 ^
+../../../../../../cocos2d/cocos/2d/CCScene.h:124:10: note: overridden virtual function is here
+    bool init() override;
+         ^
+1 warning generated.
+In file included from C:\Users\user\Desktop\Avoid\Avoid\Classes\TitleScene.cpp:1:
+../../../../../../Classes/TitleScene.h:10:18: warning: 'init' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+    virtual bool init();
+                 ^
+../../../../../../cocos2d/cocos/2d/CCScene.h:124:10: note: overridden virtual function is here
+    bool init() override;
+         ^
+1 warning generated.
+In file included from C:\Users\user\Desktop\Avoid\Avoid\Classes\UIController.cpp:3:
+../../../../../../Classes/TitleScene.h:10:18: warning: 'init' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+    virtual bool init();
+                 ^
+../../../../../../cocos2d/cocos/2d/CCScene.h:124:10: note: overridden virtual function is here
+    bool init() override;
+         ^
+1 warning generated.
+[666/666] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libAvoid.so

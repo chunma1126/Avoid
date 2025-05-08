@@ -1,8 +1,7 @@
 #pragma once
 #include "cocos2d.h"
 #include <string>
-#include <sstream>
-#include <iomanip>
+#include <format>
 
 class TimeView
 {
@@ -10,9 +9,8 @@ public:
 	void init();
 	void setLabel(float _time) 
 	{
-		std::ostringstream stream;
-		stream << std::fixed << std::setprecision(1) << _time;
-		timeLabel->setString(stream.str());
+		std::string formatted = std::format("{:.2f}", _time);
+		timeLabel->setString(formatted);
 	}
 	cocos2d::Label* getLabel() { return timeLabel; }
 private:

@@ -76,6 +76,7 @@ list(APPEND GAME_SOURCE
      Classes/TimeView.cpp
      Classes/TitleScene.cpp
      Classes/UIController.cpp
+     Classes/Joystick.cpp
 
 
      )
@@ -102,6 +103,8 @@ list(APPEND GAME_HEADER
         Classes/TimeView.h
         Classes/TitleScene.h
         Classes/UIController.h
+        Classes/Joystick.h
+
         )
 
 
