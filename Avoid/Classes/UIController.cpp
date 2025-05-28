@@ -2,8 +2,9 @@
 #include "GameScene.h"
 #include "TitleScene.h"
 #include "Joystick.h"
-#include <format>
 #include <string>
+#include <sstream>
+#include <iomanip>
 
 USING_NS_CC;
 
@@ -99,7 +100,10 @@ void UIController::playerGameOverScreen(float _playTime)
 	gameOverlabel->setPosition({ screenCenter.x , screenCenter.y + visibleSize.height * 0.1f });
 	_scene->addChild(gameOverlabel,1);
 
-	std::string str = std::format("time : {:.2f}", _playTime);
+	std::stringstream ss;
+	ss << "time : " << std::fixed << std::setprecision(2) << _playTime;
+	std::string str = ss.str();
+
 	auto playTimeLabel = cocos2d::Label::createWithSystemFont(str, "fonts/CookieRun Regular.ttf", 28);
 	playTimeLabel->setPosition({ screenCenter.x, screenCenter.y - visibleSize.height * 0.05f });
 	_scene->addChild(playTimeLabel, 1);

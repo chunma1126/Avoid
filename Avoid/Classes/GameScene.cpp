@@ -12,7 +12,6 @@
 #include "OneToOnePattern.h"
 #include "DragonPattern.h"
 
-#include "Joystick.h"
 
 
 USING_NS_CC;
@@ -97,10 +96,10 @@ bool GameScene::init()
     //Player init
     {
         auto player = Player::create();
-        player->setJoystick(uiController->getJoystick());
-
         static_cast<Node*>(player)->setPosition(screenCenter);
         //player->setPosition(screenCenter);
+
+        player->setJoystick(uiController->getJoystick());
 
         player->getHealthComponent().onDamageEvents.add([uiController]() 
             {
@@ -118,9 +117,8 @@ bool GameScene::init()
                 uiController->playerGameOverScreen(uiController->getTimeCount().getTime());
             });
 
-        addChild(player,0);
+        addChild(player,-100);
     }
-
 
 
     scheduleUpdate();
@@ -135,7 +133,7 @@ void GameScene::update(float dt)
     {
         CCLOG("game is over!!!");
     }
-    else if (currentPattern == nullptr)//next patterb
+    else if (currentPattern == nullptr)//next pattern
     {
         currentPattern = _patternQueue.front();
         _patternQueue.pop();

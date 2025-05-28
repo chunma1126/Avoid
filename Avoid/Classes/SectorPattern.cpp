@@ -8,7 +8,7 @@ SectorPattern::~SectorPattern()
 void SectorPattern::start()
 {
 	_completeTime = 2.5f;
-    _arrowCount = 6;
+    _arrowCount = 9;
     _arrowSpeed = 15000;
 
     float centerAngleDeg = 90.0f + (90 * _direction);
