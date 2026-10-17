@@ -57,53 +57,54 @@ endif()
 # add cross-platforms source files and header files 
 list(APPEND GAME_SOURCE
      Classes/AppDelegate.cpp
-     Classes/Arrow.cpp
-     Classes/ArrowPattern.cpp
-     Classes/ArrowPool.cpp
-     Classes/CameraShakeAction.cpp
-     Classes/CirclePattern.cpp
-     Classes/DragonPattern.cpp
-     Classes/ForkPattern.cpp
-     Classes/GameScene.cpp
-     Classes/HealthBar.cpp
-     Classes/HealthComponent.cpp
-     Classes/OneToOnePattern.cpp
-     Classes/Player.cpp
-     Classes/RightAndLeftPattern.cpp
-     Classes/SectorPattern.cpp
-     Classes/SquarePattern.cpp
-     Classes/StayPattern.cpp
-     Classes/TimeView.cpp
-     Classes/TitleScene.cpp
-     Classes/UIController.cpp
-     Classes/Joystick.cpp
+     Classes/Arrow/Arrow.cpp
+     Classes/Pattern/ArrowPattern.cpp
+     Classes/Arrow/ArrowPool.cpp
+     Classes/Effect/CameraShakeAction.cpp
+     Classes/Pattern/CirclePattern.cpp
+     Classes/Pattern/DragonPattern.cpp
+     Classes/Pattern/ForkPattern.cpp
+     Classes/Scene/GameScene.cpp
+     Classes/UI/HealthBar.cpp
+     Classes/Player/HealthComponent.cpp
+     Classes/Pattern/OneToOnePattern.cpp
+     Classes/Player/Player.cpp
+     Classes/Pattern/RightAndLeftPattern.cpp
+     Classes/Pattern/SectorPattern.cpp
+     Classes/Pattern/SquarePattern.cpp
+     Classes/Pattern/StayPattern.cpp
+     Classes/UI/TimeView.cpp
+     Classes/Scene/TitleScene.cpp
+     Classes/UI/UIController.cpp
+     Classes/UI/Joystick.cpp
 
 
      )
 list(APPEND GAME_HEADER
-        Classes/Action.h
+        Classes/Core/Action.h
         Classes/AppDelegate.h
-        Classes/Arrow.h
-        Classes/ArrowPattern.h
-        Classes/ArrowPool.h
-        Classes/CameraShakeAction.h
-        Classes/CirclePattern.h
-        Classes/DragonPattern.h
-        Classes/Enum.h
-        Classes/ForkPattern.h
-        Classes/GameScene.h
-        Classes/HealthBar.h
-        Classes/HealthComponent.h
-        Classes/OneToOnePattern.h
-        Classes/Player.h
-        Classes/RightAndLeftPattern.h
-        Classes/SectorPattern.h
-        Classes/SquarePattern.h
-        Classes/StayPattern.h
-        Classes/TimeView.h
-        Classes/TitleScene.h
-        Classes/UIController.h
-        Classes/Joystick.h
+        Classes/Arrow/Arrow.h
+        Classes/Pattern/ArrowPattern.h
+        Classes/Arrow/ArrowPool.h
+        Classes/Effect/CameraShakeAction.h
+        Classes/Pattern/CirclePattern.h
+        Classes/Pattern/DragonPattern.h
+        Classes/Core/Enum.h
+        Classes/Pattern/ForkPattern.h
+        Classes/Scene/GameScene.h
+        Classes/UI/HealthBar.h
+        Classes/Player/HealthComponent.h
+        Classes/Pattern/OneToOnePattern.h
+        Classes/Player/Player.h
+        Classes/Pattern/RightAndLeftPattern.h
+        Classes/Pattern/SectorPattern.h
+        Classes/Pattern/SquarePattern.h
+        Classes/Pattern/StayPattern.h
+        Classes/UI/TimeView.h
+        Classes/UI/TimeCount.h
+        Classes/Scene/TitleScene.h
+        Classes/UI/UIController.h
+        Classes/UI/Joystick.h
 
         )
 
@@ -176,6 +177,13 @@ endif()
 target_link_libraries(${APP_NAME} cocos2d)
 target_include_directories(${APP_NAME}
         PRIVATE Classes
+        PRIVATE Classes/Arrow
+        PRIVATE Classes/Core
+        PRIVATE Classes/Effect
+        PRIVATE Classes/Pattern
+        PRIVATE Classes/Player
+        PRIVATE Classes/Scene
+        PRIVATE Classes/UI
         PRIVATE ${COCOS2DX_ROOT_PATH}/cocos/audio/include/
 )
 
